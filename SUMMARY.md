@@ -19,7 +19,8 @@
 
 ## Ubuntu使用
 * [常用工具](https://docs.python.org/zh-cn/3/)
-    * [截图工具Flameshot](blog/ubuntu/Flameshot.md)
+    * [截图之Flameshot](blog/ubuntu/Flameshot.md)
+
 
 ## 其他
 * [github Page](blog/other/githubPages.md)
