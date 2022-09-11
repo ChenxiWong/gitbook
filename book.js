@@ -38,8 +38,8 @@ module.exports = {
         "chapter-fold": {},
         "theme-lou": {
             "color": "#5F9EA0", // 主题色
-            "favicon": "static/favicon.ico", // favicon图标
-            "logo": "static/logo.png", // 顶部左侧图标
+            "favicon": "static/zhuque.jpg", // favicon图标
+            "logo": "static/zhuque.jpg", // 顶部左侧图标
             "forbidCopy": false, // 页面是否禁止复制
             "search-placeholder": "全局搜索", // 搜索框默认文本
             "book-summary-title": "导航", // 目录标题
