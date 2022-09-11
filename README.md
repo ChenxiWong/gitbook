@@ -19,5 +19,3 @@
 | -- | -- | -- |
 | <a href="https://docs.python.org/zh-cn/3/">python标准库</a> |  <a href="https://studygolang.com/pkgdoc">golang标准库</a> |  <a href="https://docs.gunicorn.org/en/stable/">gunicorn文档</a> |
 |  <a href="https://en.cppreference.com/w/c">C语言参考手册</a> | <a href="https://zh.cppreference.com/w/%E9%A6%96%E9%A1%B5">C++参考手册</a>  |  |
-
-
