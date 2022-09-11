@@ -24,7 +24,7 @@ module.exports = {
         "highlight",
         "-lunr",
         "sharing",
-        "livereload",
+        "-livereload",
         "chapter-fold",
         "sitemap",
         "theme-lou",
