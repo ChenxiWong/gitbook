@@ -9,15 +9,25 @@ CI/CD的工具
 并自动更新到`github pages`.
 
 # 配置secrets
-
-首先在项目内新增一个秘钥token,给流水线使用,注意这个token有失效,可以设置无限期.
-
-
-项目的`settings` -> `Secrets` -> `Actions` -> `New repository secret`
-
-
-![image-20220808222511091](https://public-1257059699.cos.ap-beijing.myqcloud.com/PicGo/image-20220808222511091.png)
-
+## 创建token
+- 在个人中心配置需要的token
+![Img](./FILES/GitHubActions.md/img-20220912000819.png)
+![Img](./FILES/GitHubActions.md/img-20220912001140.png)
+![Img](./FILES/GitHubActions.md/img-20220912001222.png)
+![Img](./FILES/GitHubActions.md/img-20220912001342.png)
+- 根据需求填写对应的信息、重点关注workflow权限
+![Img](./FILES/GitHubActions.md/img-20220912001551.png)
+- 填写完成创建token
+![Img](./FILES/GitHubActions.md/img-20220912001730.png)
+- 复制对应的token字符串
+![Img](./FILES/GitHubActions.md/img-20220912001853.png)
+- 将token字符串填写到项目token中
+![Img](./FILES/GitHubActions.md/img-20220912002442.png)
+![Img](./FILES/GitHubActions.md/img-20220912002627.png)
+![Img](./FILES/GitHubActions.md/img-20220912002737.png)
+- 填写copy的token字符串提交，即可创建完成
+![Img](./FILES/GitHubActions.md/img-20220912002927.png)
+- 注意最后一步的token name，就是workflow中的使用名称
 # CI脚本
 
 工作流程在 `.github/workflows` 目录中定义,此目录下所有`yml`文件都会被执行.
