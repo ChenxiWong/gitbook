@@ -17,6 +17,10 @@
     * [python gevent 使用实例](blog/python/pythonGeventDemo.md)
     * [sysv-ipc 进程间通信的使用](blog/python/python_sysv-ipc_Demo.md)
 
+## Ubuntu使用
+* [常用工具](https://docs.python.org/zh-cn/3/)
+    *[截图工具Flameshot]()
+
 ## 其他
 * [github Page](blog/other/githubPages.md)
     * [gitbook使用举例](blog/other/gitbookEnvPrepare.md)
