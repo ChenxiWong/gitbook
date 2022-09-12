@@ -22,4 +22,4 @@ py-spy dump --pid 进程ID
 ```
 
 ### 命令行示例
-![py-spy](https://img.hellogithub.com/i/QcroOeIpFYGCB4Z_1661566729.gif)
+![Img](./FILES/python_py_spy.md/img-20220912115250.png)
