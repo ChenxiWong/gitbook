@@ -5,6 +5,7 @@
 
 ## golang笔记
 * [标准库](https://studygolang.com/pkgdoc)
+    * [golang安装及一些常识](blog/golang/golang_env_build.md)
     * [golangfmt占位符号](blog/golang/fmt_placeholder.md)
 * [第三方库](https://wangchenxi.top)
     * [golang自定义日志样式](blog/golang/zap_userdefine.md)
