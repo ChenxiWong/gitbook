@@ -23,3 +23,6 @@ py-spy dump --pid 进程ID
 
 ### 命令行示例
 ![Img](./FILES/python_py_spy.md/img-20220912115250.png)
+
+### 了解更多
+[对应项目的github](https://github.com/benfred/py-spy)
