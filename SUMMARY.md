@@ -20,6 +20,7 @@
 ## Ubuntu使用
 * [常用工具](https://docs.python.org/zh-cn/3/)
     * [截图之Flameshot](blog/ubuntu/Flameshot.md)
+    * [监控之prometheus](blog/prometheus/grafana_prometheus_metrics.md)
 
 
 ## 其他
