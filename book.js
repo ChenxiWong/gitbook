@@ -1,11 +1,11 @@
 module.exports = {
-    "title": "我的文档",
-    "author": "tianv5",
+    "title": "个人笔记",
+    "author": "ChenxiWong",
     "description": "文档",
     "keywords": "学习,笔记,编程,代码,博客,文章,github",
     "introduction": {
         "path": "README.md",
-        "title": "前言",
+        "title": "导航首页",
     },
     "variables": {
         "themeColor": "#3884ff",
@@ -52,7 +52,7 @@ module.exports = {
             }
         },
         "sitemap": {
-            "hostname": "https://tianv5.github.io/docs"
+            "hostname": "https://chenxiwong.github.io/gitbook"
         },
         "prism": {
             "css": [
