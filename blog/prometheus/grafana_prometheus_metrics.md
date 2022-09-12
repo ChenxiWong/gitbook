@@ -64,33 +64,33 @@ sudo systemctl status node_exporter.service
 
 
 ### 配置webui
-    打开主机地址+3000端口。
-    例如：主机IP为192.168.22.23
-    浏览器输入以下地址：    `http://192.168.22.23:3000`
-    ![Img](./FILES/grafana_prometheus_metrics.md/img-20220912102054.png)
-    默认用户为 admin admin
+打开主机地址+3000端口。
+例如：主机IP为192.168.22.23
+浏览器输入以下地址：    `http://192.168.22.23:3000`
+![Img](./FILES/grafana_prometheus_metrics.md/img-20220912102054.png)
+默认用户为 admin admin
 
-    ![Img](./FILES/grafana_prometheus_metrics.md/img-20220912102143.png)
-    登陆后修改密码
+![Img](./FILES/grafana_prometheus_metrics.md/img-20220912102143.png)
+登陆后修改密码
 
 
 ### 修改完密码进入主页。准备配置数据源
-    ![Img](./FILES/grafana_prometheus_metrics.md/img-20220912102323.png)
-    点击Add data source
-    ![Img](./FILES/grafana_prometheus_metrics.md/img-20220912102423.png)
-    选择prometheus
-    ![Img](./FILES/grafana_prometheus_metrics.md/img-20220912102502.png)
-    填入主机的IP,端口号为9090
-    ![Img](./FILES/grafana_prometheus_metrics.md/img-20220912102533.png)
-    点击保存并测试（save&test）
-    ![Img](./FILES/grafana_prometheus_metrics.md/img-20220912102645.png)
+![Img](./FILES/grafana_prometheus_metrics.md/img-20220912102323.png)
+点击Add data source
+![Img](./FILES/grafana_prometheus_metrics.md/img-20220912102423.png)
+选择prometheus
+![Img](./FILES/grafana_prometheus_metrics.md/img-20220912102502.png)
+填入主机的IP,端口号为9090
+![Img](./FILES/grafana_prometheus_metrics.md/img-20220912102533.png)
+点击保存并测试（save&test）
+![Img](./FILES/grafana_prometheus_metrics.md/img-20220912102645.png)
 
 ### 导入模板配置
-    ![Img](./FILES/grafana_prometheus_metrics.md/img-20220912103538.png)
-    ![Img](./FILES/grafana_prometheus_metrics.md/img-20220912103602.png)
-    ![Img](./FILES/grafana_prometheus_metrics.md/img-20220912103611.png)
-    ![Img](./FILES/grafana_prometheus_metrics.md/img-20220912103619.png)
-    ![Img](./FILES/grafana_prometheus_metrics.md/img-20220912103630.png)
+![Img](./FILES/grafana_prometheus_metrics.md/img-20220912103538.png)
+![Img](./FILES/grafana_prometheus_metrics.md/img-20220912103602.png)
+![Img](./FILES/grafana_prometheus_metrics.md/img-20220912103611.png)
+![Img](./FILES/grafana_prometheus_metrics.md/img-20220912103619.png)
+![Img](./FILES/grafana_prometheus_metrics.md/img-20220912103630.png)
 
 
 ### 搭建其他服务的监控
