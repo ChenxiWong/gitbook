@@ -1,10 +1,10 @@
 # <a href="http://wangchenxi.top/">个人介绍</a>
-|   |
+| | | |
 | -- | -- | -- |
 | <a href="https://wangchenxi.top/">个人站点</a> | <a href="https://github.com/ChenxiWong/golangLearn" target="_blank" title="go语言学习">个人golang学习仓库</a> |  |
 
 # 友情连接
-|   |
+| | | |
 | -- | -- | -- |
 | <a href="https://www.bookstack.cn/" target="_blank" title="程序开发图书">书栈网</a> | <a href="https://www.liwenzhou.com/" target="_blank" title="go语言、路飞学成">李文周的博客</a> | <a href="https://www.liujiangblog.com/" target="_blank" title="个人python推广讲师">刘江的博客教程</a> |
 | <a href="https://www.cnblogs.com/derek1184405959" target="_blank" title="慕课网python讲师，很多实战项目">Zhang_derek</a> | <a href="https://maicss.gitbooks.io/pyqt5/content/" target="_blank" title="pyqt">pyqt5代码示例</a> | <a href="http://www.python3.vip" target="_blank" title="python讲师、bilibiliUP主">白月黑羽</a> |
@@ -15,7 +15,7 @@
 | <a href="https://blog.csdn.net/sunt2018">CSDN博主tianv5</a> |  |  |
 
 # 参考文档
-|   |
+| | | |
 | -- | -- | -- |
 | <a href="https://docs.python.org/zh-cn/3/">python标准库</a> |  <a href="https://studygolang.com/pkgdoc">golang标准库</a> |  <a href="https://docs.gunicorn.org/en/stable/">gunicorn文档</a> |
 |  <a href="https://en.cppreference.com/w/c">C语言参考手册</a> | <a href="https://zh.cppreference.com/w/%E9%A6%96%E9%A1%B5">C++参考手册</a>  |  |
