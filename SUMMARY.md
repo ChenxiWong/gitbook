@@ -36,3 +36,4 @@
     * [常用的正则举例](blog/other/common_tool_re.md)
     * [我看到的一个比较好的单例实现](blog/python/singleton.md)
     * [mysql的一些基础](blog/other/mysql_import_export.md)
+* [姑射山人说](blog/gusheshanrenshuo/fun.md)
