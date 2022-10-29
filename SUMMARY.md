@@ -37,3 +37,6 @@
     * [我看到的一个比较好的单例实现](blog/python/singleton.md)
     * [mysql的一些基础](blog/other/mysql_import_export.md)
 * [姑射山人说](blog/gusheshanrenshuo/fun.md)
+* [plantUML工具](blog/other/plantUML.md)
+* [code2flowe工具](blog/other/code2flow.md)
+* [scrcpy工具](blog/other/scrcpy.md)
