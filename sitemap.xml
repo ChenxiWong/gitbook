@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url> <loc>https://chenxiwong.github.io/./</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/golang/golang_env_build.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/golang/fmt_placeholder.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/golang/golang100mistakes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/golang/zap_userdefine.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/python/ubuntu_clang_python.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/python/gunicornServerHook.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/python/pythonLinuxIpcMessageQueue.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/python/pythonGeventDemo.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/python/python_sysv-ipc_Demo.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/python/flask_test_moc.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/python/python_py_spy.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/ubuntu/Flameshot.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/prometheus/grafana_prometheus_metrics.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/other/virtualbox_androidx86.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/other/githubPages.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/other/gitbookEnvPrepare.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/other/GitHubActions.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/other/common_tool_re.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/python/singleton.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/other/k8s.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/other/mysql_import_export.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/gusheshanrenshuo/fun.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/other/plantUML.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/other/code2flow.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://chenxiwong.github.io/blog/other/scrcpy.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+</urlset>
