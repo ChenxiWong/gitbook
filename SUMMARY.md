@@ -42,3 +42,4 @@
 * [plantUML工具](blog/other/plantUML.md)
 * [code2flowe工具](blog/other/code2flow.md)
 * [scrcpy工具](blog/other/scrcpy.md)
+* [按键查看工具](blog/other/key_action.md)

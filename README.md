@@ -19,6 +19,8 @@
 | | | |
 | -- | -- | -- |
 | <a href="https://docs.python.org/zh-cn/3/">python标准库</a> |  <a href="https://studygolang.com/pkgdoc">golang标准库</a> |  <a href="https://docs.gunicorn.org/en/stable/">gunicorn文档</a> |
-|  <a href="https://en.cppreference.com/w/c">C语言参考手册</a> | <a href="https://zh.cppreference.com/w/%E9%A6%96%E9%A1%B5">C++参考手册</a>  |  |
-
+|  <a href="https://en.cppreference.com/w/c">C语言参考手册</a> | <a href="https://zh.cppreference.com/w/%E9%A6%96%E9%A1%B5">C++参考手册</a>  | <a href="https://studygolang.gitbook.io/learn-go-with-tests/">learn golang with test</a> |
+| <a href="https://github.com/rougier/numpy-100">numpy练习册</a> | <a href="https://course.rs/about-book.html">Rust语言圣经</a> | <a href="https://tinylab-1.gitbook.io/shellbook/">Shell编程范例</a> |
+| <a href="https://github.com/guangzhengli/k8s-tutorials">k8s入门教程</a> | <a href="https://github.com/ben1234560/k8s_PaaS">K8s PaaS/DevOps</a> | <a href="http://rcore-os.cn/rCore-Tutorial-Book-v3/appendix-a/index.html">Rust 系统编程入门</a> |
+| <a href="https://github.com/kaina404/FlutterDouBan">flutter豆瓣样例</a> | -- | -- |
 
