@@ -14,6 +14,8 @@
 ## python笔记
 * [标准库](https://docs.python.org/zh-cn/3/)
     * [ubuntu环境下C语言拓展cpython](blog/python/ubuntu_clang_python.md)
+    * [tkinter开发界面客户端工具](blog/python/tkinter_gui_demo.md)
+
 * [第三方库](https://wangchenxi.top)
     * [gunicorn server hook 说明](blog/python/gunicornServerHook.md)
     * [python Linux ipc通信之消息队列实例](blog/python/pythonLinuxIpcMessageQueue.md)
