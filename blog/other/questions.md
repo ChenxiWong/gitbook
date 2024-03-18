@@ -13,3 +13,10 @@ do
 echo $i
 done
 ```
+
+- 计算机常用术语
+![Img](./FILES/questions.md/img-20240318163746.png)
+
+
+- Windows WSL 卸载 ubuntu
+![Img](./FILES/questions.md/img-20240318163903.png)
