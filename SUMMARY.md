@@ -67,3 +67,4 @@
     * [K8S教程](blog/other/k8s.md)
     * [mysql的一些基础](blog/other/mysql_import_export.md)
 * [姑射山人说](blog/gusheshanrenshuo/fun.md)
+* [devops](blog/devops/常用命令整理.md)
