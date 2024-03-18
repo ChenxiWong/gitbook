@@ -15,6 +15,8 @@
     * [sysv-ipc 进程间通信的使用](blog/python/python_sysv-ipc_Demo.md)
     * [flask实现一个moc服务](blog/python/flask_test_moc.md)
     * [python性能分析之py-spy](blog/python/python_py_spy.md)
+    * [ip地址合并的问题](blog/python/一个ip地址合并的样例.md)
+    * [protocolbuffer源码pyi生成](blog/python/pb生成pyi文件.md)
 
 
 ## golang笔记
@@ -66,6 +68,7 @@
     * [常用的正则举例](blog/other/common_tool_re.md)
     * [我看到的一个比较好的单例实现](blog/python/singleton.md)
     * [K8S教程](blog/other/k8s.md)
+    * [常见问题集锦](blog/other/questions.md)
     * [mysql的一些基础](blog/other/mysql_import_export.md)
 * [姑射山人说](blog/gusheshanrenshuo/fun.md)
 * [devops](blog/devops/常用命令整理.md)
