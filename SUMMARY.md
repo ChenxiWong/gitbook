@@ -61,6 +61,7 @@
 * [github Page](blog/other/githubPages.md)
     * [gitbook使用举例](blog/other/gitbookEnvPrepare.md)
     * [github Actions自动构建](blog/other/GitHubActions.md)
+    * [git常用命令](blog/other/git常用命令.md)
 * [常识基础](https://docs.python.org/zh-cn/3/)
     * [常用的正则举例](blog/other/common_tool_re.md)
     * [我看到的一个比较好的单例实现](blog/python/singleton.md)
