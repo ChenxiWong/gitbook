@@ -28,3 +28,7 @@
 | <a href="https://github.com/guangzhengli/k8s-tutorials">k8s入门教程</a> | <a href="https://github.com/ben1234560/k8s_PaaS">K8s PaaS/DevOps</a> | <a href="http://rcore-os.cn/rCore-Tutorial-Book-v3/appendix-a/index.html">Rust 系统编程入门</a> |
 | <a href="https://github.com/kaina404/FlutterDouBan">flutter豆瓣样例</a> | -- | -- |
 
+# 备用github
+| | | |
+| -- | -- | -- |
+| <a href="https://github.com/chaseSpace/k8s-tutorial-cn/blob/e380694a48d07c4567cb9a19d2504db68cfe4d1b/doc_tutorial.md">Kubernetes 基础教程</a> |   |   |

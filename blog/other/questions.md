@@ -20,3 +20,17 @@ done
 
 - Windows WSL 卸载 ubuntu
 ![Img](./FILES/questions.md/img-20240318163903.png)
+
+
+- ubuntu系统如何修改hostname
+1. 需要编辑/etc/hostname文件。使用文本编辑器以超级用户权限打开此文件：
+sudo vi /etc/hostname
+删除旧的主机名，并输入新的主机名。保存并关闭文件。
+2. 同样，您还需要编辑/etc/hosts文件，以确保该文件中的主机名与您刚刚设置的新主机名相匹配。同样使用文本编辑器以超级用户权限打开此文件：
+sudo vi /etc/hosts
+找到包含127.0.1.1的行，并更改该行的主机名部分以匹配新的主机名。保存并关闭文件。
+3. 重启计算机或注销会话以使更改生效：
+sudo reboot
+4. 或者如果您只是想测试更改而不立即重启：
+hostnamectl
+这将显示当前的主机名设置，包括您刚才所做的更改。
