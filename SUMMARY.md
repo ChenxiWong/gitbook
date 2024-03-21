@@ -22,6 +22,7 @@
 ## golang笔记
 * [标准库](https://studygolang.com/pkgdoc)
     * [golang安装及一些常识](blog/golang/golang_env_build.md)
+    * [离线环境搭建GOPROXY](blog/golang/离线环境搭建GOPROXY.md)
     * [golangfmt占位符号](blog/golang/fmt_placeholder.md)
     * [100-go-mistakes](blog/golang/golang100mistakes.md)
 * [第三方库](https://wangchenxi.top)

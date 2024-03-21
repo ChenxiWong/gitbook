@@ -23,6 +23,7 @@ done
 
 
 - ubuntu系统如何修改hostname
+```text
 1. 需要编辑/etc/hostname文件。使用文本编辑器以超级用户权限打开此文件：
 sudo vi /etc/hostname
 删除旧的主机名，并输入新的主机名。保存并关闭文件。
@@ -34,3 +35,16 @@ sudo reboot
 4. 或者如果您只是想测试更改而不立即重启：
 hostnamectl
 这将显示当前的主机名设置，包括您刚才所做的更改。
+```
+
+- 问题描述
+ctr镜像导入报错ctr: content digest sha256:xxxxxx not found
+
+解决方案
+```text
+现象：
+直接导入j镜像可能会出现类似于 ctr: content digest sha256:xxxxxx not found
+解决办法：
+拉取镜像、导出镜像时，加上--platform
+```
+

@@ -1,5 +1,113 @@
 # k8s笔记
 
+## deployment
+
+kubectl create deployment deploy-nginx--image=docker.io/library/nginx:latest  -n test 
+kubectl get deploy -n test
+kubectl delete deploy deploy-nginx -n test
+
+```yml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: test
+  name: nginx-deployment
+  labels: 
+    app: nginx
+spec:
+  replicas: 3
+  selector: 
+    matchLabels: 
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.7.9
+        ports:
+        - containerPort: 80
+```
+
+## service
+
+kubectl expose deployment nginx-deployment  --port=8888 --target-port=80 -n test
+
+kubectl get service -n test 
+
+kubectl delete service   nginx-deployment  -n test
+
+
+kubectl expose deployment nginx-deployment  \ 
+--port=8888 --target-port=80 -n test \  
+--type=NodePort
+
+```yml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: test
+  name: nginx-deployment
+  labels: 
+    app: nginx
+spec:
+  replicas: 3
+  selector: 
+    matchLabels: 
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.7.9
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: test
+  name: nginx-deployment
+  labels: 
+    app: nginx
+spec:
+  selector: 
+    app: nginx
+  ports: 
+  - port: 8888
+    targetPort: 80
+  type: NodePort
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  namespace: test
+  name: nginx-ingress
+spec:
+  ingressClassName: ingress
+  rules: 
+  - host: k8s.learn.wcx
+    http: 
+      paths: 
+      - path: /  
+        pathType: Prefix
+        backend: 
+          service: 
+            name: nginx-deployment
+            port: 
+              number: 8888
+
+```
+
+
+
+
 ## k8s大体架构
 ![Img](./FILES/k8s笔记.md/img-20240319155131.png)
 
@@ -285,6 +393,29 @@ containerd config default > /etc/containerd/config.toml
 
 ## k8s常用命令
 
+- 集群管理常用命令
+```bash
+kubectl apply -f namespace-test.yml
+kubectl create ns test
+kubectl delete ns test
+kubectl delete pod -f nginx-tomcat -n test
+kubectl delete pod nginx -n test
+kubectl delete pod  nginx-tomcat -n test --force
+kubectl exec -it nginx -n test -- bash
+kubectl get namespace
+kubectl get nodes -o wide
+kubectl get ns
+kubectl get pods
+kubectl get pods -A
+kubectl get pods -n test
+kubectl logs -f nginx -n test
+kubectl logs -f -n test nginx-tomcat
+kubectl run nginx --image=nginx:latest -n test
+service containerd restart
+ssh-keygen -t rsa -P ''
+```
+
+
 - containered
 ```bash
   ctr c create docker.io/library/nginx:latest nginx1
@@ -317,5 +448,5 @@ containerd config default > /etc/containerd/config.toml
 
  containerd 端口映射的问题？
 
-
+ctr run --net-host --mount type=bind,src=/var/run/containerd/sock,dst=/var/run/containerd/sock,options=bind:rw --env CONTAINERD_ADDRESS=/var/run/containerd/sock --hostname mycontainer --runtime runc --image myimage:latest --port 8080:80 mycontainer
 - docker
