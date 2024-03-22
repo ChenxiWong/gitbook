@@ -1,5 +1,9 @@
 # k8s笔记
 
+## windows 修改host
+文件路径： `C:\Windows\System32\drivers\etc`
+
+
 ## deployment
 
 kubectl create deployment deploy-nginx--image=docker.io/library/nginx:latest  -n test 
@@ -44,6 +48,9 @@ kubectl expose deployment nginx-deployment  \
 --port=8888 --target-port=80 -n test \  
 --type=NodePort
 
+# 同一个yml部署
+kubectl rollout restart deployment pipline -n test
+
 ```yml
 apiVersion: apps/v1
 kind: Deployment
@@ -64,7 +71,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:1.7.9
+        image: nginx:1.7.9 
         ports:
         - containerPort: 80
 ---
@@ -105,6 +112,68 @@ spec:
 
 ```
 
+
+```yml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: test
+  name: nginx-deployment
+  labels: 
+    app: mydemo
+spec:
+  replicas: 3
+  selector: 
+    matchLabels: 
+      app: mydemo
+  template:
+    metadata:
+      labels:
+        app: mydemo
+    spec:
+      containers:
+      - name: mydemo
+        image: 192.168.1.11:80/repo/mydemo:v5.0.0 
+        ports:
+        - containerPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: test
+  name: nginx-deployment
+  labels: 
+    app: mydemo
+spec:
+  selector: 
+    app: mydemo
+  ports: 
+  - port: 8888
+    targetPort: 8000
+  type: NodePort
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  namespace: test
+  name: nginx-ingress
+spec:
+  ingressClassName: ingress
+  rules: 
+  - host: k8s.learn.wcx
+    http: 
+      paths: 
+      - path: /  
+        pathType: Prefix
+        backend: 
+          service: 
+            name: nginx-deployment
+            port: 
+              number: 8888
+
+
+```
 
 
 
@@ -293,10 +362,15 @@ version = 2
       [plugins."io.containerd.grpc.v1.cri".registry.auths]
 
       [plugins."io.containerd.grpc.v1.cri".registry.configs]
+        [plugins."io.containerd.grpc.v1.cri".registry.configs."192.168.1.11:80".auth]
+          username = "admin"
+          password = "Harbor12345"
 
       [plugins."io.containerd.grpc.v1.cri".registry.headers]
 
       [plugins."io.containerd.grpc.v1.cri".registry.mirrors]
+        [plugins."io.containerd.grpc.v1.cri".registry.mirrors."192.168.1.11:80"]
+          endpoint = ["http://192.168.1.11:80"]
         [plugins."io.containerd.grpc.v1.cri".registry.mirrors."docker.io"]
           endpoint = ["https://docker.mirrors.ustc.edu.cn", "http://hub-mirror.c.163.com"]
         [plugins."io.containerd.grpc.v1.cri".registry.mirrors."gcr.io"]
@@ -389,6 +463,21 @@ version = 2
 ### 生成默认模块配置文件
 ```bash
 containerd config default > /etc/containerd/config.toml
+
+
+      [plugins."io.containerd.grpc.v1.cri".registry.auths]
+      [plugins."io.containerd.grpc.v1.cri".registry.configs]
+        [plugins."io.containerd.grpc.v1.cri".registry.configs."192.168.1.11:80".tls]
+          insecure_skip_verify = false
+        [plugins."io.containerd.grpc.v1.cri".registry.configs."192.168.1.11:80".auth]
+          username = "admin"
+          password = "Harbor12345"
+
+        [plugins."io.containerd.grpc.v1.cri".registry.mirrors."192.168.1.11:80"]
+          endpoint = ["http://192.168.1.11:80"]
+
+ctr images pull --plain-http  192.168.1.11:80/repo/mydemo:v5.0.0
+crictl pull  192.168.1.11:80/repo/mydemo:v5.0.0
 ```
 
 ## k8s常用命令
@@ -418,6 +507,7 @@ ssh-keygen -t rsa -P ''
 
 - containered
 ```bash
+ctr images pull --plain-http  192.168.1.11:80/repo/mydemo:v5.0.0
   ctr c create docker.io/library/nginx:latest nginx1
   ctr c delete nginx1
   ctr c ls
