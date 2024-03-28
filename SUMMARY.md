@@ -74,3 +74,4 @@
 * [devops](blog/devops/常用命令整理.md)
     * [K8S教程](blog/other/k8s.md)
     * [K8S笔记](blog/devops/k8s笔记.md)
+    * [K8S笔记](blog/devops/k8s编写yml.md)
