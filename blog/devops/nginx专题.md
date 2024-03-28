@@ -4,7 +4,7 @@
 - web服务器
   请给出，nginx作为web服务器的常见配置conf文件，要求可以直接使用。
 
-```
+```text
 server {
     listen 80;
     server_name example.com;
@@ -50,8 +50,8 @@ server {
     access_log /var/log/nginx/example.com-access.log;
     error_log /var/log/nginx/example.com-error.log;
 }
-
 ```
+
 - 反向代理
 - 负载均衡
   请给出，nginx作为web服务器的常见配置conf文件，要求可以直接使用。
@@ -100,6 +100,7 @@ server {
 ## URL重定向
 
 ## 防盗链
+
 ```
 server {
     listen 80;
