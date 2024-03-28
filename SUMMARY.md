@@ -59,6 +59,8 @@
     * [code2flowe工具](blog/other/code2flow.md)
     * [scrcpy工具](blog/other/scrcpy.md)
     * [按键查看工具](blog/other/key_action.md)
+    * [nginx配置](blog/devops/nginx专题.md)
+
 
 ## 其他
 * [github Page](blog/other/githubPages.md)
@@ -74,4 +76,4 @@
 * [devops](blog/devops/常用命令整理.md)
     * [K8S教程](blog/other/k8s.md)
     * [K8S笔记](blog/devops/k8s笔记.md)
-    * [K8S笔记](blog/devops/k8s编写yml.md)
+    * [K8S编写yml的技巧](blog/devops/k8s编写yml.md)
