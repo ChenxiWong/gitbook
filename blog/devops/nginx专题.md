@@ -3,7 +3,8 @@
 ## nginx七大应用场景
 - web服务器
   请给出，nginx作为web服务器的常见配置conf文件，要求可以直接使用。
-```text
+
+```
 server {
     listen 80;
     server_name example.com;
