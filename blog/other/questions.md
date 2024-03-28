@@ -1,4 +1,19 @@
 # questions
+
+- chatGML 问题模板 代码截图识别
+```text
+请将图片中的代码，识别输出(包含注释)。请注意，识别的文本是python代码，请输出格式化后的python代码。
+请将图片中的文本，识别输出（包含表头）。请注意，识别的文本是csv格式的文本，请按照`csv`格式输出。
+```
+
+- python, sqlmap报错 AttributeError: module ‘collections‘ has no attribute ‘Callable‘
+
+```text
+进入python安装目录 如我的在e盘下修改py3k_compat.py这个文件E:\python\lib\site-packages\pyreadline\py3k_compat.py
+
+在第8行把 return isinstance(x, collections.Callable)改为 return isinstance(x, collections.abc.Callable)即可正常使用
+```
+
 - 问题描述
 ![Img](./FILES/questions.md/img-20240318163231.png)
 这个脚本只能用bash执行，用sh执行报错

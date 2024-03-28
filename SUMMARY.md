@@ -17,6 +17,7 @@
     * [python性能分析之py-spy](blog/python/python_py_spy.md)
     * [ip地址合并的问题](blog/python/一个ip地址合并的样例.md)
     * [protocolbuffer源码pyi生成](blog/python/pb生成pyi文件.md)
+    * [scipy数据分析demo源码](blog/scipy/pandas500demo.md)
 
 
 ## golang笔记
