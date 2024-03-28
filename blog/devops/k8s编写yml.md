@@ -4,11 +4,11 @@
 
 ## 字段类型
 
-- \<String\>
-- \<\[\]String\>
+- `<String>`
+- `<[]String>`
 - map
-- \<Object\>
-- \<\[\]Object\>
+- `<Object>`
+- `<[]Object>`
 
 ### 类型是如何确定的？
 
