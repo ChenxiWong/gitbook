@@ -143,7 +143,24 @@ server {
 ## nginx匹配路径`/`
 ![Img](./FILES/nginx专题.md/img-20240328193514.png)
 
+## nginx配置图形化界面
 
+nginx proxy manager 官网地址： https://nginxproxymanager.com/guide/
 
+Create a docker-compose.yml file similar to this:
+```yml
+version: '3.8'
+services:
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+```
 
  
