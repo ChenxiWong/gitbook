@@ -118,8 +118,129 @@ df #输出df在调整行标签之后的所有数据
 2021-05,603938,三孚股份,69.08,7.17亿,134.8亿,134.8亿
 ```
 
-## 001　使用随机数创建一个DataFrame
+## 005　使用月初日期设置DataFrame的行标签
+
+```csv
+,盐水鸭,酱鸭,板鸭,烤鸭
+0,1800,1600,2400,1200
+1,2600,1800,2000,1800
+2,2400,2100,5900,2480
+3,2000,2800,1800,2400
+4,2500,1200,2500,3900
+
+```
+
+```python
+import pandas as pd #导入pandas库，并使用pd重命名pandas
+#读取 myexcel.xlsx文件的 Sheet1工作表
+df=pd.read_excel('myexcel.xlsx',sheet_name='Sheet1')
+df #输出 df 的所有数据
+#将 df 的行标签调整为每月的月初日期
+df.index=pd.date_range('20210111',periods=5,freq=pd.offsets.MonthBegin(1))
+##将 df 的行标签调整为每月的工作日月初日期
+##df.index=pd.date_range('20210111',periods=5, freq=pd.offsets.BusinessMonthBegin(1))
+##将 df 的行标签调整为每月的月末日期
+##df.index=pd.date_range(start='20210111',periods=5,freq='1M')
+##df.index=pd.date_range('20210111',periods=5,freq=pd.offsets.MonthEnd(1))
+##将 df 的行标签调整为每月的工作日月末日期
+##df.index=pd.date_range('20210111',periods=5,freq=pd.offsets.BusinessMonthEnd(1))
+##将 df 的行标签调整为每季的季末日期
+df.index=pd.date_range(start='20210111',periods=5,freq='1Q')
+##df.index=pd.date_range('20210111',periods=5,freq=pd.offsets.QuarterEnd(1))
+##将 df 的行标签调整为每季的季初日期
+##df.index=pd.date_range('20210111',periods=5,freq=pd.offsets.QuarterBegin(1))
+##将 df 的行标签调整为每年的年末日期
+df.index=pd.date_range(start='20210111',periods=5,freq='1Y')
+##df.index=pd.date_range('20210111',periods=5,freq=pd.offsets.YearEnd(1))
+##将 df 的行标签调整为每年的年初日期
+##df.index=pd.date_range('20210111',periods=5,freq=pd.offsets.YearBegin(1))
+df #输出 df 在调整行标签之后的所有数据
+
+```
+
+
+```csv
+日期,盐水鸭,酱鸭,板鸭,烤鸭
+2021-02-01,1800,1600,2400,1200
+2021-03-01,2600,1800,2000,1800
+2021-04-01,2400,2100,5900,2480
+2021-05-01,2000,2800,1800,2400
+2021-06-01,2500,1200,2500,3900
+```
+
+## 006　使用星期日设置DataFrame的行标签
+
+```csv
+日期,盐水鸭,酱鸭,板鸭,烤鸭
+2021-02-07,1800,1600,2400,1200
+2021-03-07,2600,1800,2000,1800
+2021-04-04,2400,2100,5900,2480
+2021-05-02,2000,2800,1800,2400
+2021-06-06,2500,1200,2500,3900
+
+```
+
+```python
+import pandas as pd #导入pandas库，并使用pd重命名pandas
+#读取 myexcel.xlsx 文件的 Sheet1工作表
+df=pd.read_excel('myexcel.xlsx',sheet_name='Sheet1',index_col=0) #输出 df 的所有数据
+from pandas.tseries.offsets import WeekOfMonth #导入WeekOfMonth
+myList=[]
+for myday in df.index:
+    #获取日期所在月份的第1个星期日
+    myList.append(myday+WeekOfMonth(weekday=6))
+    #获取日期所在月份的第2个星期日
+    myList.append(myday+pd.offsets.Week(weekday=6))
+    #获取日期所在月份的下个月的第1个星期日
+    myList.append((myday+pd.offsets.Week(weekday=6)*2))
+    #获取日期所在月份的下个月的第1个星期五
+    myList.append((myday+WeekOfMonth(weekday=6)*2))
+    #获取日期所在月份的第1个星期五
+    myList.append(myday+WeekOfMonth(weekday=4))
+df.index=myList
+df #输出 df 在调整行标签之后的所有数据
+
+```
+
+## 007　使用月初日期设置DataFrame的行标签
+
+```csv
+
+```
 
 ```python
 
 ```
+
+```csv
+
+```
+
+## 006　使用月初日期设置DataFrame的行标签
+
+```csv
+
+```
+
+```python
+
+```
+
+```csv
+
+```
+
+## 006　使用月初日期设置DataFrame的行标签
+
+```csv
+
+```
+
+```python
+
+```
+
+```csv
+
+```
+

@@ -7,6 +7,7 @@
 * [标准库](https://docs.python.org/zh-cn/3/)
     * [ubuntu环境下C语言拓展cpython](blog/python/ubuntu_clang_python.md)
     * [tkinter开发界面客户端工具](blog/python/tkinter_gui_demo.md)
+    * [标准库之itertools](blog/python/标准库之itertools.md)
 
 * [第三方库](https://wangchenxi.top)
     * [gunicorn server hook 说明](blog/python/gunicornServerHook.md)
@@ -73,6 +74,7 @@
     * [我看到的一个比较好的单例实现](blog/python/singleton.md)
     * [常见问题集锦](blog/other/questions.md)
     * [mysql的一些基础](blog/other/mysql_import_export.md)
+    * [一些题目整理](blog/other/机试题目.md)
 * [姑射山人说](blog/gusheshanrenshuo/fun.md)
 * [devops](blog/devops/常用命令整理.md)
     * [K8S教程](blog/other/k8s.md)
