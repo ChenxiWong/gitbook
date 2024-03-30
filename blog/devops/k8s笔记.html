@@ -1,0 +1,1708 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>K8S笔记 · 个人笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="ChenxiWong">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-lou/lou.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="k8s编写yml.html" />
+    
+    
+    <link rel="prev" href="../other/k8s.html" />
+    
+
+    </head>
+    <body>
+         
+
+<div class="book">
+  <div class="header-inner">
+    <!-- LOGO -->
+    <div class="logo"></div>
+    <span class="title"></span>
+
+    <!-- Search -->
+    
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+    <!-- Nav -->
+    <ul class="header-nav">
+      <li>
+        <a href="https://www.baidu.com" target="_blank">百度</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="book-summary">
+    <div class="book-summary-title">文档目录</div>
+     
+    <nav role="navigation">
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">简介</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">python笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <a target="_blank" href="https://docs.python.org/zh-cn/3/">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../python/ubuntu_clang_python.html">
+            
+                <a href="../python/ubuntu_clang_python.html">
+            
+                    
+                    ubuntu环境下C语言拓展cpython
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../python/tkinter_gui_demo.html">
+            
+                <a href="../python/tkinter_gui_demo.html">
+            
+                    
+                    tkinter开发界面客户端工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../python/标准库之itertools.html">
+            
+                <a href="../python/标准库之itertools.html">
+            
+                    
+                    标准库之itertools
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <a target="_blank" href="https://wangchenxi.top">
+            
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../python/gunicornServerHook.html">
+            
+                <a href="../python/gunicornServerHook.html">
+            
+                    
+                    gunicorn server hook 说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../python/pythonLinuxIpcMessageQueue.html">
+            
+                <a href="../python/pythonLinuxIpcMessageQueue.html">
+            
+                    
+                    python Linux ipc通信之消息队列实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../python/pythonGeventDemo.html">
+            
+                <a href="../python/pythonGeventDemo.html">
+            
+                    
+                    python gevent 使用实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../python/python_sysv-ipc_Demo.html">
+            
+                <a href="../python/python_sysv-ipc_Demo.html">
+            
+                    
+                    sysv-ipc 进程间通信的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../python/flask_test_moc.html">
+            
+                <a href="../python/flask_test_moc.html">
+            
+                    
+                    flask实现一个moc服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../python/python_py_spy.html">
+            
+                <a href="../python/python_py_spy.html">
+            
+                    
+                    python性能分析之py-spy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../python/一个ip地址合并的样例.html">
+            
+                <a href="../python/一个ip地址合并的样例.html">
+            
+                    
+                    ip地址合并的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../python/pb生成pyi文件.html">
+            
+                <a href="../python/pb生成pyi文件.html">
+            
+                    
+                    protocolbuffer源码pyi生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="../scipy/pandas500demo.html">
+            
+                <a href="../scipy/pandas500demo.html">
+            
+                    
+                    scipy数据分析demo源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">golang笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <a target="_blank" href="https://studygolang.com/pkgdoc">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../golang/golang_env_build.html">
+            
+                <a href="../golang/golang_env_build.html">
+            
+                    
+                    golang安装及一些常识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../golang/离线环境搭建GOPROXY.html">
+            
+                <a href="../golang/离线环境搭建GOPROXY.html">
+            
+                    
+                    离线环境搭建GOPROXY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../golang/fmt_placeholder.html">
+            
+                <a href="../golang/fmt_placeholder.html">
+            
+                    
+                    golangfmt占位符号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../golang/golang100mistakes.html">
+            
+                <a href="../golang/golang100mistakes.html">
+            
+                    
+                    100-go-mistakes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <a target="_blank" href="https://wangchenxi.top">
+            
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../golang/zap_userdefine.html">
+            
+                <a href="../golang/zap_userdefine.html">
+            
+                    
+                    golang自定义日志样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Dart笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="https://studygolang.com/pkgdoc">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../Dart/40m_Learn_dart.html">
+            
+                <a href="../Dart/40m_Learn_dart.html">
+            
+                    
+                    快速入门Dart基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../Dart/Dart_logic.html">
+            
+                <a href="../Dart/Dart_logic.html">
+            
+                    
+                    Dart 逻辑运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../Dart/dart_bit_compute.html">
+            
+                <a href="../Dart/dart_bit_compute.html">
+            
+                    
+                    Dart 按位运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../Dart/Dart_relation_compute.html">
+            
+                <a href="../Dart/Dart_relation_compute.html">
+            
+                    
+                    Dart 关系运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../Dart/dart_final_const.html">
+            
+                <a href="../Dart/dart_final_const.html">
+            
+                    
+                    Dart 常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../Dart/dart_explain.html">
+            
+                <a href="../Dart/dart_explain.html">
+            
+                    
+                    Dart 注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../Dart/dart_type.html">
+            
+                <a href="../Dart/dart_type.html">
+            
+                    
+                    Dart 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../Dart/dart_math_compute.html">
+            
+                <a href="../Dart/dart_math_compute.html">
+            
+                    
+                    Dart 算术运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../Dart/control_struct.html">
+            
+                <a href="../Dart/control_struct.html">
+            
+                    
+                    Dart 控制流语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="../Dart/dart_give_value.html">
+            
+                <a href="../Dart/dart_give_value.html">
+            
+                    
+                    Dart 赋值运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.11" data-path="../Dart/dart_key_words.html">
+            
+                <a href="../Dart/dart_key_words.html">
+            
+                    
+                    Dart 关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.12" data-path="../Dart/dart_bit_move.html">
+            
+                <a href="../Dart/dart_bit_move.html">
+            
+                    
+                    Dart 移位运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.13" data-path="../Dart/dart_three_var_compute.html">
+            
+                <a href="../Dart/dart_three_var_compute.html">
+            
+                    
+                    Dart 三元运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.14" data-path="../Dart/dart_var.html">
+            
+                <a href="../Dart/dart_var.html">
+            
+                    
+                    Dart 变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">效率工具</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <a target="_blank" href="https://docs.python.org/zh-cn/3/">
+            
+                    
+                    ubuntu环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../ubuntu/Flameshot.html">
+            
+                <a href="../ubuntu/Flameshot.html">
+            
+                    
+                    截图之Flameshot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../prometheus/grafana_prometheus_metrics.html">
+            
+                <a href="../prometheus/grafana_prometheus_metrics.html">
+            
+                    
+                    监控之prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../other/virtualbox_androidx86.html">
+            
+                <a href="../other/virtualbox_androidx86.html">
+            
+                    
+                    virtualbox安装androidx86
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <a target="_blank" href="https://docs.python.org/zh-cn/3/">
+            
+                    
+                    常用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../other/githubPages.html">
+            
+                <a href="../other/githubPages.html">
+            
+                    
+                    github Page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../other/plantUML.html">
+            
+                <a href="../other/plantUML.html">
+            
+                    
+                    plantUML工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../other/code2flow.html">
+            
+                <a href="../other/code2flow.html">
+            
+                    
+                    code2flowe工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.4" data-path="../other/scrcpy.html">
+            
+                <a href="../other/scrcpy.html">
+            
+                    
+                    scrcpy工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.5" data-path="../other/key_action.html">
+            
+                <a href="../other/key_action.html">
+            
+                    
+                    按键查看工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.6" data-path="nginx专题.html">
+            
+                <a href="nginx专题.html">
+            
+                    
+                    nginx配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">其他</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../other/githubPages.html">
+            
+                <a href="../other/githubPages.html">
+            
+                    
+                    github Page
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../other/gitbookEnvPrepare.html">
+            
+                <a href="../other/gitbookEnvPrepare.html">
+            
+                    
+                    gitbook使用举例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../other/GitHubActions.html">
+            
+                <a href="../other/GitHubActions.html">
+            
+                    
+                    github Actions自动构建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../other/git常用命令.html">
+            
+                <a href="../other/git常用命令.html">
+            
+                    
+                    git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" >
+            
+                <a target="_blank" href="https://docs.python.org/zh-cn/3/">
+            
+                    
+                    常识基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="../other/common_tool_re.html">
+            
+                <a href="../other/common_tool_re.html">
+            
+                    
+                    常用的正则举例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.2" data-path="../python/singleton.html">
+            
+                <a href="../python/singleton.html">
+            
+                    
+                    我看到的一个比较好的单例实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.3" data-path="../other/questions.html">
+            
+                <a href="../other/questions.html">
+            
+                    
+                    常见问题集锦
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.4" data-path="../other/mysql_import_export.html">
+            
+                <a href="../other/mysql_import_export.html">
+            
+                    
+                    mysql的一些基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.5" data-path="../other/机试题目.html">
+            
+                <a href="../other/机试题目.html">
+            
+                    
+                    一些题目整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../gusheshanrenshuo/fun.html">
+            
+                <a href="../gusheshanrenshuo/fun.html">
+            
+                    
+                    姑射山人说
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="常用命令整理.html">
+            
+                <a href="常用命令整理.html">
+            
+                    
+                    devops
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.4.1" data-path="../other/k8s.html">
+            
+                <a href="../other/k8s.html">
+            
+                    
+                    K8S教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.4.2" data-path="k8s笔记.html">
+            
+                <a href="k8s笔记.html">
+            
+                    
+                    K8S笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.3" data-path="k8s编写yml.html">
+            
+                <a href="k8s编写yml.html">
+            
+                    
+                    K8S编写yml的技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+</nav>
+     
+  </div>
+
+  <!-- Content nav -->
+  <div class="book-anchor">
+    <div class="book-anchor-title"></div>
+
+    <div class="book-anchor-body"></div>
+  </div>
+
+  <div class="book-body">
+    
+    <div class="body-inner">
+       
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >K8S笔记</a>
+    </h1>
+</div>
+
+
+
+      <div class="page-wrapper" tabindex="-1" role="main">
+        <div class="page-inner">
+          
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+          <section class="normal markdown-section">
+             <h1 id="k8s&#x7B14;&#x8BB0;">k8s&#x7B14;&#x8BB0;</h1>
+<h2 id="windows-&#x4FEE;&#x6539;host">windows &#x4FEE;&#x6539;host</h2>
+<p>&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF1A; <code>C:\Windows\System32\drivers\etc</code></p>
+<h2 id="deployment">deployment</h2>
+<p>kubectl create deployment deploy-nginx--image=docker.io/library/nginx:latest  -n test 
+kubectl get deploy -n test
+kubectl delete deploy deploy-nginx -n test</p>
+<pre class="language-"><code class="lang-yml"><span class="hljs-attr">apiVersion:</span> apps/v1
+<span class="hljs-attr">kind:</span> Deployment
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  namespace:</span> test
+<span class="hljs-attr">  name:</span> nginx-deployment
+<span class="hljs-attr">  labels:</span> 
+<span class="hljs-attr">    app:</span> nginx
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  replicas:</span> <span class="hljs-number">3</span>
+<span class="hljs-attr">  selector:</span> 
+<span class="hljs-attr">    matchLabels:</span> 
+<span class="hljs-attr">      app:</span> nginx
+<span class="hljs-attr">  template:</span>
+<span class="hljs-attr">    metadata:</span>
+<span class="hljs-attr">      labels:</span>
+<span class="hljs-attr">        app:</span> nginx
+<span class="hljs-attr">    spec:</span>
+<span class="hljs-attr">      containers:</span>
+<span class="hljs-attr">      - name:</span> nginx
+<span class="hljs-attr">        image:</span> nginx:<span class="hljs-number">1.7</span><span class="hljs-number">.9</span>
+<span class="hljs-attr">        ports:</span>
+<span class="hljs-attr">        - containerPort:</span> <span class="hljs-number">80</span>
+</code></pre>
+<h2 id="service">service</h2>
+<p>kubectl expose deployment nginx-deployment  --port=8888 --target-port=80 -n test</p>
+<p>kubectl get service -n test </p>
+<p>kubectl delete service   nginx-deployment  -n test</p>
+<p>kubectl expose deployment nginx-deployment  \ 
+--port=8888 --target-port=80 -n test \<br>--type=NodePort</p>
+<h1 id="&#x540C;&#x4E00;&#x4E2A;yml&#x90E8;&#x7F72;">&#x540C;&#x4E00;&#x4E2A;yml&#x90E8;&#x7F72;</h1>
+<p>kubectl rollout restart deployment pipline -n test</p>
+<pre class="language-"><code class="lang-yml"><span class="hljs-attr">apiVersion:</span> apps/v1
+<span class="hljs-attr">kind:</span> Deployment
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  namespace:</span> test
+<span class="hljs-attr">  name:</span> nginx-deployment
+<span class="hljs-attr">  labels:</span> 
+<span class="hljs-attr">    app:</span> nginx
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  replicas:</span> <span class="hljs-number">3</span>
+<span class="hljs-attr">  selector:</span> 
+<span class="hljs-attr">    matchLabels:</span> 
+<span class="hljs-attr">      app:</span> nginx
+<span class="hljs-attr">  template:</span>
+<span class="hljs-attr">    metadata:</span>
+<span class="hljs-attr">      labels:</span>
+<span class="hljs-attr">        app:</span> nginx
+<span class="hljs-attr">    spec:</span>
+<span class="hljs-attr">      containers:</span>
+<span class="hljs-attr">      - name:</span> nginx
+<span class="hljs-attr">        image:</span> nginx:<span class="hljs-number">1.7</span><span class="hljs-number">.9</span> 
+<span class="hljs-attr">        ports:</span>
+<span class="hljs-attr">        - containerPort:</span> <span class="hljs-number">80</span>
+<span class="hljs-meta">---</span>
+<span class="hljs-attr">apiVersion:</span> v1
+<span class="hljs-attr">kind:</span> Service
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  namespace:</span> test
+<span class="hljs-attr">  name:</span> nginx-deployment
+<span class="hljs-attr">  labels:</span> 
+<span class="hljs-attr">    app:</span> nginx
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  selector:</span> 
+<span class="hljs-attr">    app:</span> nginx
+<span class="hljs-attr">  ports:</span> 
+<span class="hljs-attr">  - port:</span> <span class="hljs-number">8888</span>
+<span class="hljs-attr">    targetPort:</span> <span class="hljs-number">80</span>
+<span class="hljs-attr">  type:</span> NodePort
+
+<span class="hljs-meta">---</span>
+<span class="hljs-attr">apiVersion:</span> networking.k8s.io/v1
+<span class="hljs-attr">kind:</span> Ingress
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  namespace:</span> test
+<span class="hljs-attr">  name:</span> nginx-ingress
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  ingressClassName:</span> ingress
+<span class="hljs-attr">  rules:</span> 
+<span class="hljs-attr">  - host:</span> k8s.learn.wcx
+<span class="hljs-attr">    http:</span> 
+<span class="hljs-attr">      paths:</span> 
+<span class="hljs-attr">      - path:</span> /  
+<span class="hljs-attr">        pathType:</span> Prefix
+<span class="hljs-attr">        backend:</span> 
+<span class="hljs-attr">          service:</span> 
+<span class="hljs-attr">            name:</span> nginx-deployment
+<span class="hljs-attr">            port:</span> 
+<span class="hljs-attr">              number:</span> <span class="hljs-number">8888</span>
+</code></pre>
+<pre class="language-"><code class="lang-yml"><span class="hljs-attr">apiVersion:</span> apps/v1
+<span class="hljs-attr">kind:</span> Deployment
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  namespace:</span> test
+<span class="hljs-attr">  name:</span> nginx-deployment
+<span class="hljs-attr">  labels:</span> 
+<span class="hljs-attr">    app:</span> mydemo
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  replicas:</span> <span class="hljs-number">3</span>
+<span class="hljs-attr">  selector:</span> 
+<span class="hljs-attr">    matchLabels:</span> 
+<span class="hljs-attr">      app:</span> mydemo
+<span class="hljs-attr">  template:</span>
+<span class="hljs-attr">    metadata:</span>
+<span class="hljs-attr">      labels:</span>
+<span class="hljs-attr">        app:</span> mydemo
+<span class="hljs-attr">    spec:</span>
+<span class="hljs-attr">      containers:</span>
+<span class="hljs-attr">      - name:</span> mydemo
+<span class="hljs-attr">        image:</span> <span class="hljs-number">192.168</span><span class="hljs-number">.1</span><span class="hljs-number">.11</span>:<span class="hljs-number">80</span>/repo/mydemo:v5<span class="hljs-number">.0</span><span class="hljs-number">.0</span> 
+<span class="hljs-attr">        ports:</span>
+<span class="hljs-attr">        - containerPort:</span> <span class="hljs-number">8000</span>
+<span class="hljs-meta">---</span>
+<span class="hljs-attr">apiVersion:</span> v1
+<span class="hljs-attr">kind:</span> Service
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  namespace:</span> test
+<span class="hljs-attr">  name:</span> nginx-deployment
+<span class="hljs-attr">  labels:</span> 
+<span class="hljs-attr">    app:</span> mydemo
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  selector:</span> 
+<span class="hljs-attr">    app:</span> mydemo
+<span class="hljs-attr">  ports:</span> 
+<span class="hljs-attr">  - port:</span> <span class="hljs-number">8888</span>
+<span class="hljs-attr">    targetPort:</span> <span class="hljs-number">8000</span>
+<span class="hljs-attr">  type:</span> NodePort
+
+<span class="hljs-meta">---</span>
+<span class="hljs-attr">apiVersion:</span> networking.k8s.io/v1
+<span class="hljs-attr">kind:</span> Ingress
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  namespace:</span> test
+<span class="hljs-attr">  name:</span> nginx-ingress
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  ingressClassName:</span> ingress
+<span class="hljs-attr">  rules:</span> 
+<span class="hljs-attr">  - host:</span> k8s.learn.wcx
+<span class="hljs-attr">    http:</span> 
+<span class="hljs-attr">      paths:</span> 
+<span class="hljs-attr">      - path:</span> /  
+<span class="hljs-attr">        pathType:</span> Prefix
+<span class="hljs-attr">        backend:</span> 
+<span class="hljs-attr">          service:</span> 
+<span class="hljs-attr">            name:</span> nginx-deployment
+<span class="hljs-attr">            port:</span> 
+<span class="hljs-attr">              number:</span> <span class="hljs-number">8888</span>
+</code></pre>
+<h2 id="k8s&#x5927;&#x4F53;&#x67B6;&#x6784;">k8s&#x5927;&#x4F53;&#x67B6;&#x6784;</h2>
+<p><img src="FILES/k8s&#x7B14;&#x8BB0;.md/img-20240319155131.png" alt="Img"></p>
+<pre class="language-"><code class="lang-text">docker run -d \
+  --restart=unless-stopped \
+  --name=kuboard \
+  -p 80:80/tcp \
+  -p 10081:10081/tcp \
+  -e KUBOARD_ENDPOINT=&quot;http://192.168.1.34:80&quot; \
+  -e KUBOARD_AGENT_SERVER_TCP_PORT=&quot;10081&quot; \
+  -v /root/kuboard-data:/data \
+  eipwork/kuboard:v3
+</code></pre>
+<pre class="language-"><code class="lang-yml"><span class="hljs-attr">apiVersion:</span> v1
+<span class="hljs-attr">kind:</span> Namespace
+<span class="hljs-attr">metadata:</span> 
+<span class="hljs-attr">  name:</span> test
+</code></pre>
+<pre class="language-"><code class="lang-yml"><span class="hljs-attr">apiVersion:</span> v1
+<span class="hljs-attr">kind:</span> Pod
+<span class="hljs-attr">metadata:</span> 
+<span class="hljs-attr">  name:</span> nginx-yml
+<span class="hljs-attr">  namespace:</span> test
+<span class="hljs-attr">spec:</span> 
+<span class="hljs-attr">  containers:</span> 
+<span class="hljs-attr">  - image:</span> nginx:latest 
+<span class="hljs-attr">    name:</span> nginx-yml
+</code></pre>
+<pre class="language-"><code class="lang-yml"><span class="hljs-attr">apiVersion:</span> v1
+<span class="hljs-attr">kind:</span> Pod
+<span class="hljs-attr">metadata:</span> 
+<span class="hljs-attr">  name:</span> nginx-yml
+<span class="hljs-attr">  namespace:</span> test
+<span class="hljs-attr">spec:</span> 
+<span class="hljs-attr">  containers:</span> 
+<span class="hljs-attr">  - image:</span> nginx:latest 
+<span class="hljs-attr">    name:</span> nginx-yml
+<span class="hljs-attr">    imagePullPolicy:</span> IfNotPresent
+</code></pre>
+<h2 id="&#x56FD;&#x5185;containered&#x914D;&#x7F6E;">&#x56FD;&#x5185;containered&#x914D;&#x7F6E;</h2>
+<pre class="language-"><code>disabled_plugins = []
+imports = []
+oom_score = 0
+plugin_dir = &quot;&quot;
+required_plugins = []
+root = &quot;/var/lib/containerd&quot; # &#x5BB9;&#x5668;&#x5B58;&#x653E;&#x8DEF;&#x5F84;&#xFF0C;&#x786E;&#x4FDD;&#x53EF;&#x7528;&#x7A7A;&#x95F4;&#x5145;&#x8DB3;
+state = &quot;/run/containerd&quot;
+version = 2
+
+[cgroup]
+  path = &quot;&quot;
+
+[debug]
+  address = &quot;&quot;
+  format = &quot;&quot;
+  gid = 0
+  level = &quot;&quot;
+  uid = 0
+
+[grpc]
+  address = &quot;/run/containerd/containerd.sock&quot;
+  gid = 0
+  max_recv_message_size = 16777216
+  max_send_message_size = 16777216
+  tcp_address = &quot;&quot;
+  tcp_tls_cert = &quot;&quot;
+  tcp_tls_key = &quot;&quot;
+  uid = 0
+
+[metrics]
+  address = &quot;&quot;
+  grpc_histogram = false
+
+[plugins]
+
+  [plugins.&quot;io.containerd.gc.v1.scheduler&quot;]
+    deletion_threshold = 0
+    mutation_threshold = 100
+    pause_threshold = 0.02
+    schedule_delay = &quot;0s&quot;
+    startup_delay = &quot;100ms&quot;
+
+  [plugins.&quot;io.containerd.grpc.v1.cri&quot;]
+    disable_apparmor = false
+    disable_cgroup = false
+    disable_hugetlb_controller = true
+    disable_proc_mount = false
+    disable_tcp_service = true
+    enable_selinux = false
+    enable_tls_streaming = false
+    ignore_image_defined_volumes = false
+    max_concurrent_downloads = 3
+    max_container_log_line_size = 16384
+    netns_mounts_under_state_dir = false
+    restrict_oom_score_adj = false
+    sandbox_image = &quot;registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6&quot;
+    selinux_category_range = 1024
+    stats_collect_period = 10
+    stream_idle_timeout = &quot;4h0m0s&quot;
+    stream_server_address = &quot;127.0.0.1&quot;
+    stream_server_port = &quot;0&quot;
+    systemd_cgroup = false
+    tolerate_missing_hugetlb_controller = true
+    unset_seccomp_profile = &quot;&quot;
+
+    [plugins.&quot;io.containerd.grpc.v1.cri&quot;.cni]
+      bin_dir = &quot;/opt/cni/bin&quot;
+      conf_dir = &quot;/etc/cni/net.d&quot;
+      conf_template = &quot;/etc/cni/net.d/cni-default.conf&quot;
+      max_conf_num = 1
+
+    [plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd]
+      default_runtime_name = &quot;runc&quot;
+      disable_snapshot_annotations = true
+      discard_unpacked_layers = false
+      no_pivot = false
+      snapshotter = &quot;overlayfs&quot;
+
+      [plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd.default_runtime]
+        base_runtime_spec = &quot;&quot;
+        container_annotations = []
+        pod_annotations = []
+        privileged_without_host_devices = false
+        runtime_engine = &quot;&quot;
+        runtime_root = &quot;&quot;
+        runtime_type = &quot;&quot;
+
+        [plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd.default_runtime.options]
+
+      [plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd.runtimes]
+
+        [plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd.runtimes.runc]
+          base_runtime_spec = &quot;&quot;
+          container_annotations = []
+          pod_annotations = []
+          privileged_without_host_devices = false
+          runtime_engine = &quot;&quot;
+          runtime_root = &quot;&quot;
+          runtime_type = &quot;io.containerd.runc.v2&quot;
+
+          [plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd.runtimes.runc.options]
+            BinaryName = &quot;&quot;
+            CriuImagePath = &quot;&quot;
+            CriuPath = &quot;&quot;
+            CriuWorkPath = &quot;&quot;
+            IoGid = 0
+            IoUid = 0
+            NoNewKeyring = false
+            NoPivotRoot = false
+            Root = &quot;&quot;
+            ShimCgroup = &quot;&quot;
+            SystemdCgroup = true
+
+      [plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd.untrusted_workload_runtime]
+        base_runtime_spec = &quot;&quot;
+        container_annotations = []
+        pod_annotations = []
+        privileged_without_host_devices = false
+        runtime_engine = &quot;&quot;
+        runtime_root = &quot;&quot;
+        runtime_type = &quot;&quot;
+
+        [plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd.untrusted_workload_runtime.options]
+
+    [plugins.&quot;io.containerd.grpc.v1.cri&quot;.image_decryption]
+      key_model = &quot;node&quot;
+
+    [plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry]
+      config_path = &quot;&quot;
+
+      [plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry.auths]
+
+      [plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry.configs]
+        [plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry.configs.&quot;192.168.1.11:80&quot;.auth]
+          username = &quot;admin&quot;
+          password = &quot;Harbor12345&quot;
+
+      [plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry.headers]
+
+      [plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry.mirrors]
+        [plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry.mirrors.&quot;192.168.1.11:80&quot;]
+          endpoint = [&quot;http://192.168.1.11:80&quot;]
+        [plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry.mirrors.&quot;docker.io&quot;]
+          endpoint = [&quot;https://docker.mirrors.ustc.edu.cn&quot;, &quot;http://hub-mirror.c.163.com&quot;]
+        [plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry.mirrors.&quot;gcr.io&quot;]
+          endpoint = [&quot;https://gcr.mirrors.ustc.edu.cn&quot;]
+        [plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry.mirrors.&quot;k8s.gcr.io&quot;]
+          endpoint = [&quot;https://gcr.mirrors.ustc.edu.cn/google-containers/&quot;]
+        [plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry.mirrors.&quot;quay.io&quot;]
+          endpoint = [&quot;https://quay.mirrors.ustc.edu.cn&quot;]
+
+    [plugins.&quot;io.containerd.grpc.v1.cri&quot;.x509_key_pair_streaming]
+      tls_cert_file = &quot;&quot;
+      tls_key_file = &quot;&quot;
+
+  [plugins.&quot;io.containerd.internal.v1.opt&quot;]
+    path = &quot;/opt/containerd&quot;
+
+  [plugins.&quot;io.containerd.internal.v1.restart&quot;]
+    interval = &quot;10s&quot;
+
+  [plugins.&quot;io.containerd.metadata.v1.bolt&quot;]
+    content_sharing_policy = &quot;shared&quot;
+
+  [plugins.&quot;io.containerd.monitor.v1.cgroups&quot;]
+    no_prometheus = false
+
+  [plugins.&quot;io.containerd.runtime.v1.linux&quot;]
+    no_shim = false
+    runtime = &quot;runc&quot;
+    runtime_root = &quot;&quot;
+    shim = &quot;containerd-shim&quot;
+    shim_debug = false
+
+  [plugins.&quot;io.containerd.runtime.v2.task&quot;]
+    platforms = [&quot;linux/amd64&quot;]
+
+  [plugins.&quot;io.containerd.service.v1.diff-service&quot;]
+    default = [&quot;walking&quot;]
+
+  [plugins.&quot;io.containerd.snapshotter.v1.aufs&quot;]
+    root_path = &quot;&quot;
+
+  [plugins.&quot;io.containerd.snapshotter.v1.btrfs&quot;]
+    root_path = &quot;&quot;
+
+  [plugins.&quot;io.containerd.snapshotter.v1.devmapper&quot;]
+    async_remove = false
+    base_image_size = &quot;&quot;
+    pool_name = &quot;&quot;
+    root_path = &quot;&quot;
+
+  [plugins.&quot;io.containerd.snapshotter.v1.native&quot;]
+    root_path = &quot;&quot;
+
+  [plugins.&quot;io.containerd.snapshotter.v1.overlayfs&quot;]
+    root_path = &quot;&quot;
+
+  [plugins.&quot;io.containerd.snapshotter.v1.zfs&quot;]
+    root_path = &quot;&quot;
+
+[proxy_plugins]
+
+[stream_processors]
+
+  [stream_processors.&quot;io.containerd.ocicrypt.decoder.v1.tar&quot;]
+    accepts = [&quot;application/vnd.oci.image.layer.v1.tar+encrypted&quot;]
+    args = [&quot;--decryption-keys-path&quot;, &quot;/etc/containerd/ocicrypt/keys&quot;]
+    env = [&quot;OCICRYPT_KEYPROVIDER_CONFIG=/etc/containerd/ocicrypt/ocicrypt_keyprovider.conf&quot;]
+    path = &quot;ctd-decoder&quot;
+    returns = &quot;application/vnd.oci.image.layer.v1.tar&quot;
+
+  [stream_processors.&quot;io.containerd.ocicrypt.decoder.v1.tar.gzip&quot;]
+    accepts = [&quot;application/vnd.oci.image.layer.v1.tar+gzip+encrypted&quot;]
+    args = [&quot;--decryption-keys-path&quot;, &quot;/etc/containerd/ocicrypt/keys&quot;]
+    env = [&quot;OCICRYPT_KEYPROVIDER_CONFIG=/etc/containerd/ocicrypt/ocicrypt_keyprovider.conf&quot;]
+    path = &quot;ctd-decoder&quot;
+    returns = &quot;application/vnd.oci.image.layer.v1.tar+gzip&quot;
+
+[timeouts]
+  &quot;io.containerd.timeout.shim.cleanup&quot; = &quot;5s&quot;
+  &quot;io.containerd.timeout.shim.load&quot; = &quot;5s&quot;
+  &quot;io.containerd.timeout.shim.shutdown&quot; = &quot;3s&quot;
+  &quot;io.containerd.timeout.task.state&quot; = &quot;2s&quot;
+
+[ttrpc]
+  address = &quot;&quot;
+  gid = 0
+  uid = 0
+</code></pre><h3 id="&#x751F;&#x6210;&#x9ED8;&#x8BA4;&#x6A21;&#x5757;&#x914D;&#x7F6E;&#x6587;&#x4EF6;">&#x751F;&#x6210;&#x9ED8;&#x8BA4;&#x6A21;&#x5757;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
+<pre class="language-"><code class="lang-bash">containerd config default &gt; /etc/containerd/config.toml
+
+
+      [plugins.<span class="hljs-string">&quot;io.containerd.grpc.v1.cri&quot;</span>.registry.auths]
+      [plugins.<span class="hljs-string">&quot;io.containerd.grpc.v1.cri&quot;</span>.registry.configs]
+        [plugins.<span class="hljs-string">&quot;io.containerd.grpc.v1.cri&quot;</span>.registry.configs.<span class="hljs-string">&quot;192.168.1.11:80&quot;</span>.tls]
+          insecure_skip_verify = <span class="hljs-literal">false</span>
+        [plugins.<span class="hljs-string">&quot;io.containerd.grpc.v1.cri&quot;</span>.registry.configs.<span class="hljs-string">&quot;192.168.1.11:80&quot;</span>.auth]
+          username = <span class="hljs-string">&quot;admin&quot;</span>
+          password = <span class="hljs-string">&quot;Harbor12345&quot;</span>
+
+        [plugins.<span class="hljs-string">&quot;io.containerd.grpc.v1.cri&quot;</span>.registry.mirrors.<span class="hljs-string">&quot;192.168.1.11:80&quot;</span>]
+          endpoint = [<span class="hljs-string">&quot;http://192.168.1.11:80&quot;</span>]
+
+ctr images pull --plain-http  192.168.1.11:80/repo/mydemo:v5.0.0
+crictl pull  192.168.1.11:80/repo/mydemo:v5.0.0
+</code></pre>
+<h2 id="k8s&#x5E38;&#x7528;&#x547D;&#x4EE4;">k8s&#x5E38;&#x7528;&#x547D;&#x4EE4;</h2>
+<ul>
+<li>&#x96C6;&#x7FA4;&#x7BA1;&#x7406;&#x5E38;&#x7528;&#x547D;&#x4EE4;<pre class="language-"><code class="lang-bash">kubectl apply <span class="hljs-_">-f</span> namespace-test.yml
+kubectl create ns <span class="hljs-built_in">test</span>
+kubectl delete ns <span class="hljs-built_in">test</span>
+kubectl delete pod <span class="hljs-_">-f</span> nginx-tomcat -n <span class="hljs-built_in">test</span>
+kubectl delete pod nginx -n <span class="hljs-built_in">test</span>
+kubectl delete pod  nginx-tomcat -n <span class="hljs-built_in">test</span> --force
+kubectl <span class="hljs-built_in">exec</span> -it nginx -n <span class="hljs-built_in">test</span> -- bash
+kubectl get namespace
+kubectl get nodes -o wide
+kubectl get ns
+kubectl get pods
+kubectl get pods -A
+kubectl get pods -n <span class="hljs-built_in">test</span>
+kubectl logs <span class="hljs-_">-f</span> nginx -n <span class="hljs-built_in">test</span>
+kubectl logs <span class="hljs-_">-f</span> -n <span class="hljs-built_in">test</span> nginx-tomcat
+kubectl run nginx --image=nginx:latest -n <span class="hljs-built_in">test</span>
+service containerd restart
+ssh-keygen -t rsa -P <span class="hljs-string">&apos;&apos;</span>
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>containered</p>
+<pre class="language-"><code class="lang-bash">ctr images pull --plain-http  192.168.1.11:80/repo/mydemo:v5.0.0
+ctr c create docker.io/library/nginx:latest nginx1
+ctr c delete nginx1
+ctr c ls
+ctr c rm nginx2
+ctr --help
+ctr images
+ctr images delete docker.io/library/nginx:latest
+ctr images <span class="hljs-built_in">export</span> ngx.img docker.io/library/nginx:latest
+ctr images <span class="hljs-built_in">export</span> ngx.img --platform linux/amd64 docker.io/library/nginx:latest
+ctr images --help
+ctr images import --help
+ctr images import ngx.img
+ctr images ls
+ctr images mount docker.io/library/nginx:latest /mnt
+ctr images pull docker.io/library/nginx:latest
+ctr images pull --help
+ctr images pull --platform linux/amd64  docker.io/library/nginx:latest
+ctr run <span class="hljs-_">-d</span> --net-host docker.io/library/nginx:latest nginx2
+ctr run --help
+ctr task delete nginx1
+ctr task <span class="hljs-built_in">exec</span> --exec-id <span class="hljs-variable">$RANDOM</span> nginx1 /bin/bash
+ctr task <span class="hljs-built_in">exec</span> --exec-id <span class="hljs-variable">$RANDOM</span> nginx1 /bin/sh
+ctr task --help
+ctr task <span class="hljs-built_in">kill</span> nginx2
+ctr task ls
+ctr task start <span class="hljs-_">-d</span> nginx1
+</code></pre>
+<p>containerd &#x7AEF;&#x53E3;&#x6620;&#x5C04;&#x7684;&#x95EE;&#x9898;&#xFF1F;</p>
+</li>
+</ul>
+<p>ctr run --net-host --mount type=bind,src=/var/run/containerd/sock,dst=/var/run/containerd/sock,options=bind:rw --env CONTAINERD_ADDRESS=/var/run/containerd/sock --hostname mycontainer --runtime runc --image myimage:latest --port 8080:80 mycontainer</p>
+<ul>
+<li>docker</li>
+</ul>
+ 
+          </section>
+          
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+ 
+        </div>
+      </div>
+      
+    </div>
+
+     
+    <a
+      href="../other/k8s.html"
+      class="navigation navigation-prev "
+      aria-label="Previous page: K8S教程"
+    >
+      <i class="fa fa-angle-left"></i>
+    </a>
+     
+    <a
+      href="k8s编写yml.html"
+      class="navigation navigation-next "
+      aria-label="Next page: K8S编写yml的技巧"
+    >
+      <i class="fa fa-angle-right"></i>
+    </a>
+      
+  </div>
+  <script>
+    function showModal() {
+      document.getElementsByClassName("mask")[0].style.display = "block";
+      document.getElementsByClassName("donate-modal")[0].style.display =
+        "block";
+    }
+    // 切换赞赏码
+    function showDonateImg(num) {
+      let alipay = "";
+      let wxpay = ""
+      if(num){
+        wxpay = "hidden"
+      }else{
+        alipay = "hidden"
+      }
+      document.getElementById("wxpay-code").hidden = wxpay;
+      document.getElementById("alipay-code").hidden = alipay;
+      document.getElementsByName("pay-way")[num].checked = "checked";
+    }
+
+    // 关闭赞赏框
+    function closeDonateModal() {
+      document.getElementsByClassName("mask")[0].style.display = "none";
+      document.getElementsByClassName("donate-modal")[0].style.display = "none";
+    }
+
+    var gitbook = gitbook || [];
+    gitbook.push(function () {
+      gitbook.page.hasChanged({"page":{"title":"K8S笔记","level":"6.4.2","depth":2,"next":{"title":"K8S编写yml的技巧","level":"6.4.3","depth":2,"path":"blog/devops/k8s编写yml.md","ref":"blog/devops/k8s编写yml.md","articles":[]},"previous":{"title":"K8S教程","level":"6.4.1","depth":2,"path":"blog/other/k8s.md","ref":"blog/other/k8s.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-lunr","sharing","-livereload","chapter-fold","sitemap","theme-lou","back-to-top-button","code","prism","search-pro","-search"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"typescript"}},"search-pro":{},"code":{"copyButtons":true},"theme-lou":{"hide-elements":[".summary .gitbook-link"],"color":"#5F9EA0","book-anchor-title":"本章目录标题","forbidCopy":false,"logo":"static/zhuque.jpg","book-summary-title":"导航","search-placeholder":"全局搜索","imgStyle":{"isCenter":true,"isBox":false,"otherStyle":"max-width: 80%;"},"favicon":"static/zhuque.jpg"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://chenxiwong.github.io/gitbook"},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","keywords":"学习,笔记,编程,代码,博客,文章,github","author":"ChenxiWong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeColor":"#3884ff","themeLou":{"nav":[{"target":"_blank","url":"https://www.baidu.com","name":"百度"}]}},"title":"个人笔记","introduction":{"path":"README.md","title":"导航首页"},"gitbook":"*","description":"文档"},"file":{"path":"blog/devops/k8s笔记.md","mtime":"2024-03-30T06:47:56.694Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-30T06:48:32.599Z"},"basePath":"../..","book":{"language":""}});
+    });
+  </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-lou/jweixin-1.6.0.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-lou/lou.js"></script>
+        
+    
+
+    </body>
+</html>
+

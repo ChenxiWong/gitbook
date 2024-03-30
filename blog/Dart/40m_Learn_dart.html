@@ -1,0 +1,1857 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>快速入门Dart基础 · 个人笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="ChenxiWong">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-lou/lou.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Dart_logic.html" />
+    
+    
+
+    </head>
+    <body>
+         
+
+<div class="book">
+  <div class="header-inner">
+    <!-- LOGO -->
+    <div class="logo"></div>
+    <span class="title"></span>
+
+    <!-- Search -->
+    
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+    <!-- Nav -->
+    <ul class="header-nav">
+      <li>
+        <a href="https://www.baidu.com" target="_blank">百度</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="book-summary">
+    <div class="book-summary-title">文档目录</div>
+     
+    <nav role="navigation">
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">简介</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">python笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <a target="_blank" href="https://docs.python.org/zh-cn/3/">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../python/ubuntu_clang_python.html">
+            
+                <a href="../python/ubuntu_clang_python.html">
+            
+                    
+                    ubuntu环境下C语言拓展cpython
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../python/tkinter_gui_demo.html">
+            
+                <a href="../python/tkinter_gui_demo.html">
+            
+                    
+                    tkinter开发界面客户端工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../python/标准库之itertools.html">
+            
+                <a href="../python/标准库之itertools.html">
+            
+                    
+                    标准库之itertools
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <a target="_blank" href="https://wangchenxi.top">
+            
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../python/gunicornServerHook.html">
+            
+                <a href="../python/gunicornServerHook.html">
+            
+                    
+                    gunicorn server hook 说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../python/pythonLinuxIpcMessageQueue.html">
+            
+                <a href="../python/pythonLinuxIpcMessageQueue.html">
+            
+                    
+                    python Linux ipc通信之消息队列实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../python/pythonGeventDemo.html">
+            
+                <a href="../python/pythonGeventDemo.html">
+            
+                    
+                    python gevent 使用实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../python/python_sysv-ipc_Demo.html">
+            
+                <a href="../python/python_sysv-ipc_Demo.html">
+            
+                    
+                    sysv-ipc 进程间通信的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../python/flask_test_moc.html">
+            
+                <a href="../python/flask_test_moc.html">
+            
+                    
+                    flask实现一个moc服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../python/python_py_spy.html">
+            
+                <a href="../python/python_py_spy.html">
+            
+                    
+                    python性能分析之py-spy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../python/一个ip地址合并的样例.html">
+            
+                <a href="../python/一个ip地址合并的样例.html">
+            
+                    
+                    ip地址合并的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../python/pb生成pyi文件.html">
+            
+                <a href="../python/pb生成pyi文件.html">
+            
+                    
+                    protocolbuffer源码pyi生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="../scipy/pandas500demo.html">
+            
+                <a href="../scipy/pandas500demo.html">
+            
+                    
+                    scipy数据分析demo源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">golang笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <a target="_blank" href="https://studygolang.com/pkgdoc">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../golang/golang_env_build.html">
+            
+                <a href="../golang/golang_env_build.html">
+            
+                    
+                    golang安装及一些常识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../golang/离线环境搭建GOPROXY.html">
+            
+                <a href="../golang/离线环境搭建GOPROXY.html">
+            
+                    
+                    离线环境搭建GOPROXY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../golang/fmt_placeholder.html">
+            
+                <a href="../golang/fmt_placeholder.html">
+            
+                    
+                    golangfmt占位符号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../golang/golang100mistakes.html">
+            
+                <a href="../golang/golang100mistakes.html">
+            
+                    
+                    100-go-mistakes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <a target="_blank" href="https://wangchenxi.top">
+            
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../golang/zap_userdefine.html">
+            
+                <a href="../golang/zap_userdefine.html">
+            
+                    
+                    golang自定义日志样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Dart笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="https://studygolang.com/pkgdoc">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="4.1.1" data-path="40m_Learn_dart.html">
+            
+                <a href="40m_Learn_dart.html">
+            
+                    
+                    快速入门Dart基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="Dart_logic.html">
+            
+                <a href="Dart_logic.html">
+            
+                    
+                    Dart 逻辑运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="dart_bit_compute.html">
+            
+                <a href="dart_bit_compute.html">
+            
+                    
+                    Dart 按位运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="Dart_relation_compute.html">
+            
+                <a href="Dart_relation_compute.html">
+            
+                    
+                    Dart 关系运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="dart_final_const.html">
+            
+                <a href="dart_final_const.html">
+            
+                    
+                    Dart 常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="dart_explain.html">
+            
+                <a href="dart_explain.html">
+            
+                    
+                    Dart 注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="dart_type.html">
+            
+                <a href="dart_type.html">
+            
+                    
+                    Dart 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="dart_math_compute.html">
+            
+                <a href="dart_math_compute.html">
+            
+                    
+                    Dart 算术运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="control_struct.html">
+            
+                <a href="control_struct.html">
+            
+                    
+                    Dart 控制流语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="dart_give_value.html">
+            
+                <a href="dart_give_value.html">
+            
+                    
+                    Dart 赋值运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.11" data-path="dart_key_words.html">
+            
+                <a href="dart_key_words.html">
+            
+                    
+                    Dart 关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.12" data-path="dart_bit_move.html">
+            
+                <a href="dart_bit_move.html">
+            
+                    
+                    Dart 移位运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.13" data-path="dart_three_var_compute.html">
+            
+                <a href="dart_three_var_compute.html">
+            
+                    
+                    Dart 三元运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.14" data-path="dart_var.html">
+            
+                <a href="dart_var.html">
+            
+                    
+                    Dart 变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">效率工具</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <a target="_blank" href="https://docs.python.org/zh-cn/3/">
+            
+                    
+                    ubuntu环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../ubuntu/Flameshot.html">
+            
+                <a href="../ubuntu/Flameshot.html">
+            
+                    
+                    截图之Flameshot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../prometheus/grafana_prometheus_metrics.html">
+            
+                <a href="../prometheus/grafana_prometheus_metrics.html">
+            
+                    
+                    监控之prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../other/virtualbox_androidx86.html">
+            
+                <a href="../other/virtualbox_androidx86.html">
+            
+                    
+                    virtualbox安装androidx86
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <a target="_blank" href="https://docs.python.org/zh-cn/3/">
+            
+                    
+                    常用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../other/githubPages.html">
+            
+                <a href="../other/githubPages.html">
+            
+                    
+                    github Page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../other/plantUML.html">
+            
+                <a href="../other/plantUML.html">
+            
+                    
+                    plantUML工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../other/code2flow.html">
+            
+                <a href="../other/code2flow.html">
+            
+                    
+                    code2flowe工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.4" data-path="../other/scrcpy.html">
+            
+                <a href="../other/scrcpy.html">
+            
+                    
+                    scrcpy工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.5" data-path="../other/key_action.html">
+            
+                <a href="../other/key_action.html">
+            
+                    
+                    按键查看工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.6" data-path="../devops/nginx专题.html">
+            
+                <a href="../devops/nginx专题.html">
+            
+                    
+                    nginx配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">其他</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../other/githubPages.html">
+            
+                <a href="../other/githubPages.html">
+            
+                    
+                    github Page
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../other/gitbookEnvPrepare.html">
+            
+                <a href="../other/gitbookEnvPrepare.html">
+            
+                    
+                    gitbook使用举例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../other/GitHubActions.html">
+            
+                <a href="../other/GitHubActions.html">
+            
+                    
+                    github Actions自动构建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../other/git常用命令.html">
+            
+                <a href="../other/git常用命令.html">
+            
+                    
+                    git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" >
+            
+                <a target="_blank" href="https://docs.python.org/zh-cn/3/">
+            
+                    
+                    常识基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="../other/common_tool_re.html">
+            
+                <a href="../other/common_tool_re.html">
+            
+                    
+                    常用的正则举例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.2" data-path="../python/singleton.html">
+            
+                <a href="../python/singleton.html">
+            
+                    
+                    我看到的一个比较好的单例实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.3" data-path="../other/questions.html">
+            
+                <a href="../other/questions.html">
+            
+                    
+                    常见问题集锦
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.4" data-path="../other/mysql_import_export.html">
+            
+                <a href="../other/mysql_import_export.html">
+            
+                    
+                    mysql的一些基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.5" data-path="../other/机试题目.html">
+            
+                <a href="../other/机试题目.html">
+            
+                    
+                    一些题目整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../gusheshanrenshuo/fun.html">
+            
+                <a href="../gusheshanrenshuo/fun.html">
+            
+                    
+                    姑射山人说
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../devops/常用命令整理.html">
+            
+                <a href="../devops/常用命令整理.html">
+            
+                    
+                    devops
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.4.1" data-path="../other/k8s.html">
+            
+                <a href="../other/k8s.html">
+            
+                    
+                    K8S教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.2" data-path="../devops/k8s笔记.html">
+            
+                <a href="../devops/k8s笔记.html">
+            
+                    
+                    K8S笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.3" data-path="../devops/k8s编写yml.html">
+            
+                <a href="../devops/k8s编写yml.html">
+            
+                    
+                    K8S编写yml的技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+</nav>
+     
+  </div>
+
+  <!-- Content nav -->
+  <div class="book-anchor">
+    <div class="book-anchor-title"></div>
+
+    <div class="book-anchor-body"></div>
+  </div>
+
+  <div class="book-body">
+    
+    <div class="body-inner">
+       
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >快速入门Dart基础</a>
+    </h1>
+</div>
+
+
+
+      <div class="page-wrapper" tabindex="-1" role="main">
+        <div class="page-inner">
+          
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+          <section class="normal markdown-section">
+             <h1 id="&#x5FEB;&#x901F;&#x5165;&#x95E8;dart&#x57FA;&#x7840;">&#x5FEB;&#x901F;&#x5165;&#x95E8;Dart&#x57FA;&#x7840;</h1>
+<p> <a href="https://www.zhihu.com/people/xiao-diu-zi-84" target="_blank"><img src="FILES/40m_Learn_dart.md/7773db38.jpeg" alt="&#x5C0F;&#x4E22;&#x5B50;"></a></p>
+<p> <a href="https://www.zhihu.com/people/xiao-diu-zi-84" target="_blank">&#x5C0F;&#x4E22;&#x5B50;</a></p>
+<p> 27 &#x4EBA;&#x8D5E;&#x540C;&#x4E86;&#x8BE5;&#x6587;&#x7AE0;</p>
+<p> &#x6559;&#x5927;&#x5BB6;&#x5FEB;&#x901F;&#x5B66;&#x4E60;&#x4E00;&#x95E8;&#x65B0;&#x8BED;&#x8A00;&#xFF1A;</p>
+<ul>
+<li>&#x7B2C;&#x4E00;&#x662F;&#x96F6;&#x57FA;&#x7840;&#xFF1A;&#x90A3;&#x6211;&#x4EEC;&#x53EA;&#x80FD;&#x9760;&#x81EA;&#x5DF1;&#x811A;&#x8E0F;&#x5B9E;&#x5730;&#x7684;&#x591A;&#x5199;&#x591A;&#x60F3;&#x6162;&#x6162;&#x719F;&#x6089;&#x4F60;&#x6240;&#x9009;&#x62E9;&#x7684;&#x8BED;&#x8A00; &#xFF0C;&#x6CA1;&#x6709;&#x522B;&#x7684;&#x529E;&#x6CD5;&#x3002;&#xFF08;&#x4F46;&#x662F;dart&#x786E;&#x5B9E;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#x6700;&#x597D;&#x5B66;&#x7684;&#x6CA1;&#x6709;&#x4E4B;&#x4E00;&#x7684;&#x8BED;&#x8A00;&#xFF09;</li>
+<li>&#x7B2C;&#x4E8C;&#x662F;&#x6709;&#x57FA;&#x7840;&#xFF1A;&#x5C0F;&#x4F19;&#x4F34;&#x4EEC;&#x5982;&#x4F55;&#x5FEB;&#x901F;&#x5B66;&#x4E60;&#x4E00;&#x95E8;&#x65B0;&#x8BED;&#x8A00;&#xFF0C;&#x5176;&#x5B9E;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x6211;&#x4EEC;&#x5F53;&#x524D;&#x6240;&#x638C;&#x63E1;&#x6216;&#x8005;&#x719F;&#x6089;&#x7684;&#x8BED;&#x8A00;&#x5BF9;&#x6BD4;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;js&#x3001;java&#x3001;swift&#x7B49;&#x7B49;&#x4EFB;&#x610F;&#x4E00;&#x95E8;&#x90FD;&#x53EF;&#x4EE5;&#xFF0C;&#x90A3;&#x4E48;&#x5269;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x638C;&#x63E1;&#x4E0E;&#x4E4B;&#x4E0D;&#x540C;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x9760;&#x81EA;&#x5DF1;&#x591A;&#x5199;&#x591A;&#x60F3;&#x6162;&#x6162;&#x719F;&#x6089;&#x3002;</li>
+</ul>
+<h3 id="&#x4E00;&#x3001;&#x5F00;&#x7BC7;&#xFF08;&#x8BF7;&#x8BB0;&#x4F4F;&#x5E76;&#x4E86;&#x89E3;&#x8FD9;&#x4E9B;&#x4E07;&#x80FD;&#x7684;&#x89C4;&#x5219;&#xFF09;">&#x4E00;&#x3001;&#x5F00;&#x7BC7;&#xFF08;&#x8BF7;&#x8BB0;&#x4F4F;&#x5E76;&#x4E86;&#x89E3;&#x8FD9;&#x4E9B;&#x4E07;&#x80FD;&#x7684;&#x89C4;&#x5219;&#xFF09;</h3>
+<ul>
+<li>&#x4E00;&#x5207;&#x53D8;&#x91CF;&#x7686;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x90FD;&#x662F;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;int&#x3001;double&#x3001;&#x51FD;&#x6570;&#x3001; null &#x7B49;&#x90FD;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x6709;&#x5BF9;&#x8C61;&#x90FD;&#x7EE7;&#x627F;&#x81EA; Object &#x7C7B;</li>
+<li>Dart&#x53EF;&#x57FA;&#x4E8E;AOT&#xFF08;Ahead Of Time&#xFF09;&#x7F16;&#x8BD1;&#xFF0C;&#x5373;&#x7F16;&#x8BD1;&#x6210;&#x5E73;&#x53F0;&#x7684;&#x672C;&#x5730;&#x4EE3;&#x7801;&#xFF0C;&#x8FD0;&#x884C;&#x6027;&#x80FD;&#x9AD8;&#x3002;</li>
+<li>Dart&#x4E5F;&#x53EF;&#x57FA;&#x4E8E;JIT&#xFF08;Just In Time&#xFF09;&#x7F16;&#x8BD1;&#xFF0C;&#x7F16;&#x8BD1;&#x5FEB;&#x901F;&#xFF0C;&#x53EF;&#x70ED;&#x52A0;&#x8F7D;&#xFF0C;&#x4F7F;&#x5F00;&#x53D1;&#x5468;&#x671F;&#x52A0;&#x500D;&#x63D0;&#x5347;&#xFF08;Flutter&#x4E9A;&#x79D2;&#x7EA7;&#x6709;&#x72B6;&#x6001;&#x70ED;&#x91CD;&#x8F7D;&#xFF09;</li>
+<li>Dart&#x53EF;&#x4EE5;&#x66F4;&#x8F7B;&#x677E;&#x5730;&#x521B;&#x5EFA;&#x4EE5;60fps&#x8FD0;&#x884C;&#x7684;&#x6D41;&#x7545;&#x52A8;&#x753B;&#x548C;&#x8F6C;&#x573A;&#x3002;Dart&#x5728;&#x6CA1;&#x6709;&#x9501;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x8FDB;&#x884C;&#x5BF9;&#x8C61;&#x5206;&#x914D;&#x548C;&#x5783;&#x573E;&#x56DE;&#x6536;</li>
+<li>Dart&#x8BED;&#x6CD5;&#x7ED3;&#x5408;Java&#x4E0E;JavaScript&#x8BED;&#x6CD5;&#x7279;&#x70B9;&#xFF0C;&#x51E0;&#x4E4E;&#x6CA1;&#x6709;&#x4EE4;&#x4EBA;&#x4E0D;&#x9002;&#x7684;&#x602A;&#x5F02;&#x8BED;&#x6CD5;&#xFF0C;&#x4F7F;Java&#x7A0B;&#x5E8F;&#x5458;&#x500D;&#x611F;&#x4EB2;&#x5207;&#xFF0C;&#x5FEB;&#x901F;&#x4E0A;&#x624B;</li>
+<li>Dart &#x6CA1;&#x6709;&#x5173;&#x4E8E; public&#x3001;protected&#x3001;private &#x7684;&#x5173;&#x952E;&#x5B57;&#x3002;&#x901A;&#x8FC7;&#x4E3A;&#x53D8;&#x91CF;&#x6807;&#x8BC6;&#x7B26;&#x6DFB;&#x52A0;&#x4E0B;&#x5212;&#x7EBF;&#x524D;&#x7F00;&#xFF0C;&#x8868;&#x660E;&#x8BE5;&#x6807;&#x8BC6;&#x7B26;&#x5BF9;&#x5176;&#x5E93;&#x662F;&#x79C1;&#x6709;&#x7684;</li>
+<li>Dart&#x652F;&#x6301;&#x9876;&#x7EA7;&#x51FD;&#x6570;&#x3001;&#x9759;&#x6001;&#x51FD;&#x6570;&#x3001;&#x5B9E;&#x4F8B;&#x51FD;&#x6570;&#xFF0C;&#x4E5F;&#x5141;&#x8BB8;&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x5D4C;&#x5957;&#x51FD;&#x6570;&#xFF0C;&#x5373;&#x5C40;&#x90E8;&#x51FD;&#x6570;&#x3002;&#x7C7B;&#x4F3C;&#x7684;&#xFF0C;dart &#x4E5F;&#x652F;&#x6301;&#x9876;&#x7EA7;&#x53D8;&#x91CF;&#x3001;&#x9759;&#x6001;&#x53D8;&#x91CF;&#x548C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;</li>
+<li>Dart &#x662F;&#x5F3A;&#x7C7B;&#x578B;&#x8BED;&#x8A00;&#xFF0C;&#x4F46;&#x7531;&#x4E8E;&#x5177;&#x5907;&#x7C7B;&#x578B;&#x63A8;&#x5BFC;&#x529F;&#x80FD;&#x6240;&#x4EE5;&#x7C7B;&#x578B;&#x58F0;&#x660E;&#x662F;&#x53EF;&#x9009;&#x7684;</li>
+</ul>
+<h3 id="&#x4E8C;&#x3001;dart&#x5FEB;&#x901F;&#x5165;&#x95E8;&#x57FA;&#x7840;&#x76EE;&#x5F55;&#xFF1A;">&#x4E8C;&#x3001;Dart&#x5FEB;&#x901F;&#x5165;&#x95E8;&#x57FA;&#x7840;&#x76EE;&#x5F55;&#xFF1A;</h3>
+<p> <img src="FILES/40m_Learn_dart.md/866facee.webp" alt="img"></p>
+<h3 id="&#x672C;&#x6587;&#x5206;&#x4E09;&#x8282;&#x8BB2;&#x89E3;&#xFF1A;">&#x672C;&#x6587;&#x5206;&#x4E09;&#x8282;&#x8BB2;&#x89E3;&#xFF1A;</h3>
+<p> | &#x7AE0;&#x8282; | &#x4ECB;&#x7ECD; | | ---- | ---- | | | &#x4E0A;&#xFF1A; | | | &#x4E2D;&#xFF1A; | | | &#x4E0B;&#xFF1A; |</p>
+<h3 id="&#x4E09;&#x3001;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x9009;&#x62E9;">&#x4E09;&#x3001;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x9009;&#x62E9;</h3>
+<h3 id="&#x7F16;&#x8BD1;&#x5668;&#x4E3B;&#x8981;&#x91C7;&#x7528;android-studio&#x7F16;&#x8BD1;&#x5668;">&#x7F16;&#x8BD1;&#x5668;&#x4E3B;&#x8981;&#x91C7;&#x7528;Android Studio&#x7F16;&#x8BD1;&#x5668;</h3>
+<p> &#x540C;&#x65F6;&#x6309;&#x7167;&#x56FD;&#x9645;&#x60EF;&#x4F8B;&#x4F7F;&#x7528;Dart&#x5B8C;&#x6210;&#x4E00;&#x4E2A;&#xFF1A;&quot;Hello&#xFF0C;World!&quot; &#x5E76;&#x8F93;&#x5165;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hello&#xFF0C;World&apos;</span>);
+ }
+</code></pre>
+<h3 id="&#x56DB;&#x3001;&#x53D8;&#x91CF;">&#x56DB;&#x3001;&#x53D8;&#x91CF;</h3>
+<p> Dart&#x4E2D;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;: <em>&#x4E00;&#x3001;&#x9759;&#x6001;&#x7C7B;&#x578B;&#x8BED;&#x8A00;&#x5E38;&#x7528;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x663E;&#x5F0F;&#x6307;&#x5B9A;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x3002;</em> &#x4E8C;&#x3001;&#x52A8;&#x6001;&#x8BED;&#x8A00;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;&#x4E0D;&#x6307;&#x5B9A;&#x7C7B;&#x578B;&#xFF0C;&#x7531;vm&#x81EA;&#x52A8;&#x63A8;&#x65AD;&#x3002;</p>
+<p> &#x4E00;&#x5207;&#x53D8;&#x91CF;&#x7686;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x90FD;&#x662F;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;int&#x3001;double&#x3001;&#x51FD;&#x6570;&#x3001; null &#x7B49;&#x90FD;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x6709;&#x5BF9;&#x8C61;&#x90FD;&#x7EE7;&#x627F;&#x81EA; Object &#x7C7B;&#x3002;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x770B;&#x770B;&#x5982;&#x4F55;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#xFF1A;</p>
+<p> &#x53D8;&#x91CF;&#x662F;&#x4E00;&#x4E2A;&#x5F15;&#x7528;&#xFF0C;&#x672A;&#x521D;&#x59CB;&#x5316;&#x7684;&#x53D8;&#x91CF;&#x503C;&#x662F;Null&#x5982;&#x4E0B;&#x3002;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+  <span class="hljs-built_in">String</span> name;
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;$name&apos;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;&#x4E3A;null</span>
+ }
+</code></pre>
+<p> &#x4E0A;&#x9762;&#x6211;&#x4EEC;&#x63D0;&#x5230;&#x4E86;&#x663E;&#x793A;&#x6307;&#x5B9A;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+  <span class="hljs-built_in">String</span> name =<span class="hljs-string">&quot;&#x9EC4;&#x836F;&#x5E08;&quot;</span>;
+  <span class="hljs-built_in">int</span> age =<span class="hljs-number">10</span>;
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;$name&apos;</span><span class="hljs-string">&apos;----$age&apos;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;:&#x9EC4;&#x836F;&#x5E08;----10</span>
+ }
+</code></pre>
+<p> &#x52A8;&#x6001;&#x8BED;&#x8A00;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;&#x4E0D;&#x6307;&#x5B9A;&#x7C7B;&#x578B;&#xFF0C;&#x7531;vm&#x81EA;&#x52A8;&#x63A8;&#x65AD;&#x3002;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+  <span class="hljs-built_in">String</span> name =<span class="hljs-string">&quot;&#x9EC4;&#x836F;&#x5E08;&quot;</span>;
+  name  =<span class="hljs-string">&apos;&#x5468;&#x4F2F;&#x901A;&apos;</span>;
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;$name&apos;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;:&#x5468;&#x4F2F;&#x901A;</span>
+ }
+</code></pre>
+<p> Dart &#x8BED;&#x8A00;&#x662F;&#x5F3A;&#x7C7B;&#x578B;&#x8BED;&#x8A00;&#xFF0C;&#x65E0;&#x6CD5;&#x5C06;&#x4E00;&#x4E2A;&#x5DF2;&#x58F0;&#x660E;&#x5177;&#x4F53;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#x4E3A;&#x53E6;&#x4E00;&#x4E2A;&#x65E0;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x7684;&#x53D8;&#x91CF;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+  <span class="hljs-built_in">String</span> name =<span class="hljs-string">&quot;&#x9EC4;&#x836F;&#x5E08;&quot;</span>;
+  name  =<span class="hljs-number">10</span>;
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;$name&apos;</span>);
+ }
+</code></pre>
+<p> &#x8FD9;&#x79CD;&#x8D4B;&#x503C;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x4F1A;&#x62A5;&#x9519;&#xFF1A;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+  <span class="hljs-built_in">int</span> age =<span class="hljs-number">10</span>;
+  age  =<span class="hljs-number">10.0</span>; <span class="hljs-comment">//&#x8FD9;&#x79CD;&#x5728;&#x8D4B;&#x503C;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x5DF2;&#x7ECF;&#x62A5;&#x9519;</span>
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;$age&apos;</span>);
+ }
+</code></pre>
+<p> &#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x5730;&#x65B9;&#x6709;&#x4E2A;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x5730;&#x65B9;&#x5C31;&#x662F;int &#x548C;double &#x7C7B;&#x90FD;&#x662F;num&#x7684;&#x5B50;&#x7C7B;&#x5982;&#x4E0B;&#x9762;&#x5199;&#x6CD5;&#x662F;&#x5408;&#x6CD5;&#x3002;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+  <span class="hljs-built_in">num</span> age =<span class="hljs-number">10</span>;
+  age  =<span class="hljs-number">10.0</span>; <span class="hljs-comment">//&#x8FD9;&#x79CD;&#x5728;&#x8D4B;&#x503C;&#x5408;&#x6CD5;</span>
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;$age&apos;</span>);
+ }
+</code></pre>
+<h3 id="1&#x3001;var&#xFF08;&#x5B98;&#x65B9;&#x98CE;&#x683C;&#x6307;&#x5357;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;var&#xFF09;">1&#x3001;var&#xFF08;&#x5B98;&#x65B9;&#x98CE;&#x683C;&#x6307;&#x5357;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;var&#xFF09;</h3>
+<p> var&#xFF1A;&#x5728;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x5728;&#x8D4B;&#x503C;&#x7684;&#x90A3;&#x4E00;&#x523B;&#xFF0C;&#x5C31;&#x5DF2;&#x7ECF;&#x51B3;&#x5B9A;&#x4E86;&#x5B83;&#x662F;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x3002;</p>
+<p> &#x4E0A;&#x9762;&#x8FD9;&#x53E5;&#x8BDD;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#x5C3C;&#xFF1F;&#x5176;&#x5B9E;&#x5F88;&#x7B80;&#x5355;&#xFF1A;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-comment">//age &#x5DF2;&#x7ECF;&#x786E;&#x5B9A;&#x4E3A;num&#x7C7B;&#x578B;&#x5E76;&#x4E3A;&#x5176;&#x8D4B;&#x503C;18&#x5C81;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8D4B;&#x503C;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4F1A;&#x62A5;&#x9519;</span>
+  <span class="hljs-keyword">var</span> age =<span class="hljs-number">18</span>;
+  age  =<span class="hljs-string">&apos;18&apos;</span>;
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;$age&apos;</span>);
+ }
+ <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-comment">//age &#x5DF2;&#x7ECF;&#x786E;&#x5B9A;&#x4E3A;num&#x7C7B;&#x578B;&#x5E76;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x4E3A;&#x5176;&#x8D4B;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8D4B;&#x503C;&#x5B57;&#x7B26;&#x4E32;&#x90A3;&#x4E48;&#x662F;&#x6B63;&#x786E;</span>
+  <span class="hljs-keyword">var</span> age;
+  age  =<span class="hljs-number">18</span>;
+  age =<span class="hljs-string">&apos;18&apos;</span>;
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;$age&apos;</span>);
+ }
+</code></pre>
+<h3 id="2&#x3001;object">2&#x3001;Object</h3>
+<p> &#x4E00;&#x5207;&#x53D8;&#x91CF;&#x7686;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x90FD;&#x662F;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;int&#x3001;double&#x3001;&#x51FD;&#x6570;&#x3001; null &#x7B49;&#x90FD;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x6709;&#x5BF9;&#x8C61;&#x90FD;&#x7EE7;&#x627F;&#x81EA; Object &#x7C7B;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+ <span class="hljs-keyword">void</span> main() {
+  <span class="hljs-built_in">Object</span> age =<span class="hljs-string">&apos;18&apos;</span>;
+  age  =<span class="hljs-number">18</span>;
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;$age&apos;</span>);
+ }
+</code></pre>
+<h3 id="3&#x3001;dynamic">3&#x3001;dynamic</h3>
+<p> dynamic&#x7C7B;&#x4F3C;java&#x4E2D;&#x7684;Object &#xFF0C;&#x6240;&#x4EE5;&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x884C;&#x4E3A;&#x4E0E;Object&#x4E00;&#x6837;&#xFF0C;&#x4F7F;&#x7528;&#x4E5F;&#x662F;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x77E5;&#x9053;&#x7684;&#x662F;&#xFF1A;dynamic&#x4E0D;&#x662F;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x786E;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#xFF0C;&#x800C;&#x662F;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#xFF1A;&#x8FD9;&#x53E5;&#x8BDD;&#x6709;&#x70B9;&#x61F5;&#xFF0C;&#x5230;&#x5E95;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#x5462;&#xFF1F;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-keyword">dynamic</span> name =<span class="hljs-string">&apos;&#x9EC4;&#x836F;&#x5E08;&apos;</span>;
+   <span class="hljs-built_in">print</span>(name.runtimeType); <span class="hljs-comment">//&#x8F93;&#x5165;&#xFF1A;String</span>
+   name =<span class="hljs-number">18</span>;
+   <span class="hljs-built_in">print</span>(name.runtimeType); <span class="hljs-comment">//&#x8F93;&#x5165;&#xFF1A;int</span>
+ }
+</code></pre>
+<h3 id="&#x8BF4;&#x660E;&#xFF1A;">&#x8BF4;&#x660E;&#xFF1A;</h3>
+<p> &#x5728;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x52A0;&#x4E0A;&#x5177;&#x4F53; &#x7C7B;&#x578B;&#xFF1A;String name = &#x201C;&#x9EC4;&#x836F;&#x5E08;&#x201D;</p>
+<p> &#x6CA1;&#x6709;&#x521D;&#x59CB;&#x5316;&#x7684;&#x53D8;&#x91CF;&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; null&#xFF08;&#x7C7B;&#x578B;&#x4E3A;&#x6570;&#x5B57;&#x7684; &#x53D8;&#x91CF;&#x5982;&#x4F55;&#x6CA1;&#x6709;&#x521D;&#x59CB;&#x5316;&#x5176;&#x503C;&#x4E5F;&#x662F; null&#xFF09;&#x3002;</p>
+<h3 id="&#x5BF9;&#x4E8E;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x6309;&#x7167;dart&#x5B98;&#x65B9;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;var&#x6765;&#x58F0;&#x660E;&#x53D8;&#x91CF;">&#x5BF9;&#x4E8E;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x6309;&#x7167;dart&#x5B98;&#x65B9;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;var&#x6765;&#x58F0;&#x660E;&#x53D8;&#x91CF;</h3>
+<h3 id="4&#x3001;final&#x4E0E;const">4&#x3001;final&#x4E0E;const</h3>
+<p> final &#x548C;const &#x4ECE;&#x672C;&#x8D28;&#x4E0A;&#x770B;&#x4E0D;&#x51FA;&#x533A;&#x522B;&#xFF1A;&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x5728;&#x8D4B;&#x503C;&#x540E;&#x5176;&#x5F15;&#x7528;&#x4E0D;&#x80FD;&#x518D;&#x6539;&#x53D8;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;final&#x6216;const&#x8FD9;&#x4E24;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x6765;&#x5B9E;&#x73B0;&#x3002; * final&#x662F;&#x8FD0;&#x884C;&#x65F6;&#x5E38;&#x91CF;&#xFF0C;final&#x7684;&#x8981;&#x6C42;&#x662F;&#x5176;&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x5728;&#x8D4B;&#x503C;&#x4EE5;&#x540E;&#x662F;&#x4E0D;&#x80FD;&#x5728;&#x6539;&#x53D8;:</p>
+<p> <img src="FILES/40m_Learn_dart.md/cab9131d.webp" alt="img"></p>
+<h3 id="final&#x6709;&#x4E24;&#x79CD;&#x4F7F;&#x7528;&#x573A;&#x666F;">final&#x6709;&#x4E24;&#x79CD;&#x4F7F;&#x7528;&#x573A;&#x666F;</h3>
+<ul>
+<li>&#x7C7B;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#xFF0C;&#x5FC5;&#x987B;&#x5728;&#x58F0;&#x660E;&#x65F6;&#x8D4B;&#x503C;&#x3002;</li>
+<li>&#x7C7B;&#x4E2D;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x58F0;&#x660E;&#x65F6;&#x5019;&#x8D4B;&#x503C;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6784;&#x9020;&#x51FD;&#x6570;&#x8D4B;&#x503C;&#x5982;&#xFF1A;</li>
+</ul>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;package:flutter/cupertino.dart&apos;</span>;
+
+ <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestDart</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">StatefulWidget</span></span>{
+
+   <span class="hljs-keyword">final</span> <span class="hljs-built_in">String</span> name;
+
+   TestDart(<span class="hljs-keyword">this</span>.name);
+
+   <span class="hljs-meta">@override</span>
+   State&lt;StatefulWidget createState() {
+     <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> implement createState</span>
+     <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+   }
+ }
+
+ <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestDartState</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">State</span>&lt;<span class="hljs-title">TestDart</span></span>{
+
+   <span class="hljs-keyword">final</span> <span class="hljs-built_in">String</span>  URL_NAME =<span class="hljs-string">&quot;https://wwww.baidu.com&quot;</span>;
+
+   <span class="hljs-meta">@override</span>
+   Widget build(BuildContext context) {
+     <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> implement build</span>
+     <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+   }
+
+ }
+</code></pre>
+<h3 id="const&#x662F;&#x7F16;&#x8BD1;&#x671F;&#x5E38;&#x91CF;&#x3002;&#x8FD9;&#x91CC;&#x5173;&#x952E;&#x70B9;&#x533A;&#x5206;&#x4EC0;&#x4E48;&#x662F;&#x7F16;&#x8BD1;&#x65F6;&#x5E38;&#x91CF;&#xFF0C;&#x8BF4;&#x767D;&#x4E86;&#x5C31;&#x662F;&#x5176;&#x5B9A;&#x4E49;&#x7684;&#x503C;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x9762;&#x5E38;&#x91CF;&#x503C;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;">const&#x662F;&#x7F16;&#x8BD1;&#x671F;&#x5E38;&#x91CF;&#x3002;&#x8FD9;&#x91CC;&#x5173;&#x952E;&#x70B9;&#x533A;&#x5206;&#x4EC0;&#x4E48;&#x662F;&#x7F16;&#x8BD1;&#x65F6;&#x5E38;&#x91CF;&#xFF0C;&#x8BF4;&#x767D;&#x4E86;&#x5C31;&#x662F;&#x5176;&#x5B9A;&#x4E49;&#x7684;&#x503C;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x9762;&#x5E38;&#x91CF;&#x503C;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</h3>
+<p> <img src="FILES/40m_Learn_dart.md/51d650f1.webp" alt="img"></p>
+<p> &#x9488;&#x5BF9;final &#x548C;const &#x7406;&#x89E3;&#x7684;&#x6709;&#x70B9;&#x6A21;&#x7CCA;&#x7684;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#xFF1A; &#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x8FD9;&#x91CC;<a href="https://link.zhihu.com/?target=https%3A//juejin.im/post/5d396a03f265da1b68370110%23heading-5" target="_blank">Flutter &#x77E5;&#x8BC6;&#x68B3;&#x7406;&#xFF08;Dart&#xFF09;-Dart&#x4E2D;static final const &#x533A;&#x522B;</a></p>
+<h3 id="&#x4E94;&#x3001;&#x64CD;&#x4F5C;&#x7B26;&#xFF1A;">&#x4E94;&#x3001;&#x64CD;&#x4F5C;&#x7B26;&#xFF1A;</h3>
+<p> Dart&#x4E2D;&#x7684;&#x64CD;&#x4F5C;&#x7B26;&#x4E0E;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8BED;&#x8A00;&#x4E2D;&#xFF08;&#x5982;&#xFF1A;java&#xFF09;&#x64CD;&#x4F5C;&#x7B26;&#x7EDD;&#x5927;&#x591A;&#x6570;&#x662F;&#x76F8;&#x540C;&#x3002;&#x8BE5;&#x6709;&#x7684;&#x90FD;&#x6709;&#xFF0C;&#x4E0D;&#x8BE5;&#x6709;&#x7684;Dart&#x4E5F;&#x6709; &#x3002;</p>
+<p> | &#x64CD;&#x4F5C;&#x7B26; | &#x8BF4;&#x660E; | | :----- | ----------: | | + | &#x52A0; | | _ | &#x51CF; | | * | &#x4E58; | | / | &#x9664; | | % | &#x53D6;&#x6A21;&#x8FD0;&#x7B97; &#x5143; | | ~/ | &#x6574;&#x9664; | | = | &#x7BAD;&#x5934;&#x51FD;&#x6570; |</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-keyword">var</span> i = <span class="hljs-number">6</span>;
+   <span class="hljs-keyword">var</span> r = <span class="hljs-number">2</span>;
+
+   <span class="hljs-comment">//&#x52A0;&#x6CD5;&#xFF1A;</span>
+   <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;<span class="hljs-subst">${i + r}</span>&apos;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;8</span>
+   <span class="hljs-comment">//&#x51CF;&#x6CD5;</span>
+   <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;<span class="hljs-subst">${i - r}</span>&apos;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;4</span>
+   <span class="hljs-comment">//&#x4E58;&#x6CD5;</span>
+   <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;<span class="hljs-subst">${i * r}</span>&apos;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;12</span>
+   <span class="hljs-comment">//&#x9664;&#x6CD5;</span>
+   <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;<span class="hljs-subst">${i / r}</span>&apos;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;3.0</span>
+   <span class="hljs-comment">//&#x53D6;&#x6A21;&#x8FD0;&#x7B97;</span>
+   <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;<span class="hljs-subst">${i % r}</span>&apos;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;0</span>
+   <span class="hljs-comment">//&#x6574;&#x9664;</span>
+   <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;<span class="hljs-subst">${i ~/ r}</span>&apos;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;3</span>
+ }
+</code></pre>
+<ul>
+<li><p>&#x7C7B;&#x578B;&#x5224;&#x65AD;&#x64CD;&#x4F5C;&#x7B26;</p>
+<p>as&#x7C7B;&#x578B;&#x8F6C;&#x6362;is&#x5982;&#x679C;&#x5BF9;&#x8C61;&#x662F;&#x6307;&#x5B9A;&#x7684;&#x7C7B;&#x578B;&#x8FD4;&#x56DE; Trueis&#xFF01;&#x5982;&#x679C;&#x5BF9;&#x8C61;&#x662F;&#x6307;&#x5B9A;&#x7684;&#x7C7B;&#x578B;&#x8FD4;&#x56DE; False</p>
+</li>
+</ul>
+<h3 id="&#x6CE8;&#x610F;&#x70B9;&#xFF1A;as-&#x64CD;&#x4F5C;&#x7B26;&#x628A;&#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x4E3A;&#x7279;&#x5B9A;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x65E0;&#x6CD5;&#x5B8C;&#x6210;&#x8F6C;&#x6362;&#x5219;&#x4F1A;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;">&#x6CE8;&#x610F;&#x70B9;&#xFF1A;as &#x64CD;&#x4F5C;&#x7B26;&#x628A;&#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x4E3A;&#x7279;&#x5B9A;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x65E0;&#x6CD5;&#x5B8C;&#x6210;&#x8F6C;&#x6362;&#x5219;&#x4F1A;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;</h3>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-keyword">var</span> name = <span class="hljs-string">&quot;&#x9EC4;&#x836F;&#x5E08;&quot;</span>;
+
+   <span class="hljs-keyword">if</span> (name <span class="hljs-keyword">is</span> <span class="hljs-built_in">String</span>) {
+     <span class="hljs-comment">//&#x5224;&#x65AD;&#x6761;&#x4EF6;&#x4E3A; true</span>
+     <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;name is String&quot;</span>);
+   }
+   <span class="hljs-keyword">var</span> age = <span class="hljs-number">1</span>;
+   <span class="hljs-keyword">if</span> (age <span class="hljs-keyword">is</span>! <span class="hljs-built_in">String</span>) {
+     <span class="hljs-comment">//&#x5224;&#x65AD;&#x6761;&#x4EF6;&#x4E3A; true</span>
+     <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;age is String&quot;</span>);
+   }
+
+   <span class="hljs-comment">//&#x8BF4;&#x660E;&#xFF1A;&#x7531;&#x4E8E;age &#x662F;int &#x7C7B;&#x578B; &#x4E0D;&#x662F;&#x4E00;&#x4E2A;String&#x7C7B;&#x578B;&#xFF0C;&#x6240;&#x4EE5;&#x6D3B;&#x62A5;&#x5982;&#x4E0B;&#x9519;&#x8BEF;</span>
+   <span class="hljs-comment">//&apos;int&apos; is not a subtype of type &apos;String&apos; in type cast</span>
+   <span class="hljs-built_in">String</span> newResult = age <span class="hljs-keyword">as</span> <span class="hljs-built_in">String</span>;
+ }
+</code></pre>
+<ul>
+<li><p>&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x7B26;</p>
+<p>| &#x64CD;&#x4F5C;&#x7B26; | &#x8BF4;&#x660E; | | :----- | ---------------: | | = | &#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x7B26; | | += | &#x52A0;&#x548C;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x7B26; | | -= | &#x51CF;&#x548C;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x7B26; | | *= | &#x4E58;&#x548C;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x7B26; | | %= | &#x53D6;&#x6A21;&#x548C;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x7B26; | | /= | &#x9664;&#x548C;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x7B26; | | ??= | &#x503C;&#x4E3A;null&#x7684;&#x53D8;&#x91CF;&#x503C; |</p>
+</li>
+</ul>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+    <span class="hljs-keyword">var</span> age =<span class="hljs-number">20</span>;
+    <span class="hljs-comment">//&#x52A0;&#x548C;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x7B26;</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;<span class="hljs-subst">${age+=<span class="hljs-number">10</span>}</span>&apos;</span>);
+    <span class="hljs-comment">//&#x51CF;&#x548C;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x7B26;</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;<span class="hljs-subst">${age-=<span class="hljs-number">10</span>}</span>&apos;</span>);
+    <span class="hljs-comment">//&#x4E58;&#x548C;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x7B26;</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;<span class="hljs-subst">${age*=<span class="hljs-number">10</span>}</span>&apos;</span>);
+    <span class="hljs-comment">//&#x9664;&#x548C;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x7B26;</span>
+    <span class="hljs-built_in">double</span> newAge =<span class="hljs-number">20.0</span>;
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;<span class="hljs-subst">${newAge /= <span class="hljs-number">10.0</span>}</span>&apos;</span>);
+    <span class="hljs-comment">//&#x53D6;&#x6A21;&#x548C;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x7B26;</span>
+    <span class="hljs-built_in">double</span> price =<span class="hljs-number">230.0</span>;
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;<span class="hljs-subst">${price %= <span class="hljs-number">10.0</span>}</span>&apos;</span>);
+
+    <span class="hljs-built_in">String</span> name;
+    name ??= <span class="hljs-string">&quot;&#x9EC4;&#x836F;&#x5E08;&quot;</span>;
+    <span class="hljs-comment">// &#x5982;&#x679C; name &#x662F; null&#xFF0C;&#x5219;&#x628A;&#x7B49;&#x4E8E;&#x53F7;&#x53F3;&#x8FB9;&#x7684;&#x503C; &#x8D4B;&#x503C;&#x7ED9; name&#xFF1B;</span>
+    <span class="hljs-comment">// &#x5982;&#x679C;&#x4E0D;&#x662F; null&#xFF0C;&#x5219; name &#x7684;&#x503C;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;</span>
+     <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;$name&quot;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;&#x9EC4;&#x836F;&#x5E08;</span>
+ }
+</code></pre>
+<ul>
+<li>&#x66FF;&#x4EE3;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#x64CD;&#x4F5C;&#x7B26;</li>
+</ul>
+<h3 id="&#x5728;dart&#x4E2D;&#x6709;&#x4E24;&#x79CD;&#x7279;&#x6B8A;&#x64CD;&#x4F5C;&#x7B26;&#x53EF;&#x4EE5;&#x66FF;&#x4EE3;-if-else-&#x8BED;&#x53E5;">&#x5728;Dart&#x4E2D;&#x6709;&#x4E24;&#x79CD;&#x7279;&#x6B8A;&#x64CD;&#x4F5C;&#x7B26;&#x53EF;&#x4EE5;&#x66FF;&#x4EE3; if-else &#x8BED;&#x53E5;</h3>
+<ul>
+<li>&#x4E09;&#x76EE;&#x8FD0;&#x7B97;&#x7B26;</li>
+<li>??</li>
+</ul>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-keyword">var</span> age = <span class="hljs-number">10</span>;
+   <span class="hljs-built_in">print</span>(printAge1(age));
+   <span class="hljs-built_in">print</span>(printAge2(age));
+   <span class="hljs-built_in">print</span>(printAge3(age));
+ }
+
+ <span class="hljs-comment">//if-else</span>
+ printAge1(age) {
+   <span class="hljs-keyword">if</span> (age == <span class="hljs-number">10</span>) {
+     <span class="hljs-keyword">return</span> age;
+   }
+   <span class="hljs-keyword">return</span> age;
+
+   <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;10</span>
+ }
+
+ <span class="hljs-comment">//&#x7B2C;&#x4E00;&#x79CD;&#x66FF;&#x6362;if-else &#x4F7F;&#x7528;&#x4E09;&#x76EE;&#x8FD0;&#x7B97;&#x7B26;</span>
+ printAge2(<span class="hljs-built_in">int</span> age) {
+   <span class="hljs-keyword">return</span> age == <span class="hljs-number">10</span> ? age : <span class="hljs-number">0</span>; <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;10</span>
+ }
+
+ <span class="hljs-comment">//&#x7B2C;&#x4E8C;&#x79CD;&#x7528;&quot;??&quot;&#x66FF;&#x6362;if-else</span>
+ printAge3(<span class="hljs-built_in">int</span> age) {
+   <span class="hljs-keyword">return</span> age == <span class="hljs-number">10</span> ?? <span class="hljs-number">0</span>; <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;true</span>
+ }
+</code></pre>
+<ul>
+<li><p>&#x7EA7;&#x8054;&#x64CD;&#x4F5C;&#x7B26;</p>
+<p>&#x7EA7;&#x8054;&#x64CD;&#x4F5C;&#x7B26; (..) &#x53EF;&#x4EE5;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E0A; &#x8FDE;&#x7EED;&#x8C03;&#x7528;&#x591A;&#x4E2A;&#x51FD;&#x6570;&#x4EE5;&#x53CA;&#x8BBF;&#x95EE;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x3002; &#x4F7F;&#x7528;&#x7EA7;&#x8054;&#x64CD;&#x4F5C;&#x7B26;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x521B;&#x5EFA; &#x4E34;&#x65F6;&#x53D8;&#x91CF;&#xFF0C; &#x5E76;&#x4E14;&#x5199;&#x51FA;&#x6765;&#x7684;&#x4EE3;&#x7801;&#x770B;&#x8D77;&#x6765; &#x66F4;&#x52A0;&#x6D41;&#x7545;&#xFF1A;</p>
+</li>
+</ul>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-keyword">var</span>  list = <span class="hljs-built_in">List</span>();
+   <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;<span class="hljs-subst">${list..add(<span class="hljs-string">&quot;&#x9EC4;&#x836F;&#x5E08;&quot;</span>)..add(<span class="hljs-string">&quot;&#x90ED;&#x9756;&quot;</span>)}</span>&quot;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;&#x9EC4;&#x836F;&#x5E08;,&#x90ED;&#x9756;</span>
+ }
+</code></pre>
+<ul>
+<li><p>&#x5B89;&#x5168;&#x64CD;&#x4F5C;&#x7B26;</p>
+<p>Dart&#x63D0;&#x4F9B;&#x4E86; ?.&#x64CD;&#x4F5C;&#x7B26;&#x3002;&#x5DE6;&#x8FB9;&#x7684;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61; &#x5982;&#x679C; &#x4E3A; null &#x5219;&#x8FD4;&#x56DE; null</p>
+</li>
+</ul>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-built_in">String</span> name;
+   <span class="hljs-comment">//&#x6CA1;&#x6709;&#x6DFB;&#x52A0;&quot;?&quot;&#x7A7A;&#x6307;&#x9488;</span>
+   <span class="hljs-built_in">print</span>(name.length); <span class="hljs-comment">// The getter &apos;length&apos; was called on null.</span>
+   <span class="hljs-comment">//&#x6DFB;&#x52A0;&quot;&#xFF1F;&quot;</span>
+   <span class="hljs-built_in">print</span>(name?.length); <span class="hljs-comment">//&#x8F93;&#x51FA;null</span>
+ }
+</code></pre>
+<h3 id="&#x516D;&#x3001;&#x5185;&#x7F6E;&#x7C7B;&#x578B;&#xFF1A;">&#x516D;&#x3001;&#x5185;&#x7F6E;&#x7C7B;&#x578B;&#xFF1A;</h3>
+<h3 id="1&#x3001;num&#xFF08;&#x6570;&#x503C;&#xFF09;">1&#x3001;num&#xFF08;&#x6570;&#x503C;&#xFF09;</h3>
+<p> dart&#x7684;num&#x7C7B;&#x578B;&#x6709;&#x91CF;&#x4E24;&#x79CD;&#x5206;&#x522B;&#x662F;int &#x548C;double&#x4E24;&#x79CD;&#xFF0C;&#x8FD9;&#x4E24;&#x79CD;&#x90FD;&#x662F;num&#x7684;&#x5B50;&#x7C7B;&#x3002;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-keyword">var</span> age = <span class="hljs-number">18</span>;
+   <span class="hljs-built_in">print</span>(age.runtimeType); <span class="hljs-comment">//&#x8F93;&#x51FA; int</span>
+
+   <span class="hljs-keyword">var</span> price = <span class="hljs-number">8.0</span>;
+   <span class="hljs-built_in">print</span>(price.runtimeType); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;double</span>
+
+   <span class="hljs-built_in">num</span> year = <span class="hljs-number">2020</span>;
+   <span class="hljs-built_in">print</span>(year.runtimeType); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;int</span>
+
+   year = <span class="hljs-number">2020.0</span>;
+   <span class="hljs-built_in">print</span>(year.runtimeType); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;double</span>
+
+   <span class="hljs-built_in">int</span> days = <span class="hljs-number">10</span>;
+   <span class="hljs-built_in">print</span>(days.runtimeType); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;int</span>
+
+   <span class="hljs-built_in">double</span> limit = <span class="hljs-number">8.90</span>;
+   <span class="hljs-built_in">print</span>(limit.runtimeType); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;double</span>
+ }
+</code></pre>
+<p> &#x540C;&#x65F6;num&#x4E5F;&#x652F;&#x6301;&#x4E00;&#x4E9B;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x8F6C;&#x6362;&#xFF1A;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-keyword">var</span> age = <span class="hljs-string">&apos;18&apos;</span>;
+   <span class="hljs-built_in">print</span>(age.runtimeType); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;String &#x7C7B;&#x578B;</span>
+
+   <span class="hljs-built_in">int</span> parseAge = <span class="hljs-built_in">int</span>.parse(age);
+   <span class="hljs-built_in">print</span>(parseAge.runtimeType); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;int &#x7C7B;&#x578B;</span>
+ }
+</code></pre>
+<h3 id="2&#x3001;string&#xFF08;&#x5B57;&#x7B26;&#x4E32;&#xFF09;">2&#x3001;string&#xFF08;&#x5B57;&#x7B26;&#x4E32;&#xFF09;</h3>
+<p> Dart&#x5B57;&#x7B26;&#x4E32;&#x662F;UTF-16&#x7F16;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5355;&#x5F15;&#x53F7;&#x6216;&#x8005;&#x53CC;&#x5F15;&#x53F7;&#x6765;&#x521B;&#x5EFA;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5355;&#x5F15;&#x53F7;&#x548C;&#x53CC;&#x5F15;&#x53F7;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;&#x4F7F;&#x7528;&#xFF0C;&#x5426;&#x5219;&#x9700;&#x8981;&#x4F7F;&#x7528;\&#x8FDB;&#x884C;&#x8F6C;&#x4E49;&#x3002;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x4E5F;&#x53EF;&#x4EE5;&#x5F15;&#x7528;&#x53D8;&#x91CF;&#x4E0E;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x540C;&#x65F6;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;&#x529F;&#x80FD;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-keyword">var</span> name = <span class="hljs-string">&apos;&#x9EC4;&#x836F;&#x5E08;&apos;</span>;
+   <span class="hljs-built_in">print</span>(name.runtimeType); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;String &#x7C7B;&#x578B;</span>
+
+   <span class="hljs-keyword">var</span> newName1 = <span class="hljs-string">&quot;my name is $name&quot;</span>;
+   <span class="hljs-built_in">print</span>(newName1); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;my name is &#x9EC4;&#x836F;&#x5E08;</span>
+
+   <span class="hljs-comment">//&#x548C;&#x4E0A;&#x9762;&#x53CD;&#x4E4B;&#xFF0C;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x4E0A;{}</span>
+   <span class="hljs-keyword">var</span> nameName2 = <span class="hljs-string">&quot;my name is <span class="hljs-subst">${User().name}</span>&quot;</span>;
+   <span class="hljs-built_in">print</span>(nameName2); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;my name is &#x9EC4;&#x836F;&#x5E08;</span>
+ }
+
+ <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> </span>{
+   <span class="hljs-keyword">var</span> age =<span class="hljs-number">10</span>;
+   <span class="hljs-keyword">var</span> name =<span class="hljs-string">&quot;&#x9EC4;&#x836F;&#x5E08;&quot;</span>;
+ }
+</code></pre>
+<p> &#x63D0;&#x4F9B;&#x4E00;&#x4E2A; r &#x524D;&#x7F00;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; &#x201C;&#x539F;&#x59CB; raw&#x201D; &#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8BF4;&#x767D;&#x4E86;&#x5C31;&#x662F;&#x4E0D;&#x9700;&#x8981;&#x8F6C;&#x4E49;&#xFF08;&#x5982;&#x679C;&#x6DFB;&#x52A0;&#x4E0A;&#x8F6C;&#x4E49;&#x5B57;&#x7B26;&#x90A3;&#x4E48;&#x5C06;&#x4F1A;&#x5931;&#x6548;&#xFF09;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-comment">//r:&#x4E0D;&#x9700;&#x8981;&#x8F6C;&#x4E49;</span>
+   <span class="hljs-built_in">print</span>(<span class="hljs-string">r&quot;&#x6362;&#x884C;&#x7B26;: \n&quot;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;&#x6362;&#x884C;&#x7B26;&#xFF1A;\n</span>
+   <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#x6362;&#x884C;&#x7B26;: \\n&quot;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;&#x6362;&#x884C;&#x7B26;&#xFF1A;\n</span>
+ }
+</code></pre>
+<h3 id="3&#x3001;bool&#xFF08;&#x5E03;&#x5C14;&#x503C;&#xFF09;">3&#x3001;bool&#xFF08;&#x5E03;&#x5C14;&#x503C;&#xFF09;</h3>
+<p> Dart&#x6709;&#x4E2A;&#x7C7B;&#x578B;&#x540D;&#x5B57;&#x4E3A;bool &#x7C7B;&#x578B;&#xFF0C;&#x800C;&#x5728;Dart&#x4E2D;&#x53EA;&#x6709;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x5E03;&#x5C14;&#x7C7B;&#x578B;&#xFF1A;&#x5206;&#x522B;&#x662F;true&#x548C;false&#x3002;&#x5728;Dart&#x4E2D;&#x8FD8;&#x5F3A;&#x7C7B;&#x578B;&#x68C0;&#x67E5;&#xFF0C;&#x53EA;&#x6709;&#x5F53;&#x4E3A;true&#x7684;&#x65F6;&#x5019;&#x624D;&#x4F1A;&#x771F;&#x3002;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+  <span class="hljs-built_in">bool</span> isLoading;
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;$isLoading&apos;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;null;</span>
+
+  isLoading =<span class="hljs-keyword">true</span>;
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;$isLoading&apos;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;true;</span>
+ }
+</code></pre>
+<h3 id="4&#x3001;list&#xFF08;&#x6570;&#x7EC4;&#xFF09;">4&#x3001;list&#xFF08;&#x6570;&#x7EC4;&#xFF09;</h3>
+<p> &#x51E0;&#x4E4E;&#x6240;&#x6709;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4E2D;&#x6570;&#x7EC4;&#x662F;&#x5FC5;&#x4E0D;&#x53EF;&#x5C11;&#x7684;&#xFF0C;&#x800C;&#x5728;Dart&#x4E2D; list &#x4E5F;&#x662F;&#x5FC5;&#x4E0D;&#x53EF;&#x5C11;&#x7684;&#x3002;</p>
+<p> &#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x4E0B;List&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x7528;&#x6CD5;:</p>
+<ul>
+<li>&#x521D;&#x59CB;&#x5316;</li>
+</ul>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-keyword">var</span> names = <span class="hljs-built_in">List</span>();
+   <span class="hljs-built_in">print</span>(names.length); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;0;</span>
+
+   <span class="hljs-keyword">var</span> names1 = <span class="hljs-built_in">List</span>(<span class="hljs-number">2</span>);
+   <span class="hljs-built_in">print</span>(names1.length); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;2;</span>
+
+   <span class="hljs-comment">//&#x5982;&#x679C;&#x60F3;&#x8981;&#x4E3A; List &#x6DFB;&#x52A0;&#x4E0D;&#x540C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x76F4;&#x63A5;&#x53EA;&#x4E70;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E3A;Object</span>
+   <span class="hljs-keyword">var</span> names2 = <span class="hljs-built_in">List</span>&lt;<span class="hljs-built_in">Object</span>();
+   names2.add(<span class="hljs-string">&apos;&#x9EC4;&#x836F;&#x5E08;&apos;</span>);
+   <span class="hljs-built_in">print</span>(names2.runtimeType); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;List&lt;Object &#x7C7B;&#x578B;</span>
+
+   <span class="hljs-comment">//&#x76F4;&#x63A5;&#x590D;&#x5236;&#xFF0C;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4E0D;&#x540C;&#x7C7B;&#x578B;</span>
+   <span class="hljs-keyword">var</span> names3 = [<span class="hljs-string">&apos;&#x9EC4;&#x836F;&#x5E08;&apos;</span>,<span class="hljs-number">12</span>,<span class="hljs-number">11.0</span>];
+   <span class="hljs-built_in">print</span>(names3.length); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;3</span>
+
+   <span class="hljs-comment">//&#x5728;list &#x5B57;&#x9762;&#x4E0A;&#x4E4B;&#x524D;&#x6DFB;&#x52A0;const &#x5173;&#x952E;&#x5B57;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x4E0D;&#x53D8;&#x7684;list&#x5BF9;&#x8C61;&#xFF08;&#x7F16;&#x8BD1;&#x662F;&#x5E38;&#x91CF;&#xFF09;</span>
+   <span class="hljs-keyword">var</span> names4 = <span class="hljs-keyword">const</span>[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>];
+   <span class="hljs-built_in">print</span>(names4.length); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;3</span>
+   <span class="hljs-comment"><span class="markdown">///&#x5982;&#x679C;&#x4E3A;names4&#x96C6;&#x5408;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x503C;&#x5982;&#x4E0B;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD9;&#x79CD;&#x64CD;&#x4F5C;&#x662F;&#x9519;&#x8BEF;&#xFF0C;list&#x4E0D;&#x53EF;&#x53D8;</span></span>
+   <span class="hljs-comment"><span class="markdown">///&#x62A5;&#x9519;&#xFF1A;Cannot add to </span>an<span class="markdown"> unmodifiable list</span></span>
+   names4.add(<span class="hljs-number">4</span>);
+ }
+</code></pre>
+<ul>
+<li>&#x5E38;&#x7528;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;</li>
+</ul>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;package:myfirstflutter/test/user.dart&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-keyword">var</span> names1 = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+   <span class="hljs-built_in">print</span>(names1.length); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;0;</span>
+
+   <span class="hljs-comment">//&#x6392;&#x5E8F;</span>
+   <span class="hljs-built_in">List</span>&lt;User myList = [User(<span class="hljs-string">&apos;&#x9EC4;&#x836F;&#x5E08;&apos;</span>, <span class="hljs-number">23</span>), User(<span class="hljs-string">&apos;&#x6B27;&#x9633;&#x950B;&apos;</span>, <span class="hljs-number">61</span>), User(<span class="hljs-string">&apos;&#x6768;&#x8FC7;&apos;</span>, <span class="hljs-number">48</span>)];
+   myList.sort((a, b) = (b.age).compareTo(a.age));
+
+   <span class="hljs-comment">//&#x96C6;&#x5408;&#x5FAA;&#x73AF;</span>
+   myList.forEach((v) {
+     <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;<span class="hljs-subst">${v.name}</span><span class="hljs-subst">${v.age}</span>&apos;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;&#x6B27;&#x9633;&#x950B;61&#xFF0C;&#x6768;&#x8FC7;48&#xFF0C;&#x9EC4;&#x836F;&#x5E08;23</span>
+   });
+
+   <span class="hljs-comment">//&#x67E5;&#x627E;&#x7B26;&#x5408;&#x6761;&#x4EF6;</span>
+   <span class="hljs-keyword">var</span> result = myList.where((v) = v.age == <span class="hljs-number">23</span>);
+   result.forEach((v){
+     <span class="hljs-comment">//isEmpty&#x5C5E;&#x6027;&#xFF0C;&#x8FD4;&#x56DE;&#x5217;&#x8868;&#x662F;&#x5426;&#x4E3A;&#x7A7A;</span>
+     <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;<span class="hljs-subst">${v.name}</span><span class="hljs-subst">${v.age}</span>&apos;</span>);
+   });
+   <span class="hljs-comment">//isEmpty&#x5C5E;&#x6027;&#xFF0C;&#x8FD4;&#x56DE;&#x5217;&#x8868;&#x662F;&#x5426;&#x4E3A;&#x7A7A;</span>
+   <span class="hljs-built_in">print</span>(myList.isEmpty);
+
+   <span class="hljs-comment">//isNotEmpty&#x5C5E;&#x6027;&#xFF0C;&#x8FD4;&#x56DE;&#x5217;&#x8868;&#x662F;&#x5426;&#x6709;&#x5143;&#x7D20;</span>
+   <span class="hljs-built_in">print</span>(myList.isNotEmpty);
+
+   <span class="hljs-comment">//&#x83B7;&#x53D6;List&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;</span>
+   <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#x83B7;&#x53D6;List&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;<span class="hljs-subst">${names1.first}</span>&quot;</span>);
+ }
+</code></pre>
+<ul>
+<li>&#x6DFB;&#x52A0;&#x6570;&#x636E;</li>
+</ul>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-keyword">var</span> names1 = [<span class="hljs-string">&apos;&#x6768;&#x8FC7;&apos;</span>, <span class="hljs-string">&apos;&#x5C0F;&#x9F99;&#x5973;&apos;</span>, <span class="hljs-string">&apos;&#x9EC4;&#x84C9;&apos;</span>];
+   <span class="hljs-comment">//&#x6DFB;&#x52A0;&#x6570;&#x636E;</span>
+   names1.add(<span class="hljs-string">&apos;&#x4E18;&#x5904;&#x673A;&apos;</span>);
+   <span class="hljs-built_in">print</span>(names1.length); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;4;</span>
+
+   <span class="hljs-keyword">var</span> names2 = <span class="hljs-built_in">List</span>(<span class="hljs-number">2</span>);
+
+   <span class="hljs-comment"><span class="markdown">///&#x5F53;&#x6267;&#x884C;add &#x65F6;&#x5019;&#x4F1A;&#x62A5;&#x9519;&#xFF1A;Cannot add to </span>a<span class="markdown"> fixed-length list</span></span>
+   <span class="hljs-comment"><span class="markdown">///&#xFF08;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x7684;list&#x662F;&#x4E0D;&#x80FD;&#x901A;&#x8FC7;add&#x6DFB;&#x52A0;&#x6570;&#x636E;&#xFF09;</span></span>
+   <span class="hljs-comment"><span class="markdown">///names2.add(1);</span></span>
+
+   <span class="hljs-comment">//&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x7684;list&#x4F7F;&#x7528;&#x4E00;&#x4E0B;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x6570;&#x636E;</span>
+   names2[<span class="hljs-number">0</span>] = <span class="hljs-string">&apos;&#x9EC4;&#x836F;&#x5E08;&apos;</span>;
+   names2[<span class="hljs-number">1</span>] = <span class="hljs-string">&apos;&#x6B27;&#x9633;&#x950B;&apos;</span>;
+   names2.forEach((v) {
+     <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;$v&apos;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;&#x9EC4;&#x836F;&#x5E08; &#x6B27;&#x9633;&#x950B;</span>
+   });
+
+   <span class="hljs-keyword">var</span> names3 = [<span class="hljs-string">&apos;&#x6768;&#x8FC7;&apos;</span>, <span class="hljs-string">&apos;&#x5C0F;&#x9F99;&#x5973;&apos;</span>, <span class="hljs-string">&apos;&#x9EC4;&#x84C9;&apos;</span>];
+   <span class="hljs-keyword">var</span> names4 = [<span class="hljs-string">&apos;1&apos;</span>, <span class="hljs-string">&apos;2&apos;</span>, <span class="hljs-string">&apos;3&apos;</span>];
+   <span class="hljs-comment">//&#x6DFB;&#x52A0;&#x5168;&#x90E8;&#x5143;&#x7D20;</span>
+   names3.addAll(names4);
+   names3.forEach((v) {
+     <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;$v&apos;</span>); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;&#x6768;&#x8FC7; &#x5C0F;&#x9F99;&#x5973; &#x9EC4;&#x84C9; 1 2 3</span>
+   });
+ }
+</code></pre>
+<ul>
+<li>&#x5220;&#x9664;&#x6570;&#x636E;</li>
+</ul>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-keyword">var</span> names1 = [<span class="hljs-string">&apos;&#x6768;&#x8FC7;&apos;</span>, <span class="hljs-string">&apos;&#x5C0F;&#x9F99;&#x5973;&apos;</span>, <span class="hljs-string">&apos;&#x9EC4;&#x84C9;&apos;</span>, <span class="hljs-string">&apos;&#x4E18;&#x5904;&#x673A;&apos;</span>, <span class="hljs-string">&apos;&#x9EC4;&#x836F;&#x5E08;&apos;</span>];
+   <span class="hljs-comment">//&#x5220;&#x9664;&#x6307;&#x5B9A;&#x5143;&#x7D20;</span>
+   names1.remove(<span class="hljs-string">&apos;&#x6768;&#x8FC7;&apos;</span>);
+   <span class="hljs-built_in">print</span>(names1); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;&#x5C0F;&#x9F99;&#x5973; &#x9EC4;&#x84C9; &#x4E18;&#x5904;&#x673A; &#x9EC4;&#x836F;&#x5E08;</span>
+
+   <span class="hljs-comment">//&#x5220;&#x9664;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;</span>
+   names1.removeLast();
+   <span class="hljs-built_in">print</span>(names1); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;&#x5C0F;&#x9F99;&#x5973; &#x9EC4;&#x84C9; &#x4E18;&#x5904;&#x673A;</span>
+
+   <span class="hljs-comment">//&#x5220;&#x9664;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x5143;&#x7D20;</span>
+   names1.removeAt(names1.length - <span class="hljs-number">1</span>);
+   <span class="hljs-built_in">print</span>(names1); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;&#x5C0F;&#x9F99;&#x5973; &#x9EC4;&#x84C9;</span>
+
+   <span class="hljs-comment">//&#x5220;&#x9664;&#x6307;&#x5B9A;&#x4F4D;&#x533A;&#x57DF;&#x5143;&#x7D20;</span>
+   names1.removeRange(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>);
+   <span class="hljs-built_in">print</span>(names1); <span class="hljs-comment">//&#x8F93;&#x51FA; &#x9EC4;&#x84C9;</span>
+
+   <span class="hljs-comment">//&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x662F;&#x5C06;&#x5217;&#x8868;List&#x4E2D;&#x7684;toString&#x53EA;&#x6709;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#x7B49;&#x4E8E;3&#x7684;&#x5143;&#x7D20;&#x5168;&#x90E8;&#x5220;&#x9664;</span>
+   names1.removeWhere((item) =item.toString().length==<span class="hljs-number">3</span>);
+   <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;&#x5220;&#x9664;&#x5217;&#x8868;&#x4E2D;toString&#x540E;&#x957F;&#x5EA6;&#x4E3A;3&#x7684;&#x5143;&#x7D20;&#xFF1A;==$names1&apos;</span>);
+ }
+</code></pre>
+<p> &#x4EE5;&#x4E0A;&#x8FD8;&#x5C11;&#x201C;&#x6539;&#x201D;&#x548C;&#x201C;&#x67E5;&#x201D; &#x5176;&#x5B9E;&#x8FD9;&#x4E9B;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4EE3;&#x7801;&#x4E2D;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x4E86;&#x4E00;&#x4E9B;&#xFF0C;&#x8FD9;&#x91CC;&#x7559;&#x4E2A;&#x5927;&#x5BB6;&#x4E00;&#x4E2A;&#x7EC3;&#x4E60;&#x9898;&#xFF1A;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x628A;&#x201C;&#x6539;&#x201D;&#x548C;&#x201C;&#x67E5;&#x201D;&#x81EA;&#x5DF1;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;</p>
+<h3 id="5&#x3001;map&#xFF08;&#x96C6;&#x5408;&#xFF09;">5&#x3001;Map&#xFF08;&#x96C6;&#x5408;&#xFF09;</h3>
+<p> Map&#x548C;lList&#x4E00;&#x6837;&#x57FA;&#x672C;&#x4E0A;&#x53EA;&#x8981;&#x5B66;&#x4E60;&#x5F00;&#x53D1;&#x8BED;&#x8A00;map&#x4E5F;&#x662F;&#x5FC5;&#x4E0D;&#x53EF;&#x5C11;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;Map&#x662F;&#x952E;&#x503C;&#x5BF9;&#x76F8;&#x5173;&#x7684;&#x5BF9;&#x8C61;&#x3002; &#x952E;&#x548C;&#x503C;&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x6BCF;&#x4E2A;&#x952E;&#x53EA;&#x51FA;&#x73B0;&#x4E00;&#x6B21;&#xFF0C; &#x800C;&#x4E00;&#x4E2A;&#x503C;&#x5219;&#x53EF;&#x4EE5;&#x51FA;&#x73B0;&#x591A;&#x6B21;&#x3002;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-comment">//&#x76F4;&#x63A5;&#x58F0;&#x660E;&#xFF0C;&#x7528;{}&#x8868;&#x793A;&#x3002;&#x91CC;&#x9762;&#x5199;key&#x548C;value &#x6BCF;&#x7EC4;&#x952E;&#x503C;&#x5BF9;&#x4E2D;&#x95F4;&#x7528;&#x9017;&#x53F7;&#x9694;&#x5F00;</span>
+   <span class="hljs-keyword">var</span> names = {<span class="hljs-string">&apos;name1&apos;</span>: <span class="hljs-string">&apos;&#x9EC4;&#x836F;&#x5E08;&apos;</span>, <span class="hljs-string">&apos;name2&apos;</span>: <span class="hljs-string">&apos;&#x6768;&#x8FC7;&apos;</span>, <span class="hljs-string">&apos;name3&apos;</span>: <span class="hljs-string">&apos;&#x8001;&#x987D;&#x7AE5;&apos;</span>};
+   <span class="hljs-built_in">print</span>(names); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;{name1:&#x9EC4;&#x836F;&#x5E08;&#xFF0C;name2: &#x6768;&#x8FC7;, name3:&#x8001;&#x987D;&#x7AE5;}</span>
+
+   <span class="hljs-keyword">var</span> names1 = <span class="hljs-built_in">Map</span>();
+   names1[<span class="hljs-string">&apos;name1&apos;</span>] = <span class="hljs-string">&apos;&#x9EC4;&#x84C9;&apos;</span>;
+   names1[<span class="hljs-string">&apos;name2&apos;</span>] = <span class="hljs-string">&apos;&#x9EC4;&#x836F;&#x5E08;&apos;</span>;
+   names1[<span class="hljs-string">&apos;name3&apos;</span>] = <span class="hljs-string">&apos;&#x90ED;&#x9756;&apos;</span>;
+   <span class="hljs-built_in">print</span>(names1); <span class="hljs-comment">//{&apos;name1&apos;: &apos;&#x9EC4;&#x84C9;&apos;, &apos;name2&apos;: &apos;&#x9EC4;&#x836F;&#x5E08;&apos;, &apos;name3&apos;: &apos;&#x90ED;&#x9756;&apos;};</span>
+
+   <span class="hljs-comment">//&#x9650;&#x5B9A;Map &#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;</span>
+   <span class="hljs-keyword">var</span> names2 = &lt;<span class="hljs-built_in">String</span>, <span class="hljs-built_in">String</span>{<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;&#x9EC4;&#x836F;&#x5E08;&apos;</span>};
+   <span class="hljs-built_in">print</span>(names2); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;{&apos;name&apos;:&apos;&#x9EC4;&#x836F;&#x5E08;&apos;}</span>
+
+   <span class="hljs-comment">//&#x4E0E;list List&#x7C7B;&#x4F3C;&#xFF0C;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7F16;&#x8BD1;&#x65F6;&#x5E38;&#x91CF;&#x7684;Map&#x9700;&#x8981;&#x5728;Map&#x7684;&#x5B57;&#x9762;&#x91CF;&#x524D;&#x52A0;&#x4E0A;const &#x5173;&#x952E;&#x5B57;</span>
+   <span class="hljs-keyword">var</span> names3 = <span class="hljs-keyword">const</span> {<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;&#x9EC4;&#x836F;&#x5E08;&apos;</span>, <span class="hljs-string">&apos;age&apos;</span>: <span class="hljs-number">60</span>};
+   <span class="hljs-built_in">print</span>(names3); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;{&apos;name&apos;:&apos;&#x9EC4;&#x836F;&#x5E08;&apos;,&apos;age&apos; : 60}</span>
+
+   <span class="hljs-comment">//&#x5FAA;&#x73AF;</span>
+   names1.forEach((k, v) {
+     <span class="hljs-built_in">print</span>(v); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;&#x9EC4;&#x84C9;&#xFF0C;&#x9EC4;&#x836F;&#x5E08;&#x3002;&#x90ED;&#x9756;</span>
+   });
+
+   <span class="hljs-comment">//&#x67E5;&#x8BE2;&#x5220;&#x9664;</span>
+   <span class="hljs-keyword">var</span> names4 = {<span class="hljs-string">&apos;name1&apos;</span>: <span class="hljs-string">&apos;&#x9EC4;&#x836F;&#x5E08;&apos;</span>, <span class="hljs-string">&apos;name2&apos;</span>: <span class="hljs-string">&apos;&#x6768;&#x8FC7;&apos;</span>, <span class="hljs-string">&apos;name3&apos;</span>: <span class="hljs-string">&apos;&#x8001;&#x987D;&#x7AE5;&apos;</span>};
+   names4.removeWhere((k, v) = k == <span class="hljs-string">&apos;name1&apos;</span>);
+
+   names4.forEach((k, v) {
+     <span class="hljs-built_in">print</span>(v); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;&#x6768;&#x8FC7;&#xFF0C;&#x8001;&#x987D;&#x7AE5;</span>
+   });
+
+   <span class="hljs-comment">//&#x6839;&#x636E;&#x6307;&#x5B9A;key &#x8FDB;&#x884C;&#x5220;&#x9664;</span>
+   names4.remove(<span class="hljs-string">&apos;name1&apos;</span>);
+   <span class="hljs-comment">//&#x627E;&#x627E;&#x662F;&#x5426;&#x5305;&#x542B;&#x6307;&#x5B9A;key</span>
+   names4.containsKey(<span class="hljs-string">&apos;name2&apos;</span>);
+
+   <span class="hljs-comment">//&#x627E;&#x627E;&#x662F;&#x5426;&#x5305;&#x542B;&#x6307;&#x5B9A;value</span>
+   names4.containsValue(<span class="hljs-string">&apos;&#x8001;&#x987D;&#x7AE5;&apos;</span>);
+
+   <span class="hljs-comment">//&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;Map&#x5BF9;&#x8C61;</span>
+   names4.addAll({<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;&#x4E18;&#x5904;&#x673A;&apos;</span>});
+ }
+</code></pre>
+<p> Map&#x548C;List&#x4E00;&#x6837;&#xFF0C;&#x540C;&#x6837;&#x6709;&#x589E;&#x5220;&#x6539;&#x67E5;&#x529F;&#x80FD;</p>
+<h3 id="&#x4E03;&#x3001;&#x5206;&#x652F;&#x4E0E;&#x5FAA;&#x73AF;&#xFF1A;">&#x4E03;&#x3001;&#x5206;&#x652F;&#x4E0E;&#x5FAA;&#x73AF;&#xFF1A;</h3>
+<p> &#x5206;&#x652F; Dart&#x5206;&#x652F;&#x76EE;&#x524D;&#x6709;if-else &#x548C;switch&#x4E24;&#x79CD;</p>
+<ul>
+<li>if&#x6761;&#x4EF6;&#x5206;&#x652F;&#xFF1A;</li>
+</ul>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-keyword">var</span> age = <span class="hljs-number">18</span>;
+   <span class="hljs-keyword">if</span> (age &lt; <span class="hljs-number">0</span>) {
+     <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;age &lt; 0&apos;</span>);
+   } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (age == <span class="hljs-number">0</span>) {
+     <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;age = 0&apos;</span>);
+   } <span class="hljs-keyword">else</span> {
+     <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;age  0&apos;</span>);
+   }
+ }
+</code></pre>
+<ul>
+<li>switch&#x6761;&#x4EF6;&#x5206;&#x652F;:</li>
+</ul>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-comment">// &#x5728;switch&#x7684;case&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6574;&#x6570;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x548C;&#x7F16;&#x8BD1;&#x65F6;&#x5E38;&#x91CF;</span>
+   <span class="hljs-built_in">String</span> name = <span class="hljs-string">&apos;&#x9EC4;&#x836F;&#x5E08;&apos;</span>;
+   <span class="hljs-keyword">switch</span> (name) {
+     <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;&#x90ED;&#x9756;&apos;</span>:
+       <span class="hljs-keyword">break</span>;
+     <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;&#x8001;&#x987D;&#x7AE5;&apos;</span>:
+       <span class="hljs-keyword">break</span>;
+     <span class="hljs-keyword">default</span>:
+       <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Default&apos;</span>);
+   }
+ }
+</code></pre>
+<p> Dart&#x4E2D;&#x5FAA;&#x73AF;&#x652F;&#x6301; for&#x3001;while &#x4EE5;&#x53CA; do-while &#x4E09;&#x79CD;&#x3002;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-comment">// for&#x5FAA;&#x73AF;</span>
+   <span class="hljs-keyword">for</span> (<span class="hljs-built_in">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">9</span>; i++) {
+     <span class="hljs-built_in">print</span>(i);
+   }
+
+   <span class="hljs-comment">// while&#x5FAA;&#x73AF;</span>
+   <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+     <span class="hljs-comment">//do something</span>
+   }
+
+   <span class="hljs-comment">//do-while&#x5FAA;&#x73AF;</span>
+   <span class="hljs-keyword">do</span> {
+     <span class="hljs-comment">//do something</span>
+   } <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>);
+ }
+</code></pre>
+<p> &#x4F46;&#x662F;&#x5728;Dart &#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x7279;&#x6709;&#x7684;&#x7CFB;&#x7EDF;&#x5FAA;&#x73AF;&#x51FD;&#x6570;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-keyword">var</span> names = [<span class="hljs-string">&quot;&#x5F20;&#x65E0;&#x5FCC;&quot;</span>, <span class="hljs-string">&quot;&#x5C0F;&#x9F99;&#x5973;&quot;</span>, <span class="hljs-string">&quot;&#x8D75;&#x654F;&quot;</span>];
+   <span class="hljs-comment">// for...in...&#x5FAA;&#x73AF;&#xFF0C;&#x662F;&#x589E;&#x5F3A;for</span>
+   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> it <span class="hljs-keyword">in</span> names) {
+     <span class="hljs-built_in">print</span>(it); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;&quot;&#x5F20;&#x65E0;&#x5FCC;&quot;,&quot;&#x5C0F;&#x9F99;&#x5973;&quot;,&quot;&#x8D75;&#x654F;&quot;</span>
+   }
+
+   <span class="hljs-comment">//forEach&#x5FAA;&#x73AF;&#x3002;&#x5176;&#x53C2;&#x6570;&#x4E3A;&#x4E00;&#x4E2A;Function&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x91CC;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x533F;&#x540D;&#x51FD;&#x6570;</span>
+   names.forEach((v) {
+     <span class="hljs-built_in">print</span>(v); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;&quot;&#x5F20;&#x65E0;&#x5FCC;&quot;,&quot;&#x5C0F;&#x9F99;&#x5973;&quot;,&quot;&#x8D75;&#x654F;&quot;</span>
+   });
+
+   names.forEach((v) = <span class="hljs-built_in">print</span>(v)); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;&quot;&#x5F20;&#x65E0;&#x5FCC;&quot;,&quot;&#x5C0F;&#x9F99;&#x5973;&quot;,&quot;&#x8D75;&#x654F;&quot;</span>
+ }
+</code></pre>
+<p> &#x6211;&#x4EEC;&#x5728;&#x6765;&#x770B;&#x4E00;&#x4E0B;&#x5728;Dart&#x4E2D;&#x600E;&#x4E48;&#x53BB;&#x5BF9;&#x4E00;&#x7EC4;Map&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5FAA;&#x73AF;</p>
+<pre class="language-"><code class="lang-dart"> <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;dart:core&apos;</span>;
+
+ <span class="hljs-keyword">void</span> main() {
+   <span class="hljs-keyword">var</span> myMap = {<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;&#x9EC4;&#x836F;&#x5E08;&apos;</span>, <span class="hljs-string">&apos;age&apos;</span>: <span class="hljs-string">&apos;50&apos;</span>, <span class="hljs-string">&apos;skills&apos;</span>: <span class="hljs-string">&apos;&#x5F39;&#x6307;&#x795E;&#x901A;&apos;</span>};
+   <span class="hljs-comment">//forEach&#x904D;&#x5386;Map</span>
+   myMap.forEach(
+       (k, v) = <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;$k : $v&quot;</span>)); <span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;name : &#x9EC4;&#x836F;&#x5E08;   age : 50   skills : &#x5F39;&#x6307;&#x795E;&#x901A;</span>
+
+   <span class="hljs-comment">//&#x6839;&#x636E;&#x952E;&#x83B7;&#x53D6;&#x503C;&#x6765;&#x904D;&#x5386;&#x3002;&#x901A;&#x8FC7;keys&#x8FD4;&#x56DE;Map&#x4E2D;&#x6240;&#x6709;&#x952E;&#x7684;&#x96C6;&#x5408;</span>
+   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> k <span class="hljs-keyword">in</span> myMap.keys) {
+     <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;$k : <span class="hljs-subst">${myMap[k]}</span>&quot;</span>);<span class="hljs-comment">//&#x8F93;&#x51FA;&#xFF1A;name : &#x9EC4;&#x836F;&#x5E08;   age : 50   skills : &#x5F39;&#x6307;&#x795E;&#x901A;</span>
+   }
+ }
+</code></pre>
+<h3 id="&#x603B;&#x7ED3;&#xFF1A;">&#x603B;&#x7ED3;&#xFF1A;</h3>
+<p> &#x770B;&#x662F;&#x4E0D;&#x662F;&#x8D85;&#x7EA7;&#x597D;&#x4E0A;&#x624B;&#xFF0C;&#x597D;&#x64CD;&#x4F5C;~&#x5176;&#x5B9E;Dart&#x7684;&#x6574;&#x4E2A;&#x5B66;&#x4E60;&#x8D77;&#x6765;&#x8FD8;&#x662F;&#x86EE;&#x7B80;&#x5355;&#x7684;&#xFF0C;&#x5BF9;&#x4E8E;&#x6709;&#x57FA;&#x7840;&#x7684;&#x8001;&#x53F8;&#x673A;&#x66F4;&#x7B80;&#x5355;&#x4E00;&#x4E9B;&#x3002;&#x5206;&#x5206;&#x949F;&#x6572;&#x8D77;&#x6765;~</p>
+<p> &#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x5C31;&#x7B80;&#x5355;&#x7684;&#x4ECB;&#x7ECD;&#x5230;&#x8FD9;&#x91CC;&#x5982;&#x4F55;&#x77ED;&#x65F6;&#x95F4;&#x5FEB;&#x901F;&#x5165;&#x95E8;Dart&#xFF0C;&#x907F;&#x514D;&#x5165;&#x5751;&#x3002;&#x7531;&#x4E8E;&#x662F;&#x60F3;&#x8BA9;&#x5927;&#x5BB6;&#x5FEB;&#x901F;&#x5165;&#x95E8;Flutter&#xFF0C;&#x6240;&#x4EE5;&#x9488;&#x5BF9;&#x4E0A;&#x9762;&#x7684;&#x8FD9;&#x4E9B;&#x7AE0;&#x8282;&#x6211;&#x4EEC;&#x8BB2;&#x89E3;&#x7684;&#x53EA;&#x662F;&#x4E00;&#x4E9B;&#x5728;&#x5F00;&#x53D1;Flutter &#x8FC7;&#x7A0B;&#x4E2D;&#x5E38;&#x7528;&#x7684;&#x4E00;&#x4E9B;&#x65B9;&#x6CD5;&#x548C;&#x51FD;&#x6570;&#x3002;&#x5982;&#x679C;&#x8981;&#x60F3;&#x5BF9;Dart&#x6709;&#x66F4;&#x6DF1;&#x7684;&#x4E86;&#x89E3;&#x548C;&#x5B66;&#x4E60;&#xFF0C;&#x540E;&#x671F;&#x53EF;&#x4EE5;&#x5173;&#x6CE8;&#x6211;&#x54E6;&#xFF0C;&#x5982;&#x6709;&#x95EE;&#x9898;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x4E0B;&#x65B9;&#x7559;&#x8A00;&#x3002;</p>
+<p> &#x611F;&#x89C9;&#x4E0D;&#x9519;&#x53EF;&#x4EE5;&#x70B9;&#x8D5E;&#x52A0;&#x5173;&#x6CE8;&#xFF0C;&#x6211;&#x4F1A;&#x6301;&#x7EED;&#x8F93;&#x51FA;&#x4F18;&#x8D28;&#x7684;&#x6587;&#x7AE0;&#x3002;</p>
+ 
+          </section>
+          
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+ 
+        </div>
+      </div>
+      
+    </div>
+
+      
+    <a
+      href="Dart_logic.html"
+      class="navigation navigation-next navigation-unique"
+      aria-label="Next page: Dart 逻辑运算符"
+    >
+      <i class="fa fa-angle-right"></i>
+    </a>
+      
+  </div>
+  <script>
+    function showModal() {
+      document.getElementsByClassName("mask")[0].style.display = "block";
+      document.getElementsByClassName("donate-modal")[0].style.display =
+        "block";
+    }
+    // 切换赞赏码
+    function showDonateImg(num) {
+      let alipay = "";
+      let wxpay = ""
+      if(num){
+        wxpay = "hidden"
+      }else{
+        alipay = "hidden"
+      }
+      document.getElementById("wxpay-code").hidden = wxpay;
+      document.getElementById("alipay-code").hidden = alipay;
+      document.getElementsByName("pay-way")[num].checked = "checked";
+    }
+
+    // 关闭赞赏框
+    function closeDonateModal() {
+      document.getElementsByClassName("mask")[0].style.display = "none";
+      document.getElementsByClassName("donate-modal")[0].style.display = "none";
+    }
+
+    var gitbook = gitbook || [];
+    gitbook.push(function () {
+      gitbook.page.hasChanged({"page":{"title":"快速入门Dart基础","level":"4.1.1","depth":2,"next":{"title":"Dart 逻辑运算符","level":"4.1.2","depth":2,"path":"blog/Dart/Dart_logic.md","ref":"blog/Dart/Dart_logic.md","articles":[]},"previous":{"title":"标准库","level":"4.1","depth":1,"url":"https://studygolang.com/pkgdoc","ref":"https://studygolang.com/pkgdoc","articles":[{"title":"快速入门Dart基础","level":"4.1.1","depth":2,"path":"blog/Dart/40m_Learn_dart.md","ref":"blog/Dart/40m_Learn_dart.md","articles":[]},{"title":"Dart 逻辑运算符","level":"4.1.2","depth":2,"path":"blog/Dart/Dart_logic.md","ref":"blog/Dart/Dart_logic.md","articles":[]},{"title":"Dart 按位运算符","level":"4.1.3","depth":2,"path":"blog/Dart/dart_bit_compute.md","ref":"blog/Dart/dart_bit_compute.md","articles":[]},{"title":"Dart 关系运算符","level":"4.1.4","depth":2,"path":"blog/Dart/Dart_relation_compute.md","ref":"blog/Dart/Dart_relation_compute.md","articles":[]},{"title":"Dart 常量","level":"4.1.5","depth":2,"path":"blog/Dart/dart_final_const.md","ref":"blog/Dart/dart_final_const.md","articles":[]},{"title":"Dart 注释","level":"4.1.6","depth":2,"path":"blog/Dart/dart_explain.md","ref":"blog/Dart/dart_explain.md","articles":[]},{"title":"Dart 数据类型","level":"4.1.7","depth":2,"path":"blog/Dart/dart_type.md","ref":"blog/Dart/dart_type.md","articles":[]},{"title":"Dart 算术运算符","level":"4.1.8","depth":2,"path":"blog/Dart/dart_math_compute.md","ref":"blog/Dart/dart_math_compute.md","articles":[]},{"title":"Dart 控制流语句","level":"4.1.9","depth":2,"path":"blog/Dart/control_struct.md","ref":"blog/Dart/control_struct.md","articles":[]},{"title":"Dart 赋值运算符","level":"4.1.10","depth":2,"path":"blog/Dart/dart_give_value.md","ref":"blog/Dart/dart_give_value.md","articles":[]},{"title":"Dart 关键字","level":"4.1.11","depth":2,"path":"blog/Dart/dart_key_words.md","ref":"blog/Dart/dart_key_words.md","articles":[]},{"title":"Dart 移位运算符","level":"4.1.12","depth":2,"path":"blog/Dart/dart_bit_move.md","ref":"blog/Dart/dart_bit_move.md","articles":[]},{"title":"Dart 三元运算符","level":"4.1.13","depth":2,"path":"blog/Dart/dart_three_var_compute.md","ref":"blog/Dart/dart_three_var_compute.md","articles":[]},{"title":"Dart 变量","level":"4.1.14","depth":2,"path":"blog/Dart/dart_var.md","ref":"blog/Dart/dart_var.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["highlight","-lunr","sharing","-livereload","chapter-fold","sitemap","theme-lou","back-to-top-button","code","prism","search-pro","-search"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"typescript"}},"search-pro":{},"code":{"copyButtons":true},"theme-lou":{"hide-elements":[".summary .gitbook-link"],"color":"#5F9EA0","book-anchor-title":"本章目录标题","forbidCopy":false,"logo":"static/zhuque.jpg","book-summary-title":"导航","search-placeholder":"全局搜索","imgStyle":{"isCenter":true,"isBox":false,"otherStyle":"max-width: 80%;"},"favicon":"static/zhuque.jpg"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://chenxiwong.github.io/gitbook"},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","keywords":"学习,笔记,编程,代码,博客,文章,github","author":"ChenxiWong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeColor":"#3884ff","themeLou":{"nav":[{"target":"_blank","url":"https://www.baidu.com","name":"百度"}]}},"title":"个人笔记","introduction":{"path":"README.md","title":"导航首页"},"gitbook":"*","description":"文档"},"file":{"path":"blog/Dart/40m_Learn_dart.md","mtime":"2024-03-30T06:47:56.682Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-30T06:48:32.599Z"},"basePath":"../..","book":{"language":""}});
+    });
+  </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-lou/jweixin-1.6.0.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-lou/lou.js"></script>
+        
+    
+
+    </body>
+</html>
+

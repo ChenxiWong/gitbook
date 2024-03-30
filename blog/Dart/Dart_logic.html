@@ -1,0 +1,1345 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Dart 逻辑运算符 · 个人笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="ChenxiWong">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-lou/lou.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="dart_bit_compute.html" />
+    
+    
+    <link rel="prev" href="40m_Learn_dart.html" />
+    
+
+    </head>
+    <body>
+         
+
+<div class="book">
+  <div class="header-inner">
+    <!-- LOGO -->
+    <div class="logo"></div>
+    <span class="title"></span>
+
+    <!-- Search -->
+    
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+    <!-- Nav -->
+    <ul class="header-nav">
+      <li>
+        <a href="https://www.baidu.com" target="_blank">百度</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="book-summary">
+    <div class="book-summary-title">文档目录</div>
+     
+    <nav role="navigation">
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">简介</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">python笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <a target="_blank" href="https://docs.python.org/zh-cn/3/">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../python/ubuntu_clang_python.html">
+            
+                <a href="../python/ubuntu_clang_python.html">
+            
+                    
+                    ubuntu环境下C语言拓展cpython
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../python/tkinter_gui_demo.html">
+            
+                <a href="../python/tkinter_gui_demo.html">
+            
+                    
+                    tkinter开发界面客户端工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../python/标准库之itertools.html">
+            
+                <a href="../python/标准库之itertools.html">
+            
+                    
+                    标准库之itertools
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <a target="_blank" href="https://wangchenxi.top">
+            
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../python/gunicornServerHook.html">
+            
+                <a href="../python/gunicornServerHook.html">
+            
+                    
+                    gunicorn server hook 说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../python/pythonLinuxIpcMessageQueue.html">
+            
+                <a href="../python/pythonLinuxIpcMessageQueue.html">
+            
+                    
+                    python Linux ipc通信之消息队列实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../python/pythonGeventDemo.html">
+            
+                <a href="../python/pythonGeventDemo.html">
+            
+                    
+                    python gevent 使用实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../python/python_sysv-ipc_Demo.html">
+            
+                <a href="../python/python_sysv-ipc_Demo.html">
+            
+                    
+                    sysv-ipc 进程间通信的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../python/flask_test_moc.html">
+            
+                <a href="../python/flask_test_moc.html">
+            
+                    
+                    flask实现一个moc服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../python/python_py_spy.html">
+            
+                <a href="../python/python_py_spy.html">
+            
+                    
+                    python性能分析之py-spy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../python/一个ip地址合并的样例.html">
+            
+                <a href="../python/一个ip地址合并的样例.html">
+            
+                    
+                    ip地址合并的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../python/pb生成pyi文件.html">
+            
+                <a href="../python/pb生成pyi文件.html">
+            
+                    
+                    protocolbuffer源码pyi生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="../scipy/pandas500demo.html">
+            
+                <a href="../scipy/pandas500demo.html">
+            
+                    
+                    scipy数据分析demo源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">golang笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <a target="_blank" href="https://studygolang.com/pkgdoc">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../golang/golang_env_build.html">
+            
+                <a href="../golang/golang_env_build.html">
+            
+                    
+                    golang安装及一些常识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../golang/离线环境搭建GOPROXY.html">
+            
+                <a href="../golang/离线环境搭建GOPROXY.html">
+            
+                    
+                    离线环境搭建GOPROXY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../golang/fmt_placeholder.html">
+            
+                <a href="../golang/fmt_placeholder.html">
+            
+                    
+                    golangfmt占位符号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../golang/golang100mistakes.html">
+            
+                <a href="../golang/golang100mistakes.html">
+            
+                    
+                    100-go-mistakes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <a target="_blank" href="https://wangchenxi.top">
+            
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../golang/zap_userdefine.html">
+            
+                <a href="../golang/zap_userdefine.html">
+            
+                    
+                    golang自定义日志样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Dart笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="https://studygolang.com/pkgdoc">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="40m_Learn_dart.html">
+            
+                <a href="40m_Learn_dart.html">
+            
+                    
+                    快速入门Dart基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.1.2" data-path="Dart_logic.html">
+            
+                <a href="Dart_logic.html">
+            
+                    
+                    Dart 逻辑运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="dart_bit_compute.html">
+            
+                <a href="dart_bit_compute.html">
+            
+                    
+                    Dart 按位运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="Dart_relation_compute.html">
+            
+                <a href="Dart_relation_compute.html">
+            
+                    
+                    Dart 关系运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="dart_final_const.html">
+            
+                <a href="dart_final_const.html">
+            
+                    
+                    Dart 常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="dart_explain.html">
+            
+                <a href="dart_explain.html">
+            
+                    
+                    Dart 注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="dart_type.html">
+            
+                <a href="dart_type.html">
+            
+                    
+                    Dart 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="dart_math_compute.html">
+            
+                <a href="dart_math_compute.html">
+            
+                    
+                    Dart 算术运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="control_struct.html">
+            
+                <a href="control_struct.html">
+            
+                    
+                    Dart 控制流语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="dart_give_value.html">
+            
+                <a href="dart_give_value.html">
+            
+                    
+                    Dart 赋值运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.11" data-path="dart_key_words.html">
+            
+                <a href="dart_key_words.html">
+            
+                    
+                    Dart 关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.12" data-path="dart_bit_move.html">
+            
+                <a href="dart_bit_move.html">
+            
+                    
+                    Dart 移位运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.13" data-path="dart_three_var_compute.html">
+            
+                <a href="dart_three_var_compute.html">
+            
+                    
+                    Dart 三元运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.14" data-path="dart_var.html">
+            
+                <a href="dart_var.html">
+            
+                    
+                    Dart 变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">效率工具</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <a target="_blank" href="https://docs.python.org/zh-cn/3/">
+            
+                    
+                    ubuntu环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../ubuntu/Flameshot.html">
+            
+                <a href="../ubuntu/Flameshot.html">
+            
+                    
+                    截图之Flameshot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../prometheus/grafana_prometheus_metrics.html">
+            
+                <a href="../prometheus/grafana_prometheus_metrics.html">
+            
+                    
+                    监控之prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../other/virtualbox_androidx86.html">
+            
+                <a href="../other/virtualbox_androidx86.html">
+            
+                    
+                    virtualbox安装androidx86
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <a target="_blank" href="https://docs.python.org/zh-cn/3/">
+            
+                    
+                    常用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../other/githubPages.html">
+            
+                <a href="../other/githubPages.html">
+            
+                    
+                    github Page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../other/plantUML.html">
+            
+                <a href="../other/plantUML.html">
+            
+                    
+                    plantUML工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../other/code2flow.html">
+            
+                <a href="../other/code2flow.html">
+            
+                    
+                    code2flowe工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.4" data-path="../other/scrcpy.html">
+            
+                <a href="../other/scrcpy.html">
+            
+                    
+                    scrcpy工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.5" data-path="../other/key_action.html">
+            
+                <a href="../other/key_action.html">
+            
+                    
+                    按键查看工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.6" data-path="../devops/nginx专题.html">
+            
+                <a href="../devops/nginx专题.html">
+            
+                    
+                    nginx配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">其他</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../other/githubPages.html">
+            
+                <a href="../other/githubPages.html">
+            
+                    
+                    github Page
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../other/gitbookEnvPrepare.html">
+            
+                <a href="../other/gitbookEnvPrepare.html">
+            
+                    
+                    gitbook使用举例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../other/GitHubActions.html">
+            
+                <a href="../other/GitHubActions.html">
+            
+                    
+                    github Actions自动构建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../other/git常用命令.html">
+            
+                <a href="../other/git常用命令.html">
+            
+                    
+                    git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" >
+            
+                <a target="_blank" href="https://docs.python.org/zh-cn/3/">
+            
+                    
+                    常识基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="../other/common_tool_re.html">
+            
+                <a href="../other/common_tool_re.html">
+            
+                    
+                    常用的正则举例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.2" data-path="../python/singleton.html">
+            
+                <a href="../python/singleton.html">
+            
+                    
+                    我看到的一个比较好的单例实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.3" data-path="../other/questions.html">
+            
+                <a href="../other/questions.html">
+            
+                    
+                    常见问题集锦
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.4" data-path="../other/mysql_import_export.html">
+            
+                <a href="../other/mysql_import_export.html">
+            
+                    
+                    mysql的一些基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.5" data-path="../other/机试题目.html">
+            
+                <a href="../other/机试题目.html">
+            
+                    
+                    一些题目整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../gusheshanrenshuo/fun.html">
+            
+                <a href="../gusheshanrenshuo/fun.html">
+            
+                    
+                    姑射山人说
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../devops/常用命令整理.html">
+            
+                <a href="../devops/常用命令整理.html">
+            
+                    
+                    devops
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.4.1" data-path="../other/k8s.html">
+            
+                <a href="../other/k8s.html">
+            
+                    
+                    K8S教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.2" data-path="../devops/k8s笔记.html">
+            
+                <a href="../devops/k8s笔记.html">
+            
+                    
+                    K8S笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.3" data-path="../devops/k8s编写yml.html">
+            
+                <a href="../devops/k8s编写yml.html">
+            
+                    
+                    K8S编写yml的技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+</nav>
+     
+  </div>
+
+  <!-- Content nav -->
+  <div class="book-anchor">
+    <div class="book-anchor-title"></div>
+
+    <div class="book-anchor-body"></div>
+  </div>
+
+  <div class="book-body">
+    
+    <div class="body-inner">
+       
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Dart 逻辑运算符</a>
+    </h1>
+</div>
+
+
+
+      <div class="page-wrapper" tabindex="-1" role="main">
+        <div class="page-inner">
+          
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+          <section class="normal markdown-section">
+             <h1 id="dart-&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;">Dart &#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;</h1>
+<p><a href="https://juejin.cn/user/184373684214733" target="_blank"><img src="FILES/Dart_logic.md/7ada550c.webp" alt="img"></a></p>
+<p><a href="https://juejin.cn/user/184373684214733" target="_blank">cekiasoo<img src="FILES/Dart_logic.md/3a6db764.webp" alt="lv-3"></a></p>
+<p>2018&#x5E74;09&#x6708;22&#x65E5; 16:06 &#xB7;  &#x9605;&#x8BFB; 1894</p>
+<h3 id="&#x4E00;&#x3001;&#x4EC0;&#x4E48;&#x662F;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;">&#x4E00;&#x3001;&#x4EC0;&#x4E48;&#x662F;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;&#x662F;&#x8868;&#x793A;&#x903B;&#x8F91;&#x4E0E;&#x3001;&#x903B;&#x8F91;&#x6216;&#x3001;&#x903B;&#x8F91;&#x975E;&#x7684;&#xFF0C;&#x597D;&#x50CF;&#x9AD8;&#x4E2D;&#x6570;&#x5B66;&#x6709;&#x8BB2;&#x8FD9;&#x4E2A;&#xFF0C;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD0;&#x7B97;&#x7B26;</th>
+<th>&#x89E3;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;&amp;</td>
+<td>&#x903B;&#x8F91;&#x4E0E;</td>
+</tr>
+<tr>
+<td>\</td>
+<td>\</td>
+<td></td>
+<td>&#x903B;&#x8F91;&#x6216;</td>
+</tr>
+<tr>
+<td>!expr</td>
+<td>&#x903B;&#x8F91;&#x975E;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x4E8C;&#x3001;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x7528;&#x6CD5;">&#x4E8C;&#x3001;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x7528;&#x6CD5;</h3>
+<h4 id="&#xFF08;&#x4E00;&#xFF09;-&#x903B;&#x8F91;&#x4E0E;">&#xFF08;&#x4E00;&#xFF09; &#x903B;&#x8F91;&#x4E0E;</h4>
+<p>&#x903B;&#x8F91;&#x4E0E;&#x5728; Dart &#x7528; &quot;&amp;&amp;&quot; &#x8868;&#x793A;&#xFF0C;&quot;&amp;&amp;&quot; &#x7684;&#x5DE6;&#x8FB9;&#x548C;&#x53F3;&#x8FB9;&#x5199;&#x6761;&#x4EF6;&#xFF0C;&#x5F53;&#x4E24;&#x4E2A;&#x6761;&#x4EF6;&#x4E3A;&#x771F;&#x65F6;&#x8FD4;&#x56DE;true, &#x5426;&#x5219;&#x8FD4;&#x56DE; false, &#x6BD4;&#x5982;&#x8BF4;&#x6709;&#x4E00;&#x628A;&#x9501;&#x662F;&#x8981;&#x4E24;&#x628A;&#x4E0D;&#x540C;&#x7684;&#x94A5;&#x5319;&#x624D;&#x80FD;&#x89E3;&#x5F00;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x53EA;&#x6709;&#x5176;&#x4E2D;&#x4E00;&#x628A;&#x94A5;&#x5319;&#x662F;&#x89E3;&#x4E0D;&#x5F00;&#x7684;&#xFF0C;&#x4E24;&#x628A;&#x90FD;&#x6CA1;&#x6709;&#x5C31;&#x66F4;&#x4E0D;&#x7528;&#x8BF4;&#x4E86;&#xFF08;&#x6211;&#x7838;&#x9501;&#x4E0D;&#x884C;&#x4E48;&#xFF09;
+&#x7528;&#x6CD5;&#xFF1A;&#x6761;&#x4EF6; A &amp;&amp; &#x6761;&#x4EF6; B
+&#x903B;&#x8F91;&#x4E0E;&#x771F;&#x503C;&#x8868;</p>
+<table>
+<thead>
+<tr>
+<th>&#x6761;&#x4EF6; A</th>
+<th>&#x6761;&#x4EF6; B</th>
+<th>&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<pre class="language-"><code class="lang-ini">bool hasKey1 = true;
+bool hasKey2 = false;
+print(hasKey1 &amp;&amp; hasKey2);
+&#x590D;&#x5236;&#x4EE3;&#x7801;
+</code></pre>
+<p><img src="FILES/Dart_logic.md/19996619.webp" alt="&#x622A;&#x56FE;"></p>
+<pre class="language-"><code class="lang-ini">bool hasKey1 = true;
+bool hasKey2 = true;
+print(hasKey1 &amp;&amp; hasKey2);
+&#x590D;&#x5236;&#x4EE3;&#x7801;
+</code></pre>
+<p><img src="FILES/Dart_logic.md/f38f3363.webp" alt="&#x622A;&#x56FE;"></p>
+<h4 id="&#xFF08;&#x4E8C;&#xFF09;-&#x903B;&#x8F91;&#x6216;">&#xFF08;&#x4E8C;&#xFF09; &#x903B;&#x8F91;&#x6216;</h4>
+<p>&#x903B;&#x8F91;&#x6216;&#x5728; Dart &#x7528; &quot;||&quot; &#x8868;&#x793A;&#xFF0C;&quot;||&quot; &#x7684;&#x5DE6;&#x8FB9;&#x548C;&#x53F3;&#x8FB9;&#x5199;&#x6761;&#x4EF6;&#xFF0C;&#x5F53;&#x4E24;&#x4E2A;&#x6761;&#x4EF6;&#x53EA;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x4E3A;&#x771F;&#x65F6;&#x8FD4;&#x56DE;true, &#x5426;&#x5219;&#x8FD4;&#x56DE; false&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x7535;&#x706F;&#x662F;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E24;&#x4E2A;&#x5F00;&#x5173;&#x7684;&#xFF0C;&#x53EA;&#x8981;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x5F00;&#x5173;&#x901A;&#x7535;&#x4E86;&#x5C31;&#x53EF;&#x4EE5;&#x4EAE;&#xFF0C;&#x53EA;&#x6709;&#x4E24;&#x4E2A;&#x5F00;&#x5173;&#x90FD;&#x6CA1;&#x901A;&#x65F6;&#x624D;&#x6CA1;&#x4EAE;&#xFF0C;
+&#x7528;&#x6CD5;&#xFF1A;&#x6761;&#x4EF6; A &amp;&amp; &#x6761;&#x4EF6; B
+&#x903B;&#x8F91;&#x6216;&#x771F;&#x503C;&#x8868;</p>
+<table>
+<thead>
+<tr>
+<th>&#x6761;&#x4EF6; A</th>
+<th>&#x6761;&#x4EF6; B</th>
+<th>&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<pre class="language-"><code class="lang-ini">bool switch1 = true;
+bool switch2 = false;
+print(switch1 || switch2);
+&#x590D;&#x5236;&#x4EE3;&#x7801;
+</code></pre>
+<p><img src="FILES/Dart_logic.md/80ec4710.webp" alt="&#x622A;&#x56FE;"></p>
+<pre class="language-"><code class="lang-ini">bool switch1 = false;
+bool switch2 = false;
+print(switch1 || switch2);
+&#x590D;&#x5236;&#x4EE3;&#x7801;
+</code></pre>
+<p><img src="FILES/Dart_logic.md/4a18f2ff.webp" alt="&#x622A;&#x56FE;"></p>
+<h4 id="&#xFF08;&#x4E09;&#xFF09;-&#x903B;&#x8F91;&#x975E;">&#xFF08;&#x4E09;&#xFF09; &#x903B;&#x8F91;&#x975E;</h4>
+<p>&#x903B;&#x8F91;&#x975E;&#x5728; Dart &#x7528; &quot;!expr&quot; &#x8868;&#x793A;, expr &#x5373; expression, &#x5982;&#x679C;&#x6761;&#x4EF6;&#x662F;&#x771F;&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x662F; false, &#x5982;&#x679C;&#x6761;&#x4EF6;&#x662F;&#x5047;&#x7684;&#x90A3;&#x7ED3;&#x679C;&#x662F; true, &#x6BD4;&#x5982;&#x8BF4;&#x8981;&#x53BB;&#x4E0A;&#x73ED;&#xFF0C;&#x52A0;&#x4E0A;&#x975E;&#x4E4B;&#x540E;&#x5C31;&#x662F;&#x4E0D;&#x53BB;&#x4E0A;&#x73ED;&#xFF0C;</p>
+<pre class="language-"><code class="lang-ini">bool goToWork = true;
+print(!goToWork);
+&#x590D;&#x5236;&#x4EE3;&#x7801;
+</code></pre>
+<p><img src="FILES/Dart_logic.md/4f07a0e7.webp" alt="&#x622A;&#x56FE;"></p>
+<pre class="language-"><code class="lang-ini">bool goToWork = false;
+print(!goToWork);
+&#x590D;&#x5236;&#x4EE3;&#x7801;
+</code></pre>
+<p><img src="FILES/Dart_logic.md/c5ad9823.webp" alt="&#x622A;&#x56FE;"></p>
+ 
+          </section>
+          
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+ 
+        </div>
+      </div>
+      
+    </div>
+
+     
+    <a
+      href="40m_Learn_dart.html"
+      class="navigation navigation-prev "
+      aria-label="Previous page: 快速入门Dart基础"
+    >
+      <i class="fa fa-angle-left"></i>
+    </a>
+     
+    <a
+      href="dart_bit_compute.html"
+      class="navigation navigation-next "
+      aria-label="Next page: Dart 按位运算符"
+    >
+      <i class="fa fa-angle-right"></i>
+    </a>
+      
+  </div>
+  <script>
+    function showModal() {
+      document.getElementsByClassName("mask")[0].style.display = "block";
+      document.getElementsByClassName("donate-modal")[0].style.display =
+        "block";
+    }
+    // 切换赞赏码
+    function showDonateImg(num) {
+      let alipay = "";
+      let wxpay = ""
+      if(num){
+        wxpay = "hidden"
+      }else{
+        alipay = "hidden"
+      }
+      document.getElementById("wxpay-code").hidden = wxpay;
+      document.getElementById("alipay-code").hidden = alipay;
+      document.getElementsByName("pay-way")[num].checked = "checked";
+    }
+
+    // 关闭赞赏框
+    function closeDonateModal() {
+      document.getElementsByClassName("mask")[0].style.display = "none";
+      document.getElementsByClassName("donate-modal")[0].style.display = "none";
+    }
+
+    var gitbook = gitbook || [];
+    gitbook.push(function () {
+      gitbook.page.hasChanged({"page":{"title":"Dart 逻辑运算符","level":"4.1.2","depth":2,"next":{"title":"Dart 按位运算符","level":"4.1.3","depth":2,"path":"blog/Dart/dart_bit_compute.md","ref":"blog/Dart/dart_bit_compute.md","articles":[]},"previous":{"title":"快速入门Dart基础","level":"4.1.1","depth":2,"path":"blog/Dart/40m_Learn_dart.md","ref":"blog/Dart/40m_Learn_dart.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-lunr","sharing","-livereload","chapter-fold","sitemap","theme-lou","back-to-top-button","code","prism","search-pro","-search"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"typescript"}},"search-pro":{},"code":{"copyButtons":true},"theme-lou":{"hide-elements":[".summary .gitbook-link"],"color":"#5F9EA0","book-anchor-title":"本章目录标题","forbidCopy":false,"logo":"static/zhuque.jpg","book-summary-title":"导航","search-placeholder":"全局搜索","imgStyle":{"isCenter":true,"isBox":false,"otherStyle":"max-width: 80%;"},"favicon":"static/zhuque.jpg"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://chenxiwong.github.io/gitbook"},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","keywords":"学习,笔记,编程,代码,博客,文章,github","author":"ChenxiWong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeColor":"#3884ff","themeLou":{"nav":[{"target":"_blank","url":"https://www.baidu.com","name":"百度"}]}},"title":"个人笔记","introduction":{"path":"README.md","title":"导航首页"},"gitbook":"*","description":"文档"},"file":{"path":"blog/Dart/Dart_logic.md","mtime":"2024-03-30T06:47:56.682Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-30T06:48:32.599Z"},"basePath":"../..","book":{"language":""}});
+    });
+  </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-lou/jweixin-1.6.0.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-lou/lou.js"></script>
+        
+    
+
+    </body>
+</html>
+

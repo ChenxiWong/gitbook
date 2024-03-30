@@ -1,0 +1,2410 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>golang自定义日志样式 · 个人笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="ChenxiWong">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-lou/lou.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+         
+
+<div class="book">
+  <div class="header-inner">
+    <!-- LOGO -->
+    <div class="logo"></div>
+    <span class="title"></span>
+
+    <!-- Search -->
+    
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+    <!-- Nav -->
+    <ul class="header-nav">
+      <li>
+        <a href="https://www.baidu.com" target="_blank">百度</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="book-summary">
+    <div class="book-summary-title">文档目录</div>
+     
+    <nav role="navigation">
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">简介</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">python笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <a target="_blank" href="https://docs.python.org/zh-cn/3/">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../python/ubuntu_clang_python.html">
+            
+                <a href="../python/ubuntu_clang_python.html">
+            
+                    
+                    ubuntu环境下C语言拓展cpython
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../python/tkinter_gui_demo.html">
+            
+                <a href="../python/tkinter_gui_demo.html">
+            
+                    
+                    tkinter开发界面客户端工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../python/标准库之itertools.html">
+            
+                <a href="../python/标准库之itertools.html">
+            
+                    
+                    标准库之itertools
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <a target="_blank" href="https://wangchenxi.top">
+            
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../python/gunicornServerHook.html">
+            
+                <a href="../python/gunicornServerHook.html">
+            
+                    
+                    gunicorn server hook 说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../python/pythonLinuxIpcMessageQueue.html">
+            
+                <a href="../python/pythonLinuxIpcMessageQueue.html">
+            
+                    
+                    python Linux ipc通信之消息队列实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../python/pythonGeventDemo.html">
+            
+                <a href="../python/pythonGeventDemo.html">
+            
+                    
+                    python gevent 使用实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../python/python_sysv-ipc_Demo.html">
+            
+                <a href="../python/python_sysv-ipc_Demo.html">
+            
+                    
+                    sysv-ipc 进程间通信的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../python/flask_test_moc.html">
+            
+                <a href="../python/flask_test_moc.html">
+            
+                    
+                    flask实现一个moc服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../python/python_py_spy.html">
+            
+                <a href="../python/python_py_spy.html">
+            
+                    
+                    python性能分析之py-spy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../python/一个ip地址合并的样例.html">
+            
+                <a href="../python/一个ip地址合并的样例.html">
+            
+                    
+                    ip地址合并的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../python/pb生成pyi文件.html">
+            
+                <a href="../python/pb生成pyi文件.html">
+            
+                    
+                    protocolbuffer源码pyi生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="../scipy/pandas500demo.html">
+            
+                <a href="../scipy/pandas500demo.html">
+            
+                    
+                    scipy数据分析demo源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">golang笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <a target="_blank" href="https://studygolang.com/pkgdoc">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="golang_env_build.html">
+            
+                <a href="golang_env_build.html">
+            
+                    
+                    golang安装及一些常识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="离线环境搭建GOPROXY.html">
+            
+                <a href="离线环境搭建GOPROXY.html">
+            
+                    
+                    离线环境搭建GOPROXY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="fmt_placeholder.html">
+            
+                <a href="fmt_placeholder.html">
+            
+                    
+                    golangfmt占位符号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="golang100mistakes.html">
+            
+                <a href="golang100mistakes.html">
+            
+                    
+                    100-go-mistakes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <a target="_blank" href="https://wangchenxi.top">
+            
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.2.1" data-path="zap_userdefine.html">
+            
+                <a href="zap_userdefine.html">
+            
+                    
+                    golang自定义日志样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Dart笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <a target="_blank" href="https://studygolang.com/pkgdoc">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../Dart/40m_Learn_dart.html">
+            
+                <a href="../Dart/40m_Learn_dart.html">
+            
+                    
+                    快速入门Dart基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../Dart/Dart_logic.html">
+            
+                <a href="../Dart/Dart_logic.html">
+            
+                    
+                    Dart 逻辑运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../Dart/dart_bit_compute.html">
+            
+                <a href="../Dart/dart_bit_compute.html">
+            
+                    
+                    Dart 按位运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../Dart/Dart_relation_compute.html">
+            
+                <a href="../Dart/Dart_relation_compute.html">
+            
+                    
+                    Dart 关系运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../Dart/dart_final_const.html">
+            
+                <a href="../Dart/dart_final_const.html">
+            
+                    
+                    Dart 常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../Dart/dart_explain.html">
+            
+                <a href="../Dart/dart_explain.html">
+            
+                    
+                    Dart 注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../Dart/dart_type.html">
+            
+                <a href="../Dart/dart_type.html">
+            
+                    
+                    Dart 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../Dart/dart_math_compute.html">
+            
+                <a href="../Dart/dart_math_compute.html">
+            
+                    
+                    Dart 算术运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../Dart/control_struct.html">
+            
+                <a href="../Dart/control_struct.html">
+            
+                    
+                    Dart 控制流语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="../Dart/dart_give_value.html">
+            
+                <a href="../Dart/dart_give_value.html">
+            
+                    
+                    Dart 赋值运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.11" data-path="../Dart/dart_key_words.html">
+            
+                <a href="../Dart/dart_key_words.html">
+            
+                    
+                    Dart 关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.12" data-path="../Dart/dart_bit_move.html">
+            
+                <a href="../Dart/dart_bit_move.html">
+            
+                    
+                    Dart 移位运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.13" data-path="../Dart/dart_three_var_compute.html">
+            
+                <a href="../Dart/dart_three_var_compute.html">
+            
+                    
+                    Dart 三元运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.14" data-path="../Dart/dart_var.html">
+            
+                <a href="../Dart/dart_var.html">
+            
+                    
+                    Dart 变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">效率工具</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <a target="_blank" href="https://docs.python.org/zh-cn/3/">
+            
+                    
+                    ubuntu环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../ubuntu/Flameshot.html">
+            
+                <a href="../ubuntu/Flameshot.html">
+            
+                    
+                    截图之Flameshot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../prometheus/grafana_prometheus_metrics.html">
+            
+                <a href="../prometheus/grafana_prometheus_metrics.html">
+            
+                    
+                    监控之prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../other/virtualbox_androidx86.html">
+            
+                <a href="../other/virtualbox_androidx86.html">
+            
+                    
+                    virtualbox安装androidx86
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <a target="_blank" href="https://docs.python.org/zh-cn/3/">
+            
+                    
+                    常用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../other/githubPages.html">
+            
+                <a href="../other/githubPages.html">
+            
+                    
+                    github Page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../other/plantUML.html">
+            
+                <a href="../other/plantUML.html">
+            
+                    
+                    plantUML工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../other/code2flow.html">
+            
+                <a href="../other/code2flow.html">
+            
+                    
+                    code2flowe工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.4" data-path="../other/scrcpy.html">
+            
+                <a href="../other/scrcpy.html">
+            
+                    
+                    scrcpy工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.5" data-path="../other/key_action.html">
+            
+                <a href="../other/key_action.html">
+            
+                    
+                    按键查看工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.6" data-path="../devops/nginx专题.html">
+            
+                <a href="../devops/nginx专题.html">
+            
+                    
+                    nginx配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">其他</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../other/githubPages.html">
+            
+                <a href="../other/githubPages.html">
+            
+                    
+                    github Page
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../other/gitbookEnvPrepare.html">
+            
+                <a href="../other/gitbookEnvPrepare.html">
+            
+                    
+                    gitbook使用举例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../other/GitHubActions.html">
+            
+                <a href="../other/GitHubActions.html">
+            
+                    
+                    github Actions自动构建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../other/git常用命令.html">
+            
+                <a href="../other/git常用命令.html">
+            
+                    
+                    git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" >
+            
+                <a target="_blank" href="https://docs.python.org/zh-cn/3/">
+            
+                    
+                    常识基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="../other/common_tool_re.html">
+            
+                <a href="../other/common_tool_re.html">
+            
+                    
+                    常用的正则举例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.2" data-path="../python/singleton.html">
+            
+                <a href="../python/singleton.html">
+            
+                    
+                    我看到的一个比较好的单例实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.3" data-path="../other/questions.html">
+            
+                <a href="../other/questions.html">
+            
+                    
+                    常见问题集锦
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.4" data-path="../other/mysql_import_export.html">
+            
+                <a href="../other/mysql_import_export.html">
+            
+                    
+                    mysql的一些基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.5" data-path="../other/机试题目.html">
+            
+                <a href="../other/机试题目.html">
+            
+                    
+                    一些题目整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../gusheshanrenshuo/fun.html">
+            
+                <a href="../gusheshanrenshuo/fun.html">
+            
+                    
+                    姑射山人说
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../devops/常用命令整理.html">
+            
+                <a href="../devops/常用命令整理.html">
+            
+                    
+                    devops
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.4.1" data-path="../other/k8s.html">
+            
+                <a href="../other/k8s.html">
+            
+                    
+                    K8S教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.2" data-path="../devops/k8s笔记.html">
+            
+                <a href="../devops/k8s笔记.html">
+            
+                    
+                    K8S笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.3" data-path="../devops/k8s编写yml.html">
+            
+                <a href="../devops/k8s编写yml.html">
+            
+                    
+                    K8S编写yml的技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+</nav>
+     
+  </div>
+
+  <!-- Content nav -->
+  <div class="book-anchor">
+    <div class="book-anchor-title"></div>
+
+    <div class="book-anchor-body"></div>
+  </div>
+
+  <div class="book-body">
+    
+    <div class="body-inner">
+       
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >golang自定义日志样式</a>
+    </h1>
+</div>
+
+
+
+      <div class="page-wrapper" tabindex="-1" role="main">
+        <div class="page-inner">
+          
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+          <section class="normal markdown-section">
+             <h3 id="golang-zap-&#x81EA;&#x5B9A;&#x4E49;&#x65E5;&#x5FD7;&#x683C;&#x5F0F;">golang zap &#x81EA;&#x5B9A;&#x4E49;&#x65E5;&#x5FD7;&#x683C;&#x5F0F;</h3>
+<h3 id="&#x76EE;&#x5F55;&#x7ED3;&#x6784;">&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h3>
+<pre class="language-"><code class="lang-tex">test_zap
+&#x251C;&#x2500;&#x2500; go.mod
+&#x251C;&#x2500;&#x2500; go.sum
+&#x251C;&#x2500;&#x2500; log_mgr
+&#x2502;   &#x251C;&#x2500;&#x2500; user_buffer.go
+&#x2502;   &#x251C;&#x2500;&#x2500; user_encoder.go
+&#x2502;   &#x251C;&#x2500;&#x2500; user_json_encoder.go
+&#x2502;   &#x251C;&#x2500;&#x2500; user_mem_encoder.go
+&#x2502;   &#x2514;&#x2500;&#x2500; usr_define_logger.go
+&#x251C;&#x2500;&#x2500; main.go
+&#x251C;&#x2500;&#x2500; test.log
+&#x2514;&#x2500;&#x2500; test_zap
+</code></pre>
+<p>main.go</p>
+<pre class="language-"><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;test_zap/log_mgr&quot;</span>
+
+    <span class="hljs-string">&quot;go.uber.org/zap&quot;</span>
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+    log := log_mgr.GetLogger()
+    zap_field := <span class="hljs-built_in">new</span>(zap.Field)
+    zap_field.Interface = <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">string</span>{
+        <span class="hljs-string">&quot;traceId&quot;</span>: <span class="hljs-string">&quot;123ewerfaskkljdasflkndsflkdflkasl&quot;</span>,
+    }
+    log.Info(<span class="hljs-string">&quot;this is info message with fileds&quot;</span>, *zap_field)
+    log.Info(<span class="hljs-string">&quot;this is info message with fileds&quot;</span>, zap.String(<span class="hljs-string">&quot;traceId&quot;</span>, <span class="hljs-string">&quot;111111111&quot;</span>))
+    log.Info(<span class="hljs-string">&quot;this is info message with fileds&quot;</span>, zap.String(<span class="hljs-string">&quot;traceId&quot;</span>, <span class="hljs-string">&quot;111111111&quot;</span>))
+    log.Info(<span class="hljs-string">&quot;this is info message with fileds&quot;</span>, zap.String(<span class="hljs-string">&quot;traceId&quot;</span>, <span class="hljs-string">&quot;111111111&quot;</span>))
+    log.Info(<span class="hljs-string">&quot;this is info message with fileds&quot;</span>, zap.String(<span class="hljs-string">&quot;traceId&quot;</span>, <span class="hljs-string">&quot;111111111&quot;</span>))
+
+    <span class="hljs-comment">// &#x6211;&#x7684;&#x8BC9;&#x6C42;</span>
+    <span class="hljs-comment">// &#x5B9A;&#x4E49;&#x65E5;&#x5FD7;&#x8868;&#x793A;&#x7B26;&#x53F7;</span>
+    <span class="hljs-comment">// &#x65E5;&#x5FD7;&#x5206;&#x5272;</span>
+
+}
+</code></pre>
+<p>usr_define_logger.go</p>
+<pre class="language-"><code class="lang-go"><span class="hljs-keyword">package</span> log_mgr
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;fmt&quot;</span>
+    <span class="hljs-string">&quot;os&quot;</span>
+    <span class="hljs-string">&quot;time&quot;</span>
+
+    <span class="hljs-string">&quot;go.uber.org/zap&quot;</span>
+    <span class="hljs-string">&quot;go.uber.org/zap/buffer&quot;</span>
+    <span class="hljs-string">&quot;go.uber.org/zap/zapcore&quot;</span>
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">FieldsTransfer2Map</span><span class="hljs-params">(fields []zapcore.Field)</span> <span class="hljs-title">map</span>[<span class="hljs-title">string</span>]<span class="hljs-title">string</span></span> {
+    resMap := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">string</span>, <span class="hljs-built_in">len</span>(fields))
+    <span class="hljs-keyword">for</span> _, v := <span class="hljs-keyword">range</span> fields {
+        resMap[v.Key] = v.String
+    }
+    <span class="hljs-keyword">return</span> resMap
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c consoleEncoder)</span> <span class="hljs-title">EncodeEntry</span><span class="hljs-params">(ent zapcore.Entry, fields []zapcore.Field)</span> <span class="hljs-params">(*buffer.Buffer, error)</span></span> {
+    line := UserGet()
+
+    <span class="hljs-comment">// We don&apos;t want the entry&apos;s metadata to be quoted and escaped (if it&apos;s</span>
+    <span class="hljs-comment">// encoded as strings), which means that we can&apos;t use the JSON encoder. The</span>
+    <span class="hljs-comment">// simplest option is to use the memory encoder and fmt.Fprint.</span>
+    <span class="hljs-comment">//</span>
+    <span class="hljs-comment">// If this ever becomes a performance bottleneck, we can implement</span>
+    <span class="hljs-comment">// ArrayEncoder for our plain-text format.</span>
+    arr := getSliceEncoder()
+    res := FieldsTransfer2Map(fields)
+    <span class="hljs-keyword">if</span> traceId, ok := res[<span class="hljs-string">&quot;traceId&quot;</span>]; ok {
+        usr_str := fmt.Sprintf(<span class="hljs-string">&quot;%s|&quot;</span>, traceId)
+        line.AppendString(usr_str)
+    }
+
+    <span class="hljs-comment">// &#x65F6;&#x95F4;</span>
+    <span class="hljs-keyword">if</span> c.TimeKey != <span class="hljs-string">&quot;&quot;</span> &amp;&amp; c.EncodeTime != <span class="hljs-literal">nil</span> {
+        c.EncodeTime(ent.Time, arr)
+    }
+
+    <span class="hljs-comment">// &#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x6807;&#x8BC6;</span>
+    <span class="hljs-keyword">if</span> c.LevelKey != <span class="hljs-string">&quot;&quot;</span> &amp;&amp; c.EncodeLevel != <span class="hljs-literal">nil</span> {
+        c.EncodeLevel(ent.Level, arr)
+    }
+
+    <span class="hljs-comment">// &#x65E5;&#x5FD7;&#x540D;&#x79F0;</span>
+    <span class="hljs-keyword">if</span> ent.LoggerName != <span class="hljs-string">&quot;&quot;</span> &amp;&amp; c.NameKey != <span class="hljs-string">&quot;&quot;</span> {
+        nameEncoder := c.EncodeName
+
+        <span class="hljs-keyword">if</span> nameEncoder == <span class="hljs-literal">nil</span> {
+            <span class="hljs-comment">// Fall back to FullNameEncoder for backward compatibility.</span>
+            nameEncoder = zapcore.FullNameEncoder
+        }
+
+        nameEncoder(ent.LoggerName, arr)
+    }
+
+    <span class="hljs-comment">// &#x8C03;&#x7528;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;</span>
+    <span class="hljs-keyword">if</span> ent.Caller.Defined {
+        <span class="hljs-keyword">if</span> c.CallerKey != <span class="hljs-string">&quot;&quot;</span> &amp;&amp; c.EncodeCaller != <span class="hljs-literal">nil</span> {
+            c.EncodeCaller(ent.Caller, arr)
+        }
+        <span class="hljs-keyword">if</span> c.FunctionKey != <span class="hljs-string">&quot;&quot;</span> {
+            arr.AppendString(ent.Caller.Function)
+        }
+    }
+    <span class="hljs-keyword">for</span> i := <span class="hljs-keyword">range</span> arr.elems {
+        <span class="hljs-keyword">if</span> i &gt; <span class="hljs-number">0</span> {
+            line.AppendString(c.ConsoleSeparator)
+        }
+        fmt.Fprint(line, arr.elems[i])
+    }
+    putSliceEncoder(arr)
+
+    <span class="hljs-comment">// Add the message itself.</span>
+    <span class="hljs-keyword">if</span> c.MessageKey != <span class="hljs-string">&quot;&quot;</span> {
+        c.addSeparatorIfNecessary(line)
+        line.AppendString(ent.Message)
+    }
+
+    <span class="hljs-comment">// &#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5B57;&#x6BB5;</span>
+    <span class="hljs-comment">// c.writeContext(line, fields)</span>
+
+    <span class="hljs-comment">// If there&apos;s no stacktrace key, honor that; this allows users to force</span>
+    <span class="hljs-comment">// single-line output.</span>
+    <span class="hljs-keyword">if</span> ent.Stack != <span class="hljs-string">&quot;&quot;</span> &amp;&amp; c.StacktraceKey != <span class="hljs-string">&quot;&quot;</span> {
+        line.AppendByte(<span class="hljs-string">&apos;\n&apos;</span>)
+        line.AppendString(ent.Stack)
+    }
+
+    line.AppendString(c.LineEnding)
+    <span class="hljs-keyword">return</span> line, <span class="hljs-literal">nil</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">MyISO8601TimeEncoder</span><span class="hljs-params">(t time.Time, enc zapcore.PrimitiveArrayEncoder)</span></span> {
+    encodeTimeLayout(t, <span class="hljs-string">&quot;2006-01-02T15:04:05.000&quot;</span>, enc)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">encodeTimeLayout</span><span class="hljs-params">(t time.Time, layout <span class="hljs-keyword">string</span>, enc zapcore.PrimitiveArrayEncoder)</span></span> {
+    <span class="hljs-keyword">type</span> appendTimeEncoder <span class="hljs-keyword">interface</span> {
+        AppendTimeLayout(time.Time, <span class="hljs-keyword">string</span>)
+    }
+
+    <span class="hljs-keyword">if</span> enc, ok := enc.(appendTimeEncoder); ok {
+        enc.AppendTimeLayout(t, layout)
+        <span class="hljs-keyword">return</span>
+    }
+
+    enc.AppendString(t.Format(layout))
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">GetLogger</span><span class="hljs-params">()</span> *<span class="hljs-title">zap</span>.<span class="hljs-title">Logger</span></span> {
+    <span class="hljs-comment">// encoderConfig := zap.NewProductionEncoderConfig()</span>
+    <span class="hljs-comment">// go.uber.org/zap/zapcore.EncoderConfig</span>
+    <span class="hljs-comment">// {MessageKey: &quot;msg&quot;, LevelKey: &quot;level&quot;, TimeKey: &quot;ts&quot;,</span>
+    <span class="hljs-comment">// NameKey: &quot;logger&quot;, CallerKey: &quot;caller&quot;, FunctionKey: &quot;&quot;,</span>
+    <span class="hljs-comment">// StacktraceKey: &quot;stacktrace&quot;, SkipLineEnding: false,</span>
+    <span class="hljs-comment">// LineEnding: &quot;\n&quot;, EncodeLevel: go.uber.org/zap/zapcore.LowercaseLevelEncoder,</span>
+    <span class="hljs-comment">// EncodeTime: main.MyISO8601TimeEncoder,</span>
+    <span class="hljs-comment">// EncodeDuration: go.uber.org/zap/zapcore.SecondsDurationEncoder,</span>
+    <span class="hljs-comment">// EncodeCaller: go.uber.org/zap/zapcore.ShortCallerEncoder,</span>
+    <span class="hljs-comment">// EncodeName: nil, NewReflectedEncoder: nil, ConsoleSeparator: &quot;|&quot;}</span>
+    <span class="hljs-comment">// json.Encoder</span>
+    encoderConfig := zapcore.EncoderConfig{
+        MessageKey:          <span class="hljs-string">&quot;message&quot;</span>,
+        LevelKey:            <span class="hljs-string">&quot;loglevel&quot;</span>,
+        TimeKey:             <span class="hljs-string">&quot;time&quot;</span>,
+        NameKey:             <span class="hljs-string">&quot;nameKey&quot;</span>,
+        CallerKey:           <span class="hljs-string">&quot;caller&quot;</span>,
+        FunctionKey:         <span class="hljs-string">&quot;functionKey&quot;</span>,
+        StacktraceKey:       <span class="hljs-string">&quot;stacktraceKey&quot;</span>,
+        SkipLineEnding:      <span class="hljs-literal">false</span>,
+        LineEnding:          <span class="hljs-string">&quot;\n&quot;</span>,
+        EncodeLevel:         zapcore.CapitalLevelEncoder,
+        EncodeTime:          MyISO8601TimeEncoder,
+        EncodeDuration:      zapcore.SecondsDurationEncoder,
+        EncodeCaller:        zapcore.ShortCallerEncoder,
+        EncodeName:          <span class="hljs-literal">nil</span>,
+        NewReflectedEncoder: <span class="hljs-literal">nil</span>,
+        ConsoleSeparator:    <span class="hljs-string">&quot;|&quot;</span>,
+    }
+    <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x4E2D;&#x65F6;&#x95F4;&#x7684;&#x683C;&#x5F0F;</span>
+    encoderConfig.EncodeTime = MyISO8601TimeEncoder
+    <span class="hljs-comment">// &#x65E5;&#x5FD7;Encoder &#x8FD8;&#x662F;JSONEncoder&#xFF0C;&#x628A;&#x65E5;&#x5FD7;&#x884C;&#x683C;&#x5F0F;&#x5316;&#x6210;JSON&#x683C;&#x5F0F;&#x7684;</span>
+    <span class="hljs-comment">// encoder := zapcore.NewJSONEncoder(encoderConfig)</span>
+    <span class="hljs-comment">// encoderConfig.ConsoleSeparator = &quot;|&quot;</span>
+    encoder := NewConsoleEncoder(encoderConfig)
+    <span class="hljs-comment">// encoder := zapcore.NewConsoleEncoder(encoderConfig)</span>
+    file, _ := os.OpenFile(<span class="hljs-string">&quot;test.log&quot;</span>, os.O_CREATE|os.O_APPEND|os.O_WRONLY, <span class="hljs-number">0644</span>)
+    fileWriteSyncer := zapcore.AddSync(file)
+    core := zapcore.NewTee(
+        <span class="hljs-comment">// &#x540C;&#x65F6;&#x5411;&#x63A7;&#x5236;&#x53F0;&#x548C;&#x6587;&#x4EF6;&#x5199;&#x65E5;&#x5FD7;&#xFF0C; &#x751F;&#x4EA7;&#x73AF;&#x5883;&#x8BB0;&#x5F97;&#x628A;&#x63A7;&#x5236;&#x53F0;&#x5199;&#x5165;&#x53BB;&#x6389;&#xFF0C;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x7684;&#x57FA;&#x672C;&#x662F;Debug &#x53CA;&#x4EE5;&#x4E0A;&#xFF0C;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x8BB0;&#x5F97;&#x6539;&#x6210;Info</span>
+        zapcore.NewCore(encoder, zapcore.AddSync(os.Stdout), zapcore.DebugLevel),
+        zapcore.NewCore(encoder, fileWriteSyncer, zapcore.DebugLevel),
+    )
+    opts := []zap.Option{}
+    opts = <span class="hljs-built_in">append</span>(opts, zap.AddCaller())
+    log := zap.New(core, opts...)
+    <span class="hljs-keyword">return</span> log
+}
+</code></pre>
+<p>user_mem_encoder.go</p>
+<pre class="language-"><code class="lang-go"><span class="hljs-comment">// Copyright (c) 2016 Uber Technologies, Inc.</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// Permission is hereby granted, free of charge, to any person obtaining a copy</span>
+<span class="hljs-comment">// of this software and associated documentation files (the &quot;Software&quot;), to deal</span>
+<span class="hljs-comment">// in the Software without restriction, including without limitation the rights</span>
+<span class="hljs-comment">// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span>
+<span class="hljs-comment">// copies of the Software, and to permit persons to whom the Software is</span>
+<span class="hljs-comment">// furnished to do so, subject to the following conditions:</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// The above copyright notice and this permission notice shall be included in</span>
+<span class="hljs-comment">// all copies or substantial portions of the Software.</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
+<span class="hljs-comment">// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
+<span class="hljs-comment">// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span>
+<span class="hljs-comment">// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span>
+<span class="hljs-comment">// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span>
+<span class="hljs-comment">// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN</span>
+<span class="hljs-comment">// THE SOFTWARE.</span>
+
+<span class="hljs-keyword">package</span> log_mgr
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;sync&quot;</span>
+    <span class="hljs-string">&quot;time&quot;</span>
+
+    <span class="hljs-string">&quot;go.uber.org/zap/buffer&quot;</span>
+    <span class="hljs-string">&quot;go.uber.org/zap/zapcore&quot;</span>
+)
+
+<span class="hljs-comment">// MapObjectEncoder is an ObjectEncoder backed by a simple</span>
+<span class="hljs-comment">// map[string]interface{}. It&apos;s not fast enough for production use, but it&apos;s</span>
+<span class="hljs-comment">// helpful in tests.</span>
+<span class="hljs-keyword">type</span> MapObjectEncoder <span class="hljs-keyword">struct</span> {
+    <span class="hljs-comment">// Fields contains the entire encoded log context.</span>
+    Fields <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">interface</span>{}
+    <span class="hljs-comment">// cur is a pointer to the namespace we&apos;re currently writing to.</span>
+    cur <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">interface</span>{}
+}
+
+<span class="hljs-comment">// NewMapObjectEncoder creates a new map-backed ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">NewMapObjectEncoder</span><span class="hljs-params">()</span> *<span class="hljs-title">MapObjectEncoder</span></span> {
+    m := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">interface</span>{})
+    <span class="hljs-keyword">return</span> &amp;MapObjectEncoder{
+        Fields: m,
+        cur:    m,
+    }
+}
+
+<span class="hljs-comment">// AddArray implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddArray</span><span class="hljs-params">(key <span class="hljs-keyword">string</span>, v zapcore.ArrayMarshaler)</span> <span class="hljs-title">error</span></span> {
+    arr := &amp;sliceArrayEncoder{elems: <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">interface</span>{}, <span class="hljs-number">0</span>)}
+    err := v.MarshalLogArray(arr)
+    m.cur[key] = arr.elems
+    <span class="hljs-keyword">return</span> err
+}
+
+<span class="hljs-comment">// AddObject implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddObject</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v zapcore.ObjectMarshaler)</span> <span class="hljs-title">error</span></span> {
+    newMap := NewMapObjectEncoder()
+    m.cur[k] = newMap.Fields
+    <span class="hljs-keyword">return</span> v.MarshalLogObject(newMap)
+}
+
+<span class="hljs-comment">// AddBinary implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddBinary</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v []<span class="hljs-keyword">byte</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddByteString implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddByteString</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v []<span class="hljs-keyword">byte</span>)</span></span> { m.cur[k] = <span class="hljs-keyword">string</span>(v) }
+
+<span class="hljs-comment">// AddBool implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddBool</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">bool</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddDuration implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m MapObjectEncoder)</span> <span class="hljs-title">AddDuration</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v time.Duration)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddComplex128 implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddComplex128</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">complex128</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddComplex64 implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddComplex64</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">complex64</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddFloat64 implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddFloat64</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">float64</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddFloat32 implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddFloat32</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">float32</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddInt implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddInt</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">int</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddInt64 implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddInt64</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">int64</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddInt32 implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddInt32</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">int32</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddInt16 implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddInt16</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">int16</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddInt8 implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddInt8</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">int8</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddString implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddString</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">string</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddTime implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m MapObjectEncoder)</span> <span class="hljs-title">AddTime</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v time.Time)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddUint implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddUint</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">uint</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddUint64 implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddUint64</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">uint64</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddUint32 implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddUint32</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">uint32</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddUint16 implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddUint16</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">uint16</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddUint8 implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddUint8</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">uint8</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddUintptr implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddUintptr</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">uintptr</span>)</span></span> { m.cur[k] = v }
+
+<span class="hljs-comment">// AddReflected implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">AddReflected</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>, v <span class="hljs-keyword">interface</span>{})</span> <span class="hljs-title">error</span></span> {
+    m.cur[k] = v
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
+}
+
+<span class="hljs-comment">// OpenNamespace implements ObjectEncoder.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(m *MapObjectEncoder)</span> <span class="hljs-title">OpenNamespace</span><span class="hljs-params">(k <span class="hljs-keyword">string</span>)</span></span> {
+    ns := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">interface</span>{})
+    m.cur[k] = ns
+    m.cur = ns
+}
+
+<span class="hljs-comment">// sliceArrayEncoder is an ArrayEncoder backed by a simple []interface{}. Like</span>
+<span class="hljs-comment">// the MapObjectEncoder, it&apos;s not designed for production use.</span>
+<span class="hljs-keyword">type</span> sliceArrayEncoder <span class="hljs-keyword">struct</span> {
+    elems []<span class="hljs-keyword">interface</span>{}
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendArray</span><span class="hljs-params">(v zapcore.ArrayMarshaler)</span> <span class="hljs-title">error</span></span> {
+    enc := &amp;sliceArrayEncoder{}
+    err := v.MarshalLogArray(enc)
+    s.elems = <span class="hljs-built_in">append</span>(s.elems, enc.elems)
+    <span class="hljs-keyword">return</span> err
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendObject</span><span class="hljs-params">(v zapcore.ObjectMarshaler)</span> <span class="hljs-title">error</span></span> {
+    m := NewMapObjectEncoder()
+    err := v.MarshalLogObject(m)
+    s.elems = <span class="hljs-built_in">append</span>(s.elems, m.Fields)
+    <span class="hljs-keyword">return</span> err
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendReflected</span><span class="hljs-params">(v <span class="hljs-keyword">interface</span>{})</span> <span class="hljs-title">error</span></span> {
+    s.elems = <span class="hljs-built_in">append</span>(s.elems, v)
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendBool</span><span class="hljs-params">(v <span class="hljs-keyword">bool</span>)</span></span>              { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendByteString</span><span class="hljs-params">(v []<span class="hljs-keyword">byte</span>)</span></span>      { s.elems = <span class="hljs-built_in">append</span>(s.elems, <span class="hljs-keyword">string</span>(v)) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendComplex128</span><span class="hljs-params">(v <span class="hljs-keyword">complex128</span>)</span></span>  { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendComplex64</span><span class="hljs-params">(v <span class="hljs-keyword">complex64</span>)</span></span>    { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendDuration</span><span class="hljs-params">(v time.Duration)</span></span> { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendFloat64</span><span class="hljs-params">(v <span class="hljs-keyword">float64</span>)</span></span>        { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendFloat32</span><span class="hljs-params">(v <span class="hljs-keyword">float32</span>)</span></span>        { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendInt</span><span class="hljs-params">(v <span class="hljs-keyword">int</span>)</span></span>                { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendInt64</span><span class="hljs-params">(v <span class="hljs-keyword">int64</span>)</span></span>            { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendInt32</span><span class="hljs-params">(v <span class="hljs-keyword">int32</span>)</span></span>            { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendInt16</span><span class="hljs-params">(v <span class="hljs-keyword">int16</span>)</span></span>            { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendInt8</span><span class="hljs-params">(v <span class="hljs-keyword">int8</span>)</span></span>              { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendString</span><span class="hljs-params">(v <span class="hljs-keyword">string</span>)</span></span>          { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendTime</span><span class="hljs-params">(v time.Time)</span></span>         { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendUint</span><span class="hljs-params">(v <span class="hljs-keyword">uint</span>)</span></span>              { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendUint64</span><span class="hljs-params">(v <span class="hljs-keyword">uint64</span>)</span></span>          { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendUint32</span><span class="hljs-params">(v <span class="hljs-keyword">uint32</span>)</span></span>          { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendUint16</span><span class="hljs-params">(v <span class="hljs-keyword">uint16</span>)</span></span>          { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendUint8</span><span class="hljs-params">(v <span class="hljs-keyword">uint8</span>)</span></span>            { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(s *sliceArrayEncoder)</span> <span class="hljs-title">AppendUintptr</span><span class="hljs-params">(v <span class="hljs-keyword">uintptr</span>)</span></span>        { s.elems = <span class="hljs-built_in">append</span>(s.elems, v) }
+
+<span class="hljs-comment">// A Pool is a type-safe wrapper around a sync.Pool.</span>
+<span class="hljs-keyword">type</span> Pool <span class="hljs-keyword">struct</span> {
+    p *sync.Pool
+}
+
+<span class="hljs-comment">// NewPool constructs a new Pool.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">NewPool</span><span class="hljs-params">()</span> <span class="hljs-title">Pool</span></span> {
+    <span class="hljs-keyword">return</span> Pool{p: &amp;sync.Pool{
+        New: <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span> <span class="hljs-title">interface</span></span>{} {
+            <span class="hljs-keyword">return</span> &amp;Buffer{bs: <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">byte</span>, <span class="hljs-number">0</span>, _size)}
+        },
+    }}
+}
+
+<span class="hljs-comment">// Get retrieves a Buffer from the pool, creating one if necessary.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(p Pool)</span> <span class="hljs-title">Get</span><span class="hljs-params">()</span> *<span class="hljs-title">Buffer</span></span> {
+    buf := p.p.Get().(*Buffer)
+    buf.Reset()
+    buf.pool = p
+    <span class="hljs-keyword">return</span> buf
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(p Pool)</span> <span class="hljs-title">put</span><span class="hljs-params">(buf *Buffer)</span></span> {
+    p.p.Put(buf)
+}
+
+<span class="hljs-keyword">var</span> (
+    _pool = buffer.NewPool()
+    <span class="hljs-comment">// UserGet retrieves a buffer from the pool, creating one if necessary.</span>
+    UserGet = _pool.Get
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">addFields</span><span class="hljs-params">(enc zapcore.ObjectEncoder, fields []zapcore.Field)</span></span> {
+    <span class="hljs-keyword">for</span> i := <span class="hljs-keyword">range</span> fields {
+        fields[i].AddTo(enc)
+    }
+}
+</code></pre>
+<p>user_json_encoder.go</p>
+<pre class="language-"><code class="lang-go">package log_mgr
+
+// Copyright (c) 2016 Uber Technologies, Inc.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the &quot;Software&quot;), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+
+import (
+    &quot;encoding/base64&quot;
+    &quot;math&quot;
+    &quot;sync&quot;
+    &quot;time&quot;
+    &quot;unicode/utf8&quot;
+
+    &quot;encoding/json&quot;
+    &quot;io&quot;
+
+    &quot;go.uber.org/zap/buffer&quot;
+    &quot;go.uber.org/zap/zapcore&quot;
+)
+
+// ReflectedEncoder serializes log fields that can&apos;t be serialized with Zap&apos;s
+// JSON encoder. These have the ReflectType field type.
+// Use EncoderConfig.NewReflectedEncoder to set this.
+type ReflectedEncoder interface {
+    // Encode encodes and writes to the underlying data stream.
+    Encode(interface{}) error
+}
+
+func defaultReflectedEncoder(w io.Writer) zapcore.ReflectedEncoder {
+    enc := json.NewEncoder(w)
+    // For consistency with our custom JSON encoder.
+    enc.SetEscapeHTML(false)
+    return enc
+}
+
+// For JSON-escaping; see jsonEncoder.safeAddString below.
+const _hex = &quot;0123456789abcdef&quot;
+
+var _jsonPool = sync.Pool{New: func() interface{} {
+    return &amp;jsonEncoder{}
+}}
+
+func getJSONEncoder() *jsonEncoder {
+    return _jsonPool.Get().(*jsonEncoder)
+}
+
+func putJSONEncoder(enc *jsonEncoder) {
+    if enc.reflectBuf != nil {
+        enc.reflectBuf.Free()
+    }
+    enc.EncoderConfig = nil
+    enc.buf = nil
+    enc.spaced = false
+    enc.openNamespaces = 0
+    enc.reflectBuf = nil
+    enc.reflectEnc = nil
+    _jsonPool.Put(enc)
+}
+
+type jsonEncoder struct {
+    *zapcore.EncoderConfig
+    buf            *buffer.Buffer
+    spaced         bool // include spaces after colons and commas
+    openNamespaces int
+
+    // for encoding generic values by reflection
+    reflectBuf *buffer.Buffer
+    reflectEnc zapcore.ReflectedEncoder
+}
+
+// NewJSONEncoder creates a fast, low-allocation JSON encoder. The encoder
+// appropriately escapes all field keys and values.
+//
+// Note that the encoder doesn&apos;t deduplicate keys, so it&apos;s possible to produce
+// a message like
+//   {&quot;foo&quot;:&quot;bar&quot;,&quot;foo&quot;:&quot;baz&quot;}
+// This is permitted by the JSON specification, but not encouraged. Many
+// libraries will ignore duplicate key-value pairs (typically keeping the last
+// pair) when unmarshaling, but users should attempt to avoid adding duplicate
+// keys.
+func NewJSONEncoder(cfg zapcore.EncoderConfig) zapcore.Encoder {
+    return newJSONEncoder(cfg, false)
+}
+
+func newJSONEncoder(cfg zapcore.EncoderConfig, spaced bool) *jsonEncoder {
+    if cfg.SkipLineEnding {
+        cfg.LineEnding = &quot;&quot;
+    } else if cfg.LineEnding == &quot;&quot; {
+        cfg.LineEnding = zapcore.DefaultLineEnding
+    }
+
+    // If no EncoderConfig.NewReflectedEncoder is provided by the user, then use default
+    if cfg.NewReflectedEncoder == nil {
+        cfg.NewReflectedEncoder = defaultReflectedEncoder
+    }
+
+    return &amp;jsonEncoder{
+        EncoderConfig: &amp;cfg,
+        buf:           UserGet(),
+        spaced:        spaced,
+    }
+}
+
+func (enc *jsonEncoder) AddArray(key string, arr zapcore.ArrayMarshaler) error {
+    enc.addKey(key)
+    return enc.AppendArray(arr)
+}
+
+func (enc *jsonEncoder) AddObject(key string, obj zapcore.ObjectMarshaler) error {
+    enc.addKey(key)
+    return enc.AppendObject(obj)
+}
+
+func (enc *jsonEncoder) AddBinary(key string, val []byte) {
+    enc.AddString(key, base64.StdEncoding.EncodeToString(val))
+}
+
+func (enc *jsonEncoder) AddByteString(key string, val []byte) {
+    enc.addKey(key)
+    enc.AppendByteString(val)
+}
+
+func (enc *jsonEncoder) AddBool(key string, val bool) {
+    enc.addKey(key)
+    enc.AppendBool(val)
+}
+
+func (enc *jsonEncoder) AddComplex128(key string, val complex128) {
+    enc.addKey(key)
+    enc.AppendComplex128(val)
+}
+
+func (enc *jsonEncoder) AddComplex64(key string, val complex64) {
+    enc.addKey(key)
+    enc.AppendComplex64(val)
+}
+
+func (enc *jsonEncoder) AddDuration(key string, val time.Duration) {
+    enc.addKey(key)
+    enc.AppendDuration(val)
+}
+
+func (enc *jsonEncoder) AddFloat64(key string, val float64) {
+    enc.addKey(key)
+    enc.AppendFloat64(val)
+}
+
+func (enc *jsonEncoder) AddFloat32(key string, val float32) {
+    enc.addKey(key)
+    enc.AppendFloat32(val)
+}
+
+func (enc *jsonEncoder) AddInt64(key string, val int64) {
+    enc.addKey(key)
+    enc.AppendInt64(val)
+}
+
+func (enc *jsonEncoder) resetReflectBuf() {
+    if enc.reflectBuf == nil {
+        enc.reflectBuf = UserGet()
+        enc.reflectEnc = enc.NewReflectedEncoder(enc.reflectBuf)
+    } else {
+        enc.reflectBuf.Reset()
+    }
+}
+
+var nullLiteralBytes = []byte(&quot;null&quot;)
+
+// Only invoke the standard JSON encoder if there is actually something to
+// encode; otherwise write JSON null literal directly.
+func (enc *jsonEncoder) encodeReflected(obj interface{}) ([]byte, error) {
+    if obj == nil {
+        return nullLiteralBytes, nil
+    }
+    enc.resetReflectBuf()
+    if err := enc.reflectEnc.Encode(obj); err != nil {
+        return nil, err
+    }
+    enc.reflectBuf.TrimNewline()
+    return enc.reflectBuf.Bytes(), nil
+}
+
+func (enc *jsonEncoder) AddReflected(key string, obj interface{}) error {
+    valueBytes, err := enc.encodeReflected(obj)
+    if err != nil {
+        return err
+    }
+    enc.addKey(key)
+    _, err = enc.buf.Write(valueBytes)
+    return err
+}
+
+func (enc *jsonEncoder) OpenNamespace(key string) {
+    enc.addKey(key)
+    enc.buf.AppendByte(&apos;{&apos;)
+    enc.openNamespaces++
+}
+
+func (enc *jsonEncoder) AddString(key, val string) {
+    enc.addKey(key)
+    enc.AppendString(val)
+}
+
+func (enc *jsonEncoder) AddTime(key string, val time.Time) {
+    enc.addKey(key)
+    enc.AppendTime(val)
+}
+
+func (enc *jsonEncoder) AddUint64(key string, val uint64) {
+    enc.addKey(key)
+    enc.AppendUint64(val)
+}
+
+func (enc *jsonEncoder) AppendArray(arr zapcore.ArrayMarshaler) error {
+    enc.addElementSeparator()
+    enc.buf.AppendByte(&apos;[&apos;)
+    err := arr.MarshalLogArray(enc)
+    enc.buf.AppendByte(&apos;]&apos;)
+    return err
+}
+
+func (enc *jsonEncoder) AppendObject(obj zapcore.ObjectMarshaler) error {
+    // Close ONLY new openNamespaces that are created during
+    // AppendObject().
+    old := enc.openNamespaces
+    enc.openNamespaces = 0
+    enc.addElementSeparator()
+    enc.buf.AppendByte(&apos;{&apos;)
+    err := obj.MarshalLogObject(enc)
+    enc.buf.AppendByte(&apos;}&apos;)
+    enc.closeOpenNamespaces()
+    enc.openNamespaces = old
+    return err
+}
+
+func (enc *jsonEncoder) AppendBool(val bool) {
+    enc.addElementSeparator()
+    enc.buf.AppendBool(val)
+}
+
+func (enc *jsonEncoder) AppendByteString(val []byte) {
+    enc.addElementSeparator()
+    enc.buf.AppendByte(&apos;&quot;&apos;)
+    enc.safeAddByteString(val)
+    enc.buf.AppendByte(&apos;&quot;&apos;)
+}
+
+// appendComplex appends the encoded form of the provided complex128 value.
+// precision specifies the encoding precision for the real and imaginary
+// components of the complex number.
+func (enc *jsonEncoder) appendComplex(val complex128, precision int) {
+    enc.addElementSeparator()
+    // Cast to a platform-independent, fixed-size type.
+    r, i := float64(real(val)), float64(imag(val))
+    enc.buf.AppendByte(&apos;&quot;&apos;)
+    // Because we&apos;re always in a quoted string, we can use strconv without
+    // special-casing NaN and +/-Inf.
+    enc.buf.AppendFloat(r, precision)
+    // If imaginary part is less than 0, minus (-) sign is added by default
+    // by AppendFloat.
+    if i &gt;= 0 {
+        enc.buf.AppendByte(&apos;+&apos;)
+    }
+    enc.buf.AppendFloat(i, precision)
+    enc.buf.AppendByte(&apos;i&apos;)
+    enc.buf.AppendByte(&apos;&quot;&apos;)
+}
+
+func (enc *jsonEncoder) AppendDuration(val time.Duration) {
+    cur := enc.buf.Len()
+    if e := enc.EncodeDuration; e != nil {
+        e(val, enc)
+    }
+    if cur == enc.buf.Len() {
+        // User-supplied EncodeDuration is a no-op. Fall back to nanoseconds to keep
+        // JSON valid.
+        enc.AppendInt64(int64(val))
+    }
+}
+
+func (enc *jsonEncoder) AppendInt64(val int64) {
+    enc.addElementSeparator()
+    enc.buf.AppendInt(val)
+}
+
+func (enc *jsonEncoder) AppendReflected(val interface{}) error {
+    valueBytes, err := enc.encodeReflected(val)
+    if err != nil {
+        return err
+    }
+    enc.addElementSeparator()
+    _, err = enc.buf.Write(valueBytes)
+    return err
+}
+
+func (enc *jsonEncoder) AppendString(val string) {
+    enc.addElementSeparator()
+    enc.buf.AppendByte(&apos;&quot;&apos;)
+    enc.safeAddString(val)
+    enc.buf.AppendByte(&apos;&quot;&apos;)
+}
+
+func (enc *jsonEncoder) AppendTimeLayout(time time.Time, layout string) {
+    enc.addElementSeparator()
+    enc.buf.AppendByte(&apos;&quot;&apos;)
+    enc.buf.AppendTime(time, layout)
+    enc.buf.AppendByte(&apos;&quot;&apos;)
+}
+
+func (enc *jsonEncoder) AppendTime(val time.Time) {
+    cur := enc.buf.Len()
+    if e := enc.EncodeTime; e != nil {
+        e(val, enc)
+    }
+    if cur == enc.buf.Len() {
+        // User-supplied EncodeTime is a no-op. Fall back to nanos since epoch to keep
+        // output JSON valid.
+        enc.AppendInt64(val.UnixNano())
+    }
+}
+
+func (enc *jsonEncoder) AppendUint64(val uint64) {
+    enc.addElementSeparator()
+    enc.buf.AppendUint(val)
+}
+
+func (enc *jsonEncoder) AddInt(k string, v int)         { enc.AddInt64(k, int64(v)) }
+func (enc *jsonEncoder) AddInt32(k string, v int32)     { enc.AddInt64(k, int64(v)) }
+func (enc *jsonEncoder) AddInt16(k string, v int16)     { enc.AddInt64(k, int64(v)) }
+func (enc *jsonEncoder) AddInt8(k string, v int8)       { enc.AddInt64(k, int64(v)) }
+func (enc *jsonEncoder) AddUint(k string, v uint)       { enc.AddUint64(k, uint64(v)) }
+func (enc *jsonEncoder) AddUint32(k string, v uint32)   { enc.AddUint64(k, uint64(v)) }
+func (enc *jsonEncoder) AddUint16(k string, v uint16)   { enc.AddUint64(k, uint64(v)) }
+func (enc *jsonEncoder) AddUint8(k string, v uint8)     { enc.AddUint64(k, uint64(v)) }
+func (enc *jsonEncoder) AddUintptr(k string, v uintptr) { enc.AddUint64(k, uint64(v)) }
+func (enc *jsonEncoder) AppendComplex64(v complex64)    { enc.appendComplex(complex128(v), 32) }
+func (enc *jsonEncoder) AppendComplex128(v complex128)  { enc.appendComplex(complex128(v), 64) }
+func (enc *jsonEncoder) AppendFloat64(v float64)        { enc.appendFloat(v, 64) }
+func (enc *jsonEncoder) AppendFloat32(v float32)        { enc.appendFloat(float64(v), 32) }
+func (enc *jsonEncoder) AppendInt(v int)                { enc.AppendInt64(int64(v)) }
+func (enc *jsonEncoder) AppendInt32(v int32)            { enc.AppendInt64(int64(v)) }
+func (enc *jsonEncoder) AppendInt16(v int16)            { enc.AppendInt64(int64(v)) }
+func (enc *jsonEncoder) AppendInt8(v int8)              { enc.AppendInt64(int64(v)) }
+func (enc *jsonEncoder) AppendUint(v uint)              { enc.AppendUint64(uint64(v)) }
+func (enc *jsonEncoder) AppendUint32(v uint32)          { enc.AppendUint64(uint64(v)) }
+func (enc *jsonEncoder) AppendUint16(v uint16)          { enc.AppendUint64(uint64(v)) }
+func (enc *jsonEncoder) AppendUint8(v uint8)            { enc.AppendUint64(uint64(v)) }
+func (enc *jsonEncoder) AppendUintptr(v uintptr)        { enc.AppendUint64(uint64(v)) }
+
+func (enc *jsonEncoder) Clone() zapcore.Encoder {
+    clone := enc.clone()
+    clone.buf.Write(enc.buf.Bytes())
+    return clone
+}
+
+func (enc *jsonEncoder) clone() *jsonEncoder {
+    clone := getJSONEncoder()
+    clone.EncoderConfig = enc.EncoderConfig
+    clone.spaced = enc.spaced
+    clone.openNamespaces = enc.openNamespaces
+    clone.buf = UserGet()
+    return clone
+}
+
+func (enc *jsonEncoder) EncodeEntry(ent zapcore.Entry, fields []zapcore.Field) (*buffer.Buffer, error) {
+    final := enc.clone()
+    final.buf.AppendByte(&apos;{&apos;)
+
+    if final.LevelKey != &quot;&quot; &amp;&amp; final.EncodeLevel != nil {
+        final.addKey(final.LevelKey)
+        cur := final.buf.Len()
+        final.EncodeLevel(ent.Level, final)
+        if cur == final.buf.Len() {
+            // User-supplied EncodeLevel was a no-op. Fall back to strings to keep
+            // output JSON valid.
+            final.AppendString(ent.Level.String())
+        }
+    }
+    if final.TimeKey != &quot;&quot; {
+        final.AddTime(final.TimeKey, ent.Time)
+    }
+    if ent.LoggerName != &quot;&quot; &amp;&amp; final.NameKey != &quot;&quot; {
+        final.addKey(final.NameKey)
+        cur := final.buf.Len()
+        nameEncoder := final.EncodeName
+
+        // if no name encoder provided, fall back to FullNameEncoder for backwards
+        // compatibility
+        if nameEncoder == nil {
+            nameEncoder = zapcore.FullNameEncoder
+        }
+
+        nameEncoder(ent.LoggerName, final)
+        if cur == final.buf.Len() {
+            // User-supplied EncodeName was a no-op. Fall back to strings to
+            // keep output JSON valid.
+            final.AppendString(ent.LoggerName)
+        }
+    }
+    if ent.Caller.Defined {
+        if final.CallerKey != &quot;&quot; {
+            final.addKey(final.CallerKey)
+            cur := final.buf.Len()
+            final.EncodeCaller(ent.Caller, final)
+            if cur == final.buf.Len() {
+                // User-supplied EncodeCaller was a no-op. Fall back to strings to
+                // keep output JSON valid.
+                final.AppendString(ent.Caller.String())
+            }
+        }
+        if final.FunctionKey != &quot;&quot; {
+            final.addKey(final.FunctionKey)
+            final.AppendString(ent.Caller.Function)
+        }
+    }
+    if final.MessageKey != &quot;&quot; {
+        final.addKey(enc.MessageKey)
+        final.AppendString(ent.Message)
+    }
+    if enc.buf.Len() &gt; 0 {
+        final.addElementSeparator()
+        final.buf.Write(enc.buf.Bytes())
+    }
+    addFields(final, fields)
+    final.closeOpenNamespaces()
+    if ent.Stack != &quot;&quot; &amp;&amp; final.StacktraceKey != &quot;&quot; {
+        final.AddString(final.StacktraceKey, ent.Stack)
+    }
+    final.buf.AppendByte(&apos;}&apos;)
+    final.buf.AppendString(final.LineEnding)
+
+    ret := final.buf
+    putJSONEncoder(final)
+    return ret, nil
+}
+
+func (enc *jsonEncoder) closeOpenNamespaces() {
+    for i := 0; i &lt; enc.openNamespaces; i++ {
+        enc.buf.AppendByte(&apos;}&apos;)
+    }
+    enc.openNamespaces = 0
+}
+
+func (enc *jsonEncoder) addKey(key string) {
+    enc.addElementSeparator()
+    enc.buf.AppendByte(&apos;&quot;&apos;)
+    enc.safeAddString(key)
+    enc.buf.AppendByte(&apos;&quot;&apos;)
+    enc.buf.AppendByte(&apos;:&apos;)
+    if enc.spaced {
+        enc.buf.AppendByte(&apos; &apos;)
+    }
+}
+
+func (enc *jsonEncoder) addElementSeparator() {
+    last := enc.buf.Len() - 1
+    if last &lt; 0 {
+        return
+    }
+    switch enc.buf.Bytes()[last] {
+    case &apos;{&apos;, &apos;[&apos;, &apos;:&apos;, &apos;,&apos;, &apos; &apos;:
+        return
+    default:
+        enc.buf.AppendByte(&apos;,&apos;)
+        if enc.spaced {
+            enc.buf.AppendByte(&apos; &apos;)
+        }
+    }
+}
+
+func (enc *jsonEncoder) appendFloat(val float64, bitSize int) {
+    enc.addElementSeparator()
+    switch {
+    case math.IsNaN(val):
+        enc.buf.AppendString(`&quot;NaN&quot;`)
+    case math.IsInf(val, 1):
+        enc.buf.AppendString(`&quot;+Inf&quot;`)
+    case math.IsInf(val, -1):
+        enc.buf.AppendString(`&quot;-Inf&quot;`)
+    default:
+        enc.buf.AppendFloat(val, bitSize)
+    }
+}
+
+// safeAddString JSON-escapes a string and appends it to the internal buffer.
+// Unlike the standard library&apos;s encoder, it doesn&apos;t attempt to protect the
+// user from browser vulnerabilities or JSONP-related problems.
+func (enc *jsonEncoder) safeAddString(s string) {
+    for i := 0; i &lt; len(s); {
+        if enc.tryAddRuneSelf(s[i]) {
+            i++
+            continue
+        }
+        r, size := utf8.DecodeRuneInString(s[i:])
+        if enc.tryAddRuneError(r, size) {
+            i++
+            continue
+        }
+        enc.buf.AppendString(s[i : i+size])
+        i += size
+    }
+}
+
+// safeAddByteString is no-alloc equivalent of safeAddString(string(s)) for s []byte.
+func (enc *jsonEncoder) safeAddByteString(s []byte) {
+    for i := 0; i &lt; len(s); {
+        if enc.tryAddRuneSelf(s[i]) {
+            i++
+            continue
+        }
+        r, size := utf8.DecodeRune(s[i:])
+        if enc.tryAddRuneError(r, size) {
+            i++
+            continue
+        }
+        enc.buf.Write(s[i : i+size])
+        i += size
+    }
+}
+
+// tryAddRuneSelf appends b if it is valid UTF-8 character represented in a single byte.
+func (enc *jsonEncoder) tryAddRuneSelf(b byte) bool {
+    if b &gt;= utf8.RuneSelf {
+        return false
+    }
+    if 0x20 &lt;= b &amp;&amp; b != &apos;\\&apos; &amp;&amp; b != &apos;&quot;&apos; {
+        enc.buf.AppendByte(b)
+        return true
+    }
+    switch b {
+    case &apos;\\&apos;, &apos;&quot;&apos;:
+        enc.buf.AppendByte(&apos;\\&apos;)
+        enc.buf.AppendByte(b)
+    case &apos;\n&apos;:
+        enc.buf.AppendByte(&apos;\\&apos;)
+        enc.buf.AppendByte(&apos;n&apos;)
+    case &apos;\r&apos;:
+        enc.buf.AppendByte(&apos;\\&apos;)
+        enc.buf.AppendByte(&apos;r&apos;)
+    case &apos;\t&apos;:
+        enc.buf.AppendByte(&apos;\\&apos;)
+        enc.buf.AppendByte(&apos;t&apos;)
+    default:
+        // Encode bytes &lt; 0x20, except for the escape sequences above.
+        enc.buf.AppendString(`\u00`)
+        enc.buf.AppendByte(_hex[b&gt;&gt;4])
+        enc.buf.AppendByte(_hex[b&amp;0xF])
+    }
+    return true
+}
+
+func (enc *jsonEncoder) tryAddRuneError(r rune, size int) bool {
+    if r == utf8.RuneError &amp;&amp; size == 1 {
+        enc.buf.AppendString(`\ufffd`)
+        return true
+    }
+    return false
+}
+</code></pre>
+<p>user_encoder.go</p>
+<pre class="language-"><code class="lang-go"><span class="hljs-keyword">package</span> log_mgr
+
+<span class="hljs-comment">// Copyright (c) 2016 Uber Technologies, Inc.</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// Permission is hereby granted, free of charge, to any person obtaining a copy</span>
+<span class="hljs-comment">// of this software and associated documentation files (the &quot;Software&quot;), to deal</span>
+<span class="hljs-comment">// in the Software without restriction, including without limitation the rights</span>
+<span class="hljs-comment">// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span>
+<span class="hljs-comment">// copies of the Software, and to permit persons to whom the Software is</span>
+<span class="hljs-comment">// furnished to do so, subject to the following conditions:</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// The above copyright notice and this permission notice shall be included in</span>
+<span class="hljs-comment">// all copies or substantial portions of the Software.</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
+<span class="hljs-comment">// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
+<span class="hljs-comment">// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span>
+<span class="hljs-comment">// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span>
+<span class="hljs-comment">// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span>
+<span class="hljs-comment">// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN</span>
+<span class="hljs-comment">// THE SOFTWARE.</span>
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;sync&quot;</span>
+
+    <span class="hljs-string">&quot;go.uber.org/zap/buffer&quot;</span>
+    <span class="hljs-string">&quot;go.uber.org/zap/zapcore&quot;</span>
+)
+
+<span class="hljs-keyword">var</span> _sliceEncoderPool = sync.Pool{
+    New: <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span> <span class="hljs-title">interface</span></span>{} {
+        <span class="hljs-keyword">return</span> &amp;sliceArrayEncoder{elems: <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">interface</span>{}, <span class="hljs-number">0</span>, <span class="hljs-number">2</span>)}
+    },
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">getSliceEncoder</span><span class="hljs-params">()</span> *<span class="hljs-title">sliceArrayEncoder</span></span> {
+    <span class="hljs-keyword">return</span> _sliceEncoderPool.Get().(*sliceArrayEncoder)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">putSliceEncoder</span><span class="hljs-params">(e *sliceArrayEncoder)</span></span> {
+    e.elems = e.elems[:<span class="hljs-number">0</span>]
+    _sliceEncoderPool.Put(e)
+}
+
+<span class="hljs-keyword">type</span> consoleEncoder <span class="hljs-keyword">struct</span> {
+    *jsonEncoder
+}
+
+<span class="hljs-comment">// NewConsoleEncoder creates an encoder whose output is designed for human -</span>
+<span class="hljs-comment">// rather than machine - consumption. It serializes the core log entry data</span>
+<span class="hljs-comment">// (message, level, timestamp, etc.) in a plain-text format and leaves the</span>
+<span class="hljs-comment">// structured context as JSON.</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// Note that although the console encoder doesn&apos;t use the keys specified in the</span>
+<span class="hljs-comment">// encoder configuration, it will omit any element whose key is set to the empty</span>
+<span class="hljs-comment">// string.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">NewConsoleEncoder</span><span class="hljs-params">(cfg zapcore.EncoderConfig)</span> <span class="hljs-title">zapcore</span>.<span class="hljs-title">Encoder</span></span> {
+    <span class="hljs-keyword">if</span> cfg.ConsoleSeparator == <span class="hljs-string">&quot;&quot;</span> {
+        <span class="hljs-comment">// Use a default delimiter of &apos;\t&apos; for backwards compatibility</span>
+        cfg.ConsoleSeparator = <span class="hljs-string">&quot;\t&quot;</span>
+    }
+    <span class="hljs-keyword">return</span> consoleEncoder{newJSONEncoder(cfg, <span class="hljs-literal">true</span>)}
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c consoleEncoder)</span> <span class="hljs-title">Clone</span><span class="hljs-params">()</span> <span class="hljs-title">zapcore</span>.<span class="hljs-title">Encoder</span></span> {
+    <span class="hljs-keyword">return</span> consoleEncoder{c.jsonEncoder.Clone().(*jsonEncoder)}
+}
+
+<span class="hljs-comment">// func (c consoleEncoder) writeContext(line *buffer.Buffer, extra []zapcore.Field) {</span>
+<span class="hljs-comment">//     context := c.jsonEncoder.Clone().(*jsonEncoder)</span>
+<span class="hljs-comment">//     defer func() {</span>
+<span class="hljs-comment">//         // putJSONEncoder assumes the buffer is still used, but we write out the buffer so</span>
+<span class="hljs-comment">//         // we can free it.</span>
+<span class="hljs-comment">//         context.buf.Free()</span>
+<span class="hljs-comment">//         putJSONEncoder(context)</span>
+<span class="hljs-comment">//     }()</span>
+
+<span class="hljs-comment">//     addFields(context, extra)</span>
+<span class="hljs-comment">//     context.closeOpenNamespaces()</span>
+<span class="hljs-comment">//     if context.buf.Len() == 0 {</span>
+<span class="hljs-comment">//         return</span>
+<span class="hljs-comment">//     }</span>
+
+<span class="hljs-comment">//     c.addSeparatorIfNecessary(line)</span>
+<span class="hljs-comment">//     line.AppendByte(&apos;{&apos;)</span>
+<span class="hljs-comment">//     line.Write(context.buf.Bytes())</span>
+<span class="hljs-comment">//     line.AppendByte(&apos;}&apos;)</span>
+<span class="hljs-comment">// }</span>
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(c consoleEncoder)</span> <span class="hljs-title">addSeparatorIfNecessary</span><span class="hljs-params">(line *buffer.Buffer)</span></span> {
+    <span class="hljs-keyword">if</span> line.Len() &gt; <span class="hljs-number">0</span> {
+        line.AppendString(c.ConsoleSeparator)
+    }
+}
+</code></pre>
+<p>user_buffer.go</p>
+<pre class="language-"><code class="lang-go"><span class="hljs-keyword">package</span> log_mgr
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;strconv&quot;</span>
+    <span class="hljs-string">&quot;time&quot;</span>
+)
+
+<span class="hljs-keyword">const</span> _size = <span class="hljs-number">1024</span> <span class="hljs-comment">// by default, create 1 KiB buffers</span>
+
+<span class="hljs-comment">// Buffer is a thin wrapper around a byte slice. It&apos;s intended to be pooled, so</span>
+<span class="hljs-comment">// the only way to construct one is via a Pool.</span>
+<span class="hljs-keyword">type</span> Buffer <span class="hljs-keyword">struct</span> {
+    bs   []<span class="hljs-keyword">byte</span>
+    pool Pool
+}
+
+<span class="hljs-comment">// AppendByte writes a single byte to the Buffer.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Buffer)</span> <span class="hljs-title">AppendByte</span><span class="hljs-params">(v <span class="hljs-keyword">byte</span>)</span></span> {
+    b.bs = <span class="hljs-built_in">append</span>(b.bs, v)
+}
+
+<span class="hljs-comment">// AppendString writes a string to the Buffer.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Buffer)</span> <span class="hljs-title">AppendString</span><span class="hljs-params">(s <span class="hljs-keyword">string</span>)</span></span> {
+    b.bs = <span class="hljs-built_in">append</span>(b.bs, s...)
+}
+
+<span class="hljs-comment">// AppendInt appends an integer to the underlying buffer (assuming base 10).</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Buffer)</span> <span class="hljs-title">AppendInt</span><span class="hljs-params">(i <span class="hljs-keyword">int64</span>)</span></span> {
+    b.bs = strconv.AppendInt(b.bs, i, <span class="hljs-number">10</span>)
+}
+
+<span class="hljs-comment">// AppendTime appends the time formatted using the specified layout.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Buffer)</span> <span class="hljs-title">AppendTime</span><span class="hljs-params">(t time.Time, layout <span class="hljs-keyword">string</span>)</span></span> {
+    b.bs = t.AppendFormat(b.bs, layout)
+}
+
+<span class="hljs-comment">// AppendUint appends an unsigned integer to the underlying buffer (assuming</span>
+<span class="hljs-comment">// base 10).</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Buffer)</span> <span class="hljs-title">AppendUint</span><span class="hljs-params">(i <span class="hljs-keyword">uint64</span>)</span></span> {
+    b.bs = strconv.AppendUint(b.bs, i, <span class="hljs-number">10</span>)
+}
+
+<span class="hljs-comment">// AppendBool appends a bool to the underlying buffer.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Buffer)</span> <span class="hljs-title">AppendBool</span><span class="hljs-params">(v <span class="hljs-keyword">bool</span>)</span></span> {
+    b.bs = strconv.AppendBool(b.bs, v)
+}
+
+<span class="hljs-comment">// AppendFloat appends a float to the underlying buffer. It doesn&apos;t quote NaN</span>
+<span class="hljs-comment">// or +/- Inf.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Buffer)</span> <span class="hljs-title">AppendFloat</span><span class="hljs-params">(f <span class="hljs-keyword">float64</span>, bitSize <span class="hljs-keyword">int</span>)</span></span> {
+    b.bs = strconv.AppendFloat(b.bs, f, <span class="hljs-string">&apos;f&apos;</span>, <span class="hljs-number">-1</span>, bitSize)
+}
+
+<span class="hljs-comment">// Len returns the length of the underlying byte slice.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Buffer)</span> <span class="hljs-title">Len</span><span class="hljs-params">()</span> <span class="hljs-title">int</span></span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">len</span>(b.bs)
+}
+
+<span class="hljs-comment">// Cap returns the capacity of the underlying byte slice.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Buffer)</span> <span class="hljs-title">Cap</span><span class="hljs-params">()</span> <span class="hljs-title">int</span></span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">cap</span>(b.bs)
+}
+
+<span class="hljs-comment">// Bytes returns a mutable reference to the underlying byte slice.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Buffer)</span> <span class="hljs-title">Bytes</span><span class="hljs-params">()</span> []<span class="hljs-title">byte</span></span> {
+    <span class="hljs-keyword">return</span> b.bs
+}
+
+<span class="hljs-comment">// String returns a string copy of the underlying byte slice.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Buffer)</span> <span class="hljs-title">String</span><span class="hljs-params">()</span> <span class="hljs-title">string</span></span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">string</span>(b.bs)
+}
+
+<span class="hljs-comment">// Reset resets the underlying byte slice. Subsequent writes re-use the slice&apos;s</span>
+<span class="hljs-comment">// backing array.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Buffer)</span> <span class="hljs-title">Reset</span><span class="hljs-params">()</span></span> {
+    b.bs = b.bs[:<span class="hljs-number">0</span>]
+}
+
+<span class="hljs-comment">// Write implements io.Writer.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Buffer)</span> <span class="hljs-title">Write</span><span class="hljs-params">(bs []<span class="hljs-keyword">byte</span>)</span> <span class="hljs-params">(<span class="hljs-keyword">int</span>, error)</span></span> {
+    b.bs = <span class="hljs-built_in">append</span>(b.bs, bs...)
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">len</span>(bs), <span class="hljs-literal">nil</span>
+}
+
+<span class="hljs-comment">// WriteByte writes a single byte to the Buffer.</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// Error returned is always nil, function signature is compatible</span>
+<span class="hljs-comment">// with bytes.Buffer and bufio.Writer</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Buffer)</span> <span class="hljs-title">WriteByte</span><span class="hljs-params">(v <span class="hljs-keyword">byte</span>)</span> <span class="hljs-title">error</span></span> {
+    b.AppendByte(v)
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
+}
+
+<span class="hljs-comment">// WriteString writes a string to the Buffer.</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// Error returned is always nil, function signature is compatible</span>
+<span class="hljs-comment">// with bytes.Buffer and bufio.Writer</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Buffer)</span> <span class="hljs-title">WriteString</span><span class="hljs-params">(s <span class="hljs-keyword">string</span>)</span> <span class="hljs-params">(<span class="hljs-keyword">int</span>, error)</span></span> {
+    b.AppendString(s)
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">len</span>(s), <span class="hljs-literal">nil</span>
+}
+
+<span class="hljs-comment">// TrimNewline trims any final &quot;\n&quot; byte from the end of the buffer.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Buffer)</span> <span class="hljs-title">TrimNewline</span><span class="hljs-params">()</span></span> {
+    <span class="hljs-keyword">if</span> i := <span class="hljs-built_in">len</span>(b.bs) - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span> {
+        <span class="hljs-keyword">if</span> b.bs[i] == <span class="hljs-string">&apos;\n&apos;</span> {
+            b.bs = b.bs[:i]
+        }
+    }
+}
+
+<span class="hljs-comment">// Free returns the Buffer to its Pool.</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// Callers must not retain references to the Buffer after calling Free.</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Buffer)</span> <span class="hljs-title">Free</span><span class="hljs-params">()</span></span> {
+    b.pool.put(b)
+}
+</code></pre>
+ 
+          </section>
+          
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+ 
+        </div>
+      </div>
+      
+    </div>
+
+        
+  </div>
+  <script>
+    function showModal() {
+      document.getElementsByClassName("mask")[0].style.display = "block";
+      document.getElementsByClassName("donate-modal")[0].style.display =
+        "block";
+    }
+    // 切换赞赏码
+    function showDonateImg(num) {
+      let alipay = "";
+      let wxpay = ""
+      if(num){
+        wxpay = "hidden"
+      }else{
+        alipay = "hidden"
+      }
+      document.getElementById("wxpay-code").hidden = wxpay;
+      document.getElementById("alipay-code").hidden = alipay;
+      document.getElementsByName("pay-way")[num].checked = "checked";
+    }
+
+    // 关闭赞赏框
+    function closeDonateModal() {
+      document.getElementsByClassName("mask")[0].style.display = "none";
+      document.getElementsByClassName("donate-modal")[0].style.display = "none";
+    }
+
+    var gitbook = gitbook || [];
+    gitbook.push(function () {
+      gitbook.page.hasChanged({"page":{"title":"golang自定义日志样式","level":"3.2.1","depth":2,"next":{"title":"标准库","level":"4.1","depth":1,"url":"https://studygolang.com/pkgdoc","ref":"https://studygolang.com/pkgdoc","articles":[{"title":"快速入门Dart基础","level":"4.1.1","depth":2,"path":"blog/Dart/40m_Learn_dart.md","ref":"blog/Dart/40m_Learn_dart.md","articles":[]},{"title":"Dart 逻辑运算符","level":"4.1.2","depth":2,"path":"blog/Dart/Dart_logic.md","ref":"blog/Dart/Dart_logic.md","articles":[]},{"title":"Dart 按位运算符","level":"4.1.3","depth":2,"path":"blog/Dart/dart_bit_compute.md","ref":"blog/Dart/dart_bit_compute.md","articles":[]},{"title":"Dart 关系运算符","level":"4.1.4","depth":2,"path":"blog/Dart/Dart_relation_compute.md","ref":"blog/Dart/Dart_relation_compute.md","articles":[]},{"title":"Dart 常量","level":"4.1.5","depth":2,"path":"blog/Dart/dart_final_const.md","ref":"blog/Dart/dart_final_const.md","articles":[]},{"title":"Dart 注释","level":"4.1.6","depth":2,"path":"blog/Dart/dart_explain.md","ref":"blog/Dart/dart_explain.md","articles":[]},{"title":"Dart 数据类型","level":"4.1.7","depth":2,"path":"blog/Dart/dart_type.md","ref":"blog/Dart/dart_type.md","articles":[]},{"title":"Dart 算术运算符","level":"4.1.8","depth":2,"path":"blog/Dart/dart_math_compute.md","ref":"blog/Dart/dart_math_compute.md","articles":[]},{"title":"Dart 控制流语句","level":"4.1.9","depth":2,"path":"blog/Dart/control_struct.md","ref":"blog/Dart/control_struct.md","articles":[]},{"title":"Dart 赋值运算符","level":"4.1.10","depth":2,"path":"blog/Dart/dart_give_value.md","ref":"blog/Dart/dart_give_value.md","articles":[]},{"title":"Dart 关键字","level":"4.1.11","depth":2,"path":"blog/Dart/dart_key_words.md","ref":"blog/Dart/dart_key_words.md","articles":[]},{"title":"Dart 移位运算符","level":"4.1.12","depth":2,"path":"blog/Dart/dart_bit_move.md","ref":"blog/Dart/dart_bit_move.md","articles":[]},{"title":"Dart 三元运算符","level":"4.1.13","depth":2,"path":"blog/Dart/dart_three_var_compute.md","ref":"blog/Dart/dart_three_var_compute.md","articles":[]},{"title":"Dart 变量","level":"4.1.14","depth":2,"path":"blog/Dart/dart_var.md","ref":"blog/Dart/dart_var.md","articles":[]}]},"previous":{"title":"第三方库","level":"3.2","depth":1,"url":"https://wangchenxi.top","ref":"https://wangchenxi.top","articles":[{"title":"golang自定义日志样式","level":"3.2.1","depth":2,"path":"blog/golang/zap_userdefine.md","ref":"blog/golang/zap_userdefine.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["highlight","-lunr","sharing","-livereload","chapter-fold","sitemap","theme-lou","back-to-top-button","code","prism","search-pro","-search"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"typescript"}},"search-pro":{},"code":{"copyButtons":true},"theme-lou":{"hide-elements":[".summary .gitbook-link"],"color":"#5F9EA0","book-anchor-title":"本章目录标题","forbidCopy":false,"logo":"static/zhuque.jpg","book-summary-title":"导航","search-placeholder":"全局搜索","imgStyle":{"isCenter":true,"isBox":false,"otherStyle":"max-width: 80%;"},"favicon":"static/zhuque.jpg"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://chenxiwong.github.io/gitbook"},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","keywords":"学习,笔记,编程,代码,博客,文章,github","author":"ChenxiWong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeColor":"#3884ff","themeLou":{"nav":[{"target":"_blank","url":"https://www.baidu.com","name":"百度"}]}},"title":"个人笔记","introduction":{"path":"README.md","title":"导航首页"},"gitbook":"*","description":"文档"},"file":{"path":"blog/golang/zap_userdefine.md","mtime":"2024-03-30T06:47:56.694Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-30T06:48:32.599Z"},"basePath":"../..","book":{"language":""}});
+    });
+  </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-lou/jweixin-1.6.0.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-lou/lou.js"></script>
+        
+    
+
+    </body>
+</html>
+
