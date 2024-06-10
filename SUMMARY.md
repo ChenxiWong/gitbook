@@ -65,6 +65,7 @@
 
 
 ## 其他
+* [Vue3快速上手](blog/other/Vue3快速上手.md)
 * [github Page](blog/other/githubPages.md)
     * [gitbook使用举例](blog/other/gitbookEnvPrepare.md)
     * [github Actions自动构建](blog/other/GitHubActions.md)
